@@ -1,0 +1,23 @@
+---
+layout: null
+---
+<?xml version="1.0" encoding="UTF-8" ?>
+<rss version="2.0">
+<channel>
+  <title>William Entriken, Reading List</title>
+  <language>en-us</language>
+  <copyright>{{ site.time | date: '%Y' }}</copyright>
+  <link>https://phor.net/reading-list.html</link>
+  <description>William Entriken book reviews</description>
+{% for book in site.data.reading-list %}
+  <item>
+    <title>{{ book.title | escape }}</title>
+    <link>https://phor.net/reading-list.html#{{ book.isbn | escape }}</link>
+    <guid>https://phor.net/reading-list.html#{{ book.isbn | escape }}</guid>
+    <pubDate>{{ book.dateread | date_to_rfc822 }}</pubDate>
+    <description>{{ book.notes | escape }}</description>
+    <enclosure url="https://images.amazon.com/images/P/{{ book.isbn | escape }}._BO2,214,203,200_THUMBZZZ_.jpg" type="image/jpeg" />
+  </item>
+{% endfor %}
+</channel>
+</rss>

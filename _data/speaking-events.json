@@ -1,0 +1,86 @@
+[
+  {
+    "date": "2019",
+    "url": "https://private.frenchfounders.com/public/event/1743/2019-12-17-08-15-blockchain-challenges-and-new-business-models",
+    "title": "French Founders"
+  },
+  {
+    "date": "2019",
+    "url": "https://www.prnewswire.com/news-releases/ey-releases-zero-knowledge-proof-blockchain-transaction-technology-to-the-public-domain-to-advance-blockchain-privacy-standards-300833137.html",
+    "title": "EY Global Blockchain Summit",
+    "coverage": [
+      "https://www.coindesk.com/ey-nightfall-ethereum-enterprise-public-blockchain"
+    ]
+  },
+  {
+    "date": "2019",
+    "url": "https://www.prnewswire.com/news-releases/nftnyc-exploring-the-non-fungible-token-ecosystem-february-20-times-square-nyc-300765136.html",
+    "title": "NFT.nyc New York",
+    "coverage": [
+      "https://www.youtube.com/watch?v=8Hp8fN7tgbA",
+      "https://www.youtube.com/watch?v=EzUdilADBRw"
+    ]
+  },
+  {
+    "date": "2019",
+    "url": "https://www.fox.temple.edu/student-professional-organizations/temple-university-supply-chain-association/",
+    "title": "Temple Supply Chain Association"
+  },
+  {
+    "date": "2019",
+    "url": "https://www.lebow.drexel.edu/event/2019/02/08/lunch-lead-and-learn-blockchain",
+    "title": "Drexel University LeBow Lunch, Lead and Learn"
+  },
+  {
+    "date": "2018",
+    "url": "https://chain76.org",
+    "title": "Chain 76 Philly"
+  },
+  {
+    "date": "2018",
+    "url": "https://www.bledstrategicforum.org/cth_speaker/william-entriken/",
+    "title": "Bled Strategic Forum",
+    "coverage": [
+      "https://medium.com/bled-strategic-forum/direction-decentralization-72970cc7b3eb"
+    ]
+  },
+  {
+    "date": "2018",
+    "url": "https://www.nifty.gg",
+    "title": "NIFTY Hong Kong",
+    "coverage": [
+      "https://www.youtube.com/watch?v=3NbXBJbwa8g"
+    ]
+  },
+  {
+    "date": "2018",
+    "url": "https://www.paypal-innovationlab.com",
+    "title": "PayPal Innovation Lab Singapore",
+    "coverage": [
+      "https://twitter.com/0xcert/status/1020942099599052800"
+    ]
+  },
+  {
+    "date": "2018",
+    "url": "https://www.eventbrite.com/e/beyond-cryptokitties-erc721-tokens-tickets-45174230339?aff=allevents#",
+    "title": "Slovenian Blockchain Alliance"
+  },
+  {
+    "date": "2018",
+    "url": "http://bcwf.thefintech.org",
+    "title": "BCWF Shanghai"
+  },
+  {
+    "date": "2018",
+    "url": "https://explore721.com/",
+    "title": "The North Texas Blockchain Alliance",
+    "coverage": [
+      "https://www.youtube.com/watch?v=RCRuAmSnntM&t=229s"
+    ]
+  },
+  {
+    "date": "2018",
+    "url": "http://sacctx.chambermaster.com/events/details/dallas-initial-deed-offering-ido-the-future-of-ico-s-2526",
+    "title": "Dallas Chamber of Commerce"
+  }
+]

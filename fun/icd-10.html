@@ -1,0 +1,76 @@
+---
+layout: page
+title: 20 Random Draft ICD-10-CM/PCS MS-DRGv28 codes
+---
+
+<div class="container">
+	<h1>Random ICD-10 Codes</h1>
+	<input class="form-control" id="query" placeholder="search...">
+	<table class="table" id="results">
+		
+	</table>
+</div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/pako/1.0.10/pako.min.js" integrity="sha256-Kc+gVCuYZLZkDP3MjxWxhNtkMbUy2ycCo86X5fKn/Bw=" crossorigin="anonymous"></script>
+
+<script>
+	var icd10Data = null;
+	
+	$.ajax({
+		url: 'icd-10-all-codes.tsv',
+		xhr: function(){
+			var xhr = new window.XMLHttpRequest();
+			xhr.addEventListener("progress", function(e){
+				console.log(e.loaded);
+			}, false);
+			return xhr;
+		},
+		success: function (res) {
+			icd10Data = res.split(/\r?\n/);
+			icd10Data = shuffle(icd10Data);
+			update();
+		}
+	});
+	
+	function shuffle(array) {
+		let counter = array.length;
+		// While there are elements in the array
+		while (counter > 0) {
+			// Pick a random index
+			let index = Math.floor(Math.random() * counter);
+			// Decrease counter by 1
+			counter--;
+			// And swap the last element with it
+			let temp = array[counter];
+			array[counter] = array[index];
+			array[index] = temp;
+		}
+		return array;
+	}
+	
+	function update() {
+		$("#results").empty();
+		
+		const query = $('#query').val();
+		let results = 0;
+		for (let i = 0; i < icd10Data.length; i++) {
+			if (icd10Data[i].toUpperCase().includes(query.toUpperCase())) {
+				const row = icd10Data[i].split(/\t/);
+				$("#results").append($("<tr><td>"+row[0]+"</td><td>"+row[1]+"</td></tr>"));
+				results++;
+			}
+			if (results >= 20) {
+				break;
+			}
+		}
+		if (results === 20) {
+			$("#results").append($("<tr><td>and more...</td></tr>"));
+		}
+		icd10Data = shuffle(icd10Data);
+	}		
+	
+	$("#query").on("input", function(e) {
+		update()
+	});
+</script>

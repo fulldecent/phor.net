@@ -1,0 +1,35 @@
+---
+layout: null
+---
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <link href="" rel="canonical">
+    <link href="{% link /assets/site.css %}" rel="stylesheet">
+    <link href="{{ page.url | prepend: site.baseurl | prepend: site.url | escape }}" rel="canonical">
+  </head>
+  <body class="pb-5">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark overflow-hidden glowbar">
+      <div class="container">
+        <a class="navbar-brand mr-auto" href="/">
+          William Entriken
+        </a>
+        <a class="mx-3 text-nowrap" href="reading-list.rss"><i class="fa fa-feed"></i> RSS</a>
+        <a class="mx-3 text-nowrap" href="https://eepurl.com/c07Ft1"><i class="fa fa-envelope"></i> Email updates</a>
+      </div>
+  
+    </nav>
+{{ content }}
+{% include google-analytics.html %}
+    <footer class="mt-5">
+      <div class="container">
+        <p>William Entriken &mdash; &#9992; Philadelphia USA &mdash; published {{ site.time | date: '%Y' }}</p>
+      </div>
+    </footer>
+  </body>
+</html>
+

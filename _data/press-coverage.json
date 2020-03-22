@@ -1,0 +1,231 @@
+[
+  {
+    "date": "2020-01-14",
+    "authors": ["Loïc Lesavre", "Priam Varin", "Peter Mell", "Michael Davidson", "James Shook"],
+    "publication": "NIST, Computer Security Division",
+    "url": "https://nvlpubs.nist.gov/nistpubs/CSWP/NIST.CSWP.01142020.pdf",
+    "title": "A Taxonomic Approach to Understanding Emerging Blockchain Identity Management Systems"
+  },
+  {
+    "date": "2020-01-31",
+    "authors": "Stephane Gosselin",
+    "publication": "Numerai",
+    "url": "https://medium.com/numerai/welcome-to-erasure-2020-9e4c7c667ca4",
+    "title": "Welcome to Erasure 2020"
+  },
+  {
+    "date": "2019-10-16",
+    "authors": "Asano Nyaa",
+    "publication": "MCHplus",
+    "url": "https://medium.com/mchplus/interview-erc721-80a67fdfad5b",
+    "title": "ERC-721開発者, Entriken氏に聞いてみた！"
+  },
+  {
+    "date": "2019-09-10",
+    "authors": "Brian Hickey",
+    "publication": "Philly Voice",
+    "url": "https://www.phillyvoice.com/ezpass-pennsylvania-turnpike-code-fines-appeals-foia-hacker/",
+    "title": "You may have racked up big E-ZPass fines and not even know it"
+  },
+  {
+    "date": "2019-06-19",
+    "authors": "Quinn Myers",
+    "publication": "MET Magazine",
+    "url": "https://melmagazine.com/en-us/story/boudoir-photography-social-media-safe",
+    "title": "How the Instagram Era Changed Boudoir Photography"
+  },
+  {
+    "date": "2019-05-23",
+    "authors": "EY",
+    "url": "https://www.ey.com/en_gl/news/2019/05/ey-to-help-blockchain-wine-pte-ltd-build-blockchain-platform-for-wine-distributors-across-asia-and-worldwide",
+    "title": "EY to help Blockchain Wine Pte. Ltd. build blockchain platform for wine distributors across Asia and worldwide"
+  },
+  {
+    "date": "2019-04-16",
+    "authors": "Anna Baydakova",
+    "publication": "Coindesk",
+    "url": "https://www.coindesk.com/ey-nightfall-ethereum-enterprise-public-blockchain",
+    "title": "Auditor EY Unveils Nightfall, An Ambitious Bid to Bring Business to Ethereum"
+  },
+  {
+    "date": "2019-04-28",
+    "authors": "罗鸿达",
+    "publication": "金色财经",
+    "url": "https://www.jinse.com/news/blockchain/357441.html",
+    "title": "ERC721主作者：撰写协议的过程是对用例更加深入的探讨"
+  },
+  {
+    "date": "2019-03-14",
+    "authors": "Jonas Kasper Jensen",
+    "publication": "The Tokenizer",
+    "url": "https://thetokenizer.io/2019/03/14/an-exploration-of-the-non-fungible-blockchain-ecosystem-report-from-nft-nyc/",
+    "title": "An exploration of the Non-Fungible Blockchain Ecosystem – report from NFT.NYC"
+  },
+  {
+    "date": "2019-01-01",
+    "authors": "James Canterbury et al.",
+    "publication": "Pharmaceutical Engineering, Volume 39, Number 1",
+    "url": "https://ispe.org/pharmaceutical-engineering/january-february-2019/blockchain-pharmaceutical-engineers",
+    "title": "Blockchain for Pharmaceutical Engineers"
+  },
+  {
+    "date": "2019-01-03",
+    "authors": "Karin Chang",
+    "publication": "CoinGecko Buzz",
+    "url": "https://www.coingecko.com/buzz/spotlight-3-william-entriken?locale=en",
+    "title": "William Entriken - The Catalyst Behind ERC-721"
+  },
+  {
+    "date": "2018-12-21",
+    "authors": "Rebecca Campbell",
+    "publication": "Forbes Contributor",
+    "url": "https://www.forbes.com/sites/rebeccacampbell1/2018/12/21/airbuss-a³-is-hosting-a-crypto-fundraiser-to-help-senior-dogs/#3c0c66e5ebe0",
+    "title": "Airbus's A³ Is Hosting A Crypto Fundraiser To Help Senior Dogs"
+  },
+  {
+    "_note": "Only \"John\" is listed on farsightpodcast.com, but his full name is listed at https://itunes.apple.com/au/podcast/farsight/id1149267066",
+    "date": "2018-11-19",
+    "authors": "John Gleeson",
+    "publication": "Farsight Podcast",
+    "url": "https://farsightpodcast.com/2018/11/19/william-entriken-erc-721-author-and-su-squares-founder/",
+    "title": "William Entriken – ERC-721 [Lead] Author and Su Squares Founder"
+  },
+  {
+    "date": "2018-10-30",
+    "authors": "Mish Shedlock",
+    "publication": "Mish's Global Economic Trend Analysis",
+    "url": "https://moneymaven.io/mishtalk/economics/beyond-bitcoin-and-icos-the-future-of-blockchain-Zk2EPUBUA0WAcKAizm7GeA/",
+    "title": "Beyond Bitcoin and ICOs: The Future of Blockchain"
+  },
+  {
+    "date": "2018-09-15",
+    "authors": "Matic Tomšič",
+    "publication": "SiolNET",
+    "url": "https://siol.net/digisvet/novice/kaj-si-o-sloveniji-misli-idejni-oce-ene-od-najbolj-vrocih-tehnologij-ta-hip-477491",
+    "title": "Kaj si o Sloveniji misli idejni oče ene od najbolj vročih tehnologij ta hip (Bled Strategic Forum)"
+  },
+  {
+    "date": "2018-07-26",
+    "authors": "赵琪",
+    "publication": "奇点财经",
+    "url": "http://www.sfgroup.hk/news_post/与erc721-首席作者安其文william-entriken探讨下一个区块链应用风/",
+    "title": "与ERC721 首席作者安其文William Entriken探讨下一个区块链应用风口 (NIFTY Hong Kong)"
+  },
+  {
+    "date": "2018-07-05",
+    "authors": "Samantha Radocchia",
+    "publication": "Forbes Contributor",
+    "url": "https://www.forbes.com/sites/samantharadocchia/2018/07/05/how-non-fungible-tokens-from-physical-collectibles-are-strengthening-asset-backed-securities/#4c498aba1b2e",
+    "title": "How Non-Fungible Tokens From Physical Collectibles Are Strengthening Asset-Backed Securities"
+  },
+  {
+    "date": "2018",
+    "authors": "快讯君",
+    "publication": "区块链周刊 (BTWeek)",
+    "url": "http://www.btweek.com/news/10217/",
+    "title": "区块链不仅是技术还是原则，不应该把它概念化 (ERC-721)"
+  },
+  {
+    "date": "2018-01-01",
+    "authors": "Christof Windeck",
+    "publication": "Heise Medien",
+    "url": "https://www.heise.de/newsticker/meldung/PC-und-Notebook-senden-per-JavaScript-auf-Mittelwelle-3948828.html",
+    "title": "PC und Notebook senden per JavaScript auf Mittelwelle"
+  },
+  {
+    "date": "2018-01-29",
+    "authors": "Jose Fritz",
+    "publication": "Arcane Radio Trivia",
+    "url": "http://tenwatts.blogspot.com/2018/01/system-bus-radio.html",
+    "title": "System Bus Radio"
+  },
+  {
+    "date": "2017-07-02",
+    "authors": "Apple",
+    "url": "https://support.apple.com/en-us/HT201536",
+    "title": "Credit to people who have reported potential security issues in Apple's web servers"
+  },
+  {
+    "date": "2017-04-14",
+    "authors": "Sarah Shayne Lim Uy",
+    "publication": "Equire Philippines",
+    "url": "http://www.esquiremag.ph/long-reads/notes-and-essays/i-was-drugged-with-devils-breath-and-kidnapped-in-manila-a1965-20170814-lfrm2?ref=site_search",
+    "title": "I was drugged with devil's breath and kidnapped in Manila"
+  },
+  {
+    "date": "2017-07-06",
+    "authors": "Roberto Torres",
+    "publication": "Technically Philly",
+    "url": "https://technical.ly/philly/2017/07/06/septa-says-real-time-data-finally-coming-buses-trolleys/",
+    "title": "SEPTA says real-time data on buses, trolleys finally coming to an app"
+  },
+  {
+    "date": "2017-04-27",
+    "authors": "Sonya Mann",
+    "publication": "Inc.com",
+    "url": "https://www.inc.com/sonya-mann/cybersecurity-zecco-scandal.html",
+    "title": "A Developer Broke His Decade-Long Silence to Expose This Bank's Cybersecurity Cover-Up"
+  },
+  {
+    "date": "2016-03-02",
+    "authors": "Catalin Cimpanu",
+    "publication": "Softpedia",
+    "url": "http://news.softpedia.com/news/emitting-radio-waves-from-a-computer-with-no-radio-transmitting-hardware-501260.shtml",
+    "title": "System bus radio"
+  },
+  {
+    "date": "2016-03-03",
+    "authors": "Мария Нефёдова",
+    "publication": "Хакер",
+    "url": "https://xakep.ru/2016/03/03/system-bus-radio/",
+    "title": "Исследователь заставил компьютер без радиопередатчика вещать на радиочастоте (System bus radio)"
+  },
+  {
+    "date": "2014-01-20",
+    "authors": "Vince Lattanzio",
+    "publication": "NBC10 Philadelphia",
+    "url": "http://www.nbcphiladelphia.com/news/tech/Frustrated-Over-Late-SEPTA-Trains-Software-Developer-Creates-App-to-Recommend-Schedule-Changes-241182841.html",
+    "title": "Frustrated Over Late SEPTA Trains, Software Developer Creates App Proposing Better Schedules"
+  },
+  {
+    "date": "2014-01-22",
+    "authors": "Editor",
+    "publication": "Metro Magazine",
+    "url": "http://www.metro-magazine.com/news/story/2014/01/septa-rider-creates-app-proposing-better-schedules-.aspx",
+    "title": "SEPTA rider creates app proposing \"better schedules\""
+  },
+  {
+    "date": "2014-01-23",
+    "authors": "Sarah Laskow",
+    "publication": "Grist",
+    "url": "http://grist.org/list/this-app-keeps-track-of-just-how-late-philadelphias-trains-are-running/",
+    "title": "This app keeps track of just how late Philadelphia’s trains are running"
+  },
+  {
+    "date": "2014-01-22",
+    "authors": "Susan Bregman",
+    "publication": "The Transit Wire",
+    "url": "http://www.thetransitwire.com/2014/01/22/septa-rider-creates-app-track-time-performance/",
+    "title": "SEPTA rider creates app to track on-time performance"
+  },
+  {
+    "date": "2016-03-01",
+    "authors": "timothy",
+    "publication": "Slashdot front page",
+    "url": "https://hardware.slashdot.org/story/16/03/01/1727226/microcasting-color-tv-by-abusing-a-wi-fi-chip",
+    "title": "Transmission of radio signals from a computer that is otherwise air gapped"
+  },
+  {
+    "date": "2015-05-12",
+    "authors": "Slashdot front page",
+    "url": "https://it.slashdot.org/story/15/05/12/2115251/photo-printing-website-artisan-state-allows-access-to-all-user-uploaded-photos",
+    "title": "Photo Printing Website Artisan State Allows Access To All User-Uploaded Photos"
+  },
+  {
+    "date": "2014-07-11",
+    "authors": "Juliana Reyes",
+    "publication": "Technically Philly",
+    "url": "https://technical.ly/philly/2014/07/11/traffic-court-data-expensive-william-entriken/",
+    "title": "Why does this data from our troubled Philadelphia Traffic Court cost $11K?"
+  }
+]
