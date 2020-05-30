@@ -1,8 +1,27 @@
-Start here https://github.com/fulldecent?tab=repositories&type=source and edit oldest project (at bottom). Click on each one and follow instructions below.
+---
+layout: article
+title: How to Organize Your Open Source Project
+subtitle: Guide to make your project clear, inviting and easy to maintain
+---
 
-# Update Open Source Projects Like a Boss V1
+Start here [https://github.com/fulldecent?tab=repositories&type=source](https://github.com/fulldecent?tab=repositories&type=source) and edit oldest project (at bottom). Click on each one and follow instructions below.
 
-1. Is the project abandoned? Archive it!
+## Is the project abandoned?
+
+**Archive it.** Don't waste people's time.
+
+## Ask for money
+
+Nobody wants to pay for your open source software. But you'll be remiss if you don't ask.
+
+Here is the classy way to ask for money. And this approach comes from https://mochajs.org
+
+> Use Mocha at Work? Ask your manager or marketing team if they’d help support our project. Your company’s logo will also be displayed on [npmjs.com]() and our [GitHub repository]().
+
+
+
+
+## Main checklist
 
 
 

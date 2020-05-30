@@ -1,0 +1,20 @@
+---
+layout: page
+---
+{%- comment -%}
+
+Front matter variables:
+ - page.title (REQUIRED) -- how to refer to page
+ - page.subtitle (REQUIRED)
+
+{%- endcomment -%}
+<div class="jumbotron">
+  <div class="container">
+    <h1 class="display-4">{{ page.title | escape }}</h1>
+    <p class="lead">{{ page.subtitle | escape }}</p>
+  </div>
+</div>
+
+<div class="container">
+{{ content }}
+</div>
