@@ -1,7 +1,14 @@
 [
   {
+    "date": "2020-03-30",
+    "authors": "Breitling",
+    "publication": "(Press release)",
+    "url": "https://www.breitling.com/us-en/service/blockchain/",
+    "title": "Service / Blockchain"
+  },
+  {
     "date": "2020-01-14",
-    "authors": ["Loïc Lesavre", "Priam Varin", "Peter Mell", "Michael Davidson", "James Shook"],
+    "authors": ["Loïc Lesavre", "Priam Varin", "Peter Mell", "Michael Davidson", "James Shook"],
     "publication": "NIST, Computer Security Division",
     "url": "https://nvlpubs.nist.gov/nistpubs/CSWP/NIST.CSWP.01142020.pdf",
     "title": "A Taxonomic Approach to Understanding Emerging Blockchain Identity Management Systems"
