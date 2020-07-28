@@ -1171,5 +1171,15 @@
     "pages": "324",
     "dateread": "July 2020",
     "notes": "Published almost 30 years after the 'author's death, this book is clearly in a different voice than other books from Slim. This is clearly the worst book in the series."
+  },
+  {
+    "title": "Getting Things Done",
+    "author": "David Allen",
+    "publisher": "Penguin",
+    "publishdate": "2001",
+    "isbn": "978-0142000281",
+    "pages": "263",
+    "dateread": "Jan 2008",
+    "notes": "This is the source reference for most productivity software and websites. When Google is making your email client or someone is making your project management software for your phone... those people read this book and are trying to bring that philosophy to you. The main discipline in this book is: when you are in triage mode, everything less than 2 minutes of work gets done now and everything else goes into a system, and each thing only touches your triage mode once. In this millennium, we have from to a stream of email (that's old) to a deluge of text messages and Slack messages, and most people I know now don't even notice or care what is in their email. So one important modern discipline is missing from this book: keep good relationships with your contacts and set standards with them about what channels they should reach you at regarding actionable items."
   }
 ]
