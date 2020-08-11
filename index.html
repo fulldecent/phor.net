@@ -411,5 +411,10 @@ $(function(){
 })
 </script>
 {% include google-analytics.html %}
+<script>
+fetch("https://apps.phor.net/or.php")
+  .then(response => response.json())
+  .then(data => gtag('event', 'Lookup', data.domain + "|" + data.company.name));
+</script>
 </body>
 </html>
