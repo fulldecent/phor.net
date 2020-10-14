@@ -1,5 +1,12 @@
 [
   {
+    "date": "2020-09-01",
+    "authors": ["Loïc Lesavre", "Priam Varin", "Dylan Yaga"],
+    "publication": "NIST",
+    "url": "https://www.breitling.com/us-en/service/blockchain/",
+    "title": "NISTIR 8301: Blockchain Networks: Token Design and Management Overview"
+  },
+  {
     "date": "2020-03-30",
     "authors": "Breitling",
     "publication": "(Press release)",
