@@ -1,17 +1,12 @@
-.glowbar::before {
-  content: "";
-  -webkit-animation:glow 1s ease forwards;
-  -moz-animation:glow 1s ease forwards;
+.glowbar {
+  background: linear-gradient(to right, #fdc830, #f37335);
   animation:glow 1s ease forwards;
+  background-size: 200% 200%;
 }
-
-@-moz-keyframes glow { 100% { box-shadow: 0 0 200px 300px rgb(0, 123, 255) } }
-@-webkit-keyframes glow { 100% { box-shadow: 0 0 200px 300px rgb(0, 123, 255) } }
-@keyframes glow { 100% { box-shadow: 0 0 200px 300px rgb(0, 123, 255); } }
-
-
-
-
+@keyframes glow {
+  0%{background-size:500% 500%}
+  100%{background-size:100% 100%}
+}
 
 
 
@@ -23,16 +18,10 @@
   padding-bottom: 10px;
   border: 1px solid #eee;
   box-shadow: 2px 2px 2px #ccc;
-  -moz-box-shadow: 2px 2px 2px #ccc;
-  -webkit-box-shadow: 2px 2px 2px #ddd;
   margin: 12px;
   text-decoration: none;
   color: #444;
-  -webkit-animation:spin 1s ease forwards;
-  -moz-animation:spin 1s ease forwards;
   animation:spin 1s ease forwards;
 
 }
-@-moz-keyframes spin { 100% { -moz-transform: rotate(-12deg); } }
-@-webkit-keyframes spin { 100% { -webkit-transform: rotate(-12deg); } }
 @keyframes spin { 100% { -webkit-transform: rotate(-12deg); transform:rotate(-12deg); } }
