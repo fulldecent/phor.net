@@ -196,7 +196,7 @@ title: William Entriken, Reading List
 </div>
 
 <div class="container">
-{% for book in site.data.reading-list | reverse %}
+{% for book in site.data.reading-list %}
   <h3 class="mt-3" id="{{ book.isbn | escape }}">{{ book.title | escape }}
     <a class="btn btn-sm btn-outline-primary pull-right" href="https://www.amazon.com/exec/obidos/ASIN/{{ book.isbn | escape }}/phornetandrel-20">Get on Amazon</a>
   </h3>
