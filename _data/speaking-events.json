@@ -1,5 +1,10 @@
 [
   {
+    "date": "2021",
+    "url": "https://www.eventbrite.com/e/nftnyc-2021-in-person-2-3-4-november-tickets-144386456779",
+    "title": "NFT NYC"
+  },
+  {
     "date": "2019",
     "url": "https://private.frenchfounders.com/public/event/1743/2019-12-17-08-15-blockchain-challenges-and-new-business-models",
     "title": "French Founders"
@@ -15,7 +20,7 @@
   {
     "date": "2019",
     "url": "https://www.prnewswire.com/news-releases/nftnyc-exploring-the-non-fungible-token-ecosystem-february-20-times-square-nyc-300765136.html",
-    "title": "NFT.nyc New York",
+    "title": "NFT NYC",
     "coverage": [
       "https://www.youtube.com/watch?v=8Hp8fN7tgbA",
       "https://www.youtube.com/watch?v=EzUdilADBRw"
