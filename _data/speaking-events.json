@@ -2,7 +2,10 @@
   {
     "date": "2021",
     "url": "https://www.eventbrite.com/e/nftnyc-2021-in-person-2-3-4-november-tickets-144386456779",
-    "title": "NFT NYC"
+    "title": "NFT NYC",
+    "coverage": [
+      "https://twitter.com/michpalmer/status/1455924833884282890"
+    ]
   },
   {
     "date": "2019",
@@ -40,6 +43,11 @@
     "date": "2018",
     "url": "https://chain76.org",
     "title": "Chain 76 Philly"
+  },
+  {
+    "date": "2018",
+    "url": "https://www.eventbrite.com/e/multi-disciplinary-hands-on-blockchain-workshop-geared-for-women-tickets-43206067511",
+    "title": "Multi-Disciplinary Hands-On Blockchain Workshop Geared for Women"
   },
   {
     "date": "2018",
