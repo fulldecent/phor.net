@@ -479,7 +479,6 @@ Let me introduce my friend William Entriken, who is the author of ERC 721 Non-Fu
           <li>15 1/2 - 34/35 shirt</li>
         </ul>
         <p>Best marathon time: 9h : 55m</p>
-        <p>Discord: fulldecent<span>#</span>8164</p>
       </div>
       <div class="col">
         <ul>
@@ -504,6 +503,50 @@ Let me introduce my friend William Entriken, who is the author of ERC 721 Non-Fu
       </p>
     </div>
   </footer>
+  <footer class="bg-dark text-light">
+    <div class="container-md py-5">
+      <h5 id="authentic-accounts">Authentic accounts</h5>
+      <p><em>Follow on all these places for good things. Accounts are not an endorsement of a platform.</em></p>
+      <div class="row">
+        <div class="col-md">
+          <h6>Discussion</h6>
+          <ul class="list-inline float-start">
+            <li class="list-inline-item"><a class="link-light" target="_blank" href="https://twitter.com/fulldecent">Twitter</a></li>
+            <li class="list-inline-item"><a class="link-light" target="_blank" href="https://discordapp.com/channels/@me/fulldecent#8164/">Discord</a></p>
+          </ul>
+        </div>
+        <div class="col-md">
+          <h6>Blogging</h6>
+          <ul class="list-inline float-start">
+            <li class="list-inline-item"><a class="link-light" target="_blank" href="https://fulldecent.blogspot.com">Personal blog</a></li>
+            <li class="list-inline-item"><a class="link-light" target="_blank" href="https://privacylog.blogspot.com">Zero-day blog</a></li>
+            <li class="list-inline-item"><a class="link-light" target="_blank" href="https://www.instagram.com/wmedesign/">Instagram</a></li>
+          </ul>
+        </div>
+        <div class="col-md">
+          <h6>Minting NFTs</h6>
+          <ul class="list-inline float-start">
+            <li class="list-inline-item"><a class="link-light" target="_blank" href="https://opensea.io/fulldecent">OpenSea</a></li>
+            <li class="list-inline-item"><a class="link-light" target="_blank" href="https://rarible.com/fulldecent">Rarible<i class="bi bi-patch-check text-primary"></i></a></li>
+            <li class="list-inline-item"><a class="link-light" target="_blank" href="https://foundation.app/@fulldecent">Foundation</a></li>
+            <li class="list-inline-item"><a class="link-light" target="_blank" href="https://mintable.app/u/fulldecent">Mintable</a></li>
+            <li class="list-inline-item"><a class="link-light" target="_blank" href="https://www.mintbase.io/human/fulldecent.near">Mintbase</a></li>
+            <li class="list-inline-item"><a class="link-light" target="_blank" href="https://app.cargo.build/creator/0xd859d7d8603D2dAb768D679eEEC25930C8FC59C1">Cargo</a></li>
+            <li class="list-inline-item"><a class="link-light" target="_blank" href="https://zora.co/fulldecent">ZORA</a></li>
+          </ul>
+        </div>
+        <div class="col-md">
+          <h6>Other</h6>
+          <ul class="list-inline float-start">
+            <li class="list-inline-item"><a class="link-light" target="_blank" href="https://www.linkedin.com/in/fulldecent">LinkedIn</a></li>
+            <li class="list-inline-item"><a class="link-light" target="_blank" href="https://www.amazon.ca/William-Entriken/e/B091JWDTRW/ref=dp_byline_cont_pop_ebooks_2">Amazon (author)</a></li>
+            <li class="list-inline-item"><a class="link-light" target="_blank" href="https://scholar.google.com/citations?user=4rGYvTgAAAAJ">Google Scholar</a></li>
+            <li class="list-inline-item"><a class="link-light" target="_blank" href="https://etherscan.io/address/0xd859d7d8603D2dAb768D679eEEC25930C8FC59C1">Ethereum Mainnet</a> <button id="eth-tip" class="btn btn-secondary btn-sm">send tip</button></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </footer>
 
   <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
   <script>
@@ -511,8 +554,26 @@ Let me introduce my friend William Entriken, who is the author of ERC 721 Non-Fu
     $('#showstalker').click(function(){
       $('#stalker').show();
       gtag('event', 'Engagement', 'Stalker');
-    })
-  })
+    });
+
+    $("#eth-tip").click(async function() {
+      const message = prompt("What message would you like to include with your tip? (Message is public & permanent.)", "Enjoy");
+      if (typeof window.ethereum === "undefined") {
+        return alert("FAILED: This browser does not support Web3, try MetaMask or similar");
+      }
+      const accounts = await ethereum.request({ method: 'eth_requestAccounts' });
+      await ethereum.request({
+        method: 'eth_sendTransaction',
+        params: [{
+          from: accounts[0],
+          to: "0xd859d7d8603D2dAb768D679eEEC25930C8FC59C1",
+          gas: '0x7530',
+          value: '0xDE0B6B3A7640000',
+          data: "0x" + message.split("").map(c => c.charCodeAt(0).toString(16).padStart(2, "0")).join(""),
+        }],
+      });
+    });
+  });
   </script>
   {% include google-analytics.html %}
 </body>
