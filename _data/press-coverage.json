@@ -1,6 +1,13 @@
 [
   {
     "date": "2021-12-01",
+    "authors": ["Jonas Kasper Jensen", "Michael Juul Rugaard"],
+    "publication": "The Tokenizer",
+    "url": "https://thetokenizer.io/NFT/the-standard-of-uniqueness/",
+    "title": "The Standard of Uniqueness"
+  },
+  {
+    "date": "2021-12-01",
     "authors": ["Ben Davis"],
     "publication": "Artnet",
     "url": "https://news.artnet.com/opinion/inside-the-nft-rush-a-token-could-save-your-life-artistic-value-means-nothing-until-its-flipped-and-other-lessons-learned-at-the-crypto-coachella-2040043",
