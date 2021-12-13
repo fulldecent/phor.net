@@ -36,6 +36,13 @@ layout: null
       <p>William Entriken &mdash; &#9992; Philadelphia USA &mdash; published {{ site.time | date: '%Y' }}</p>
     </div>
   </footer>
+  <script src="https://cdn.jsdelivr.net/npm/anchor-js@4.3.1/anchor.min.js" integrity="sha256-0WMZ9PF4b2hTF66Eglv/9H5Vwk6lnOG4AbmCJxo96WQ=" crossorigin="anonymous"></script>
+  <script>
+    // Add anchors on DOMContentLoaded
+    document.addEventListener('DOMContentLoaded', function(event) {
+      anchors.add();
+    });
+  </script>
 </body>
 </html>
 
