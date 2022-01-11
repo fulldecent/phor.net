@@ -1,5 +1,12 @@
 [
   {
+    "date": "2022-01-10",
+    "authors": ["Pooja Ranjan"],
+    "publication": "Ethereum Cat Herders",
+    "url": "https://www.youtube.com/watch?v=3ig5WhvRI9k",
+    "title": "PEEP an EIP #58: EIP-721: Non-Fungible Token Standard with William Entriken"
+  },
+  {
     "date": "2022-01-07",
     "authors": ["Qazal"],
     "publication": "NFT Labs",
