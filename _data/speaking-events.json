@@ -16,7 +16,7 @@
     ]
   },
   {
-    "date": "2021",
+    "date": "2021-11-30",
     "url": "https://www.dcentralcon.com",
     "title": "DCentral Miami",
     "coverage": [
@@ -24,7 +24,7 @@
     ]
   },
   {
-    "date": "2021",
+    "date": "2021-11-01",
     "url": "https://www.eventbrite.com/e/nftnyc-2021-in-person-2-3-4-november-tickets-144386456779",
     "title": "NFT NYC",
     "coverage": [
@@ -32,16 +32,17 @@
     ]
   },
   {
-    "date": "2019",
+    "date": "2019-12-16",
     "url": "https://private.frenchfounders.com/public/event/1743/2019-12-17-08-15-blockchain-challenges-and-new-business-models",
     "title": "French Founders"
   },
   {
-    "date": "2019",
+    "date": "2019-04-16",
     "url": "https://www.prnewswire.com/news-releases/ey-releases-zero-knowledge-proof-blockchain-transaction-technology-to-the-public-domain-to-advance-blockchain-privacy-standards-300833137.html",
     "title": "EY Global Blockchain Summit",
     "coverage": [
-      "https://www.coindesk.com/ey-nightfall-ethereum-enterprise-public-blockchain"
+      "https://www.coindesk.com/ey-nightfall-ethereum-enterprise-public-blockchain",
+      "https://finance.yahoo.com/news/global-auditor-ey-unveils-ambitious-171013633.html"
     ]
   },
   {
