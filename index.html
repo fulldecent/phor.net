@@ -361,20 +361,12 @@ https://github.com/google/libphonenumber/actions
               </div>    
             </div>
           </div>
-
-
-
-
-
-
         </div>
         <div class="col col-md-4">
           <p><strong>The first ERC-721 NFT</strong></p>
           Su Squares <a target="_blank" href="https://tenthousandsu.com/">about 3,500 of 10,000 minted</a>
         </div>
       </div>
-
-
 
 
       <h2>What's hot</h2>
@@ -503,7 +495,9 @@ https://github.com/google/libphonenumber/actions
 
     <h2>Press coverage</h2>
     <ul>
-{% for press-coverage in site.data.press-coverage %}
+{%- assign press-coverage-first = site.data.press-coverage | slice: 0, 10 -%}
+{%- assign press-coverage-rest = site.data.press-coverage | slice: 10, 999 -%}
+{% for press-coverage in press-coverage-first %}
       <li>
         <cite>
           <time title="{{ press-coverage.date | date: "%Y-%m-%d" }}" datetime="{{ press-coverage.date | date: "%Y-%m-%d" }}">{{ press-coverage.date | date: "%Y" }}</time>.
@@ -513,7 +507,18 @@ https://github.com/google/libphonenumber/actions
         </cite>
       </li>
 {% endfor %}
+{% for press-coverage in press-coverage-rest %}
+      <li class="d-none press-coverage-rest">
+        <cite>
+          <time title="{{ press-coverage.date | date: "%Y-%m-%d" }}" datetime="{{ press-coverage.date | date: "%Y-%m-%d" }}">{{ press-coverage.date | date: "%Y" }}</time>.
+          {{ press-coverage.authors | join: ", " | escape }}.
+          {{ press-coverage.publication | escape }}.
+          <a href="{{ press-coverage.url | escape }}">{{ press-coverage.title | escape }}</a>.
+        </cite>
+      </li>
+{% endfor %}
     </ul>
+    <p id="press-coverage-show-more"><span class="btn btn-link">Show more&hellip;</span></p>
     <p><a href="self-portraits">Self portraits for media</a></p>
 
     <h2 id="speaking">Speaking events (<a href="https://twitter.com/fulldecent">updates on Twitter</a>)</h2>
@@ -525,8 +530,9 @@ https://github.com/google/libphonenumber/actions
       <li>Tuesdays at 18:00 (New York). <a href="https://twitter.com/fulldecent/status/1475851800322453504">NFT/Web3 Community Service Hour</a> / <a href="https://www.twitch.tv/fulldecent/schedule"><i class="bi bi-twitch"></i></a> <span class="badge badge-success">Free</span></li>
       <li>Tuesdays at 20:00 (New York). <a href="https://discord.com/invite/originsNFT">OriginsNFT
         community Solidity class</a> / <a href="https://twitter.com/jumpmanft/status/1478951732193366018"><i class="bi bi-twitter"></i></a></li>
-{% for speaking-event in site.data.speaking-events %}
-
+{%- assign speaking-events-first = site.data.speaking-events | slice: 0, 10 -%}
+{%- assign speaking-events-rest = site.data.speaking-events | slice: 10, 999 -%}
+{% for speaking-event in speaking-events-first %}
       <li>
         {{ speaking-event.date | escape }}.
         <a href="{{ speaking-event.url | escape }}">{{ speaking-event.title | escape }}</a>
@@ -550,7 +556,32 @@ https://github.com/google/libphonenumber/actions
         {% endif %}        
       </li>
 {% endfor %}
+{% for speaking-event in speaking-events-rest %}
+      <li class="d-none speaking-event-rest">
+        {{ speaking-event.date | escape }}.
+        <a href="{{ speaking-event.url | escape }}">{{ speaking-event.title | escape }}</a>
+        {% if speaking-event.coverage %}
+        /
+          {% for coverage in speaking-event.coverage %}
+            <a href="{{ coverage | escape }}">
+              {% if coverage contains "youtube" %}
+                <i class="bi bi-youtube"></i>
+              {% elsif coverage contains "youtu.be" %}
+                <i class="bi bi-youtube"></i>
+              {% elsif coverage contains "twitter" %}
+                <i class="bi bi-twitter"></i>
+              {% elsif coverage contains ".jpg" %}
+                <i class="bi bi-file-image"></i>
+              {% else %}
+                <i class="bi bi-newspaper"></i>
+              {% endif %}
+            </a>
+          {% endfor %}
+        {% endif %}        
+      </li>
+{% endfor %}
     </ul>
+    <p id="speaking-events-show-more"><span class="btn btn-link">Show more&hellip;</span></p>
     <p>This work was sponsored in part by Ethereum Foundation.</p>
 
     <h2>More products and research</h2>
@@ -718,6 +749,18 @@ https://github.com/google/libphonenumber/actions
     $('#showstalker').click(function(){
       $('#stalker').show();
       gtag('event', 'Engagement', 'Stalker');
+    });
+
+    $('#press-coverage-show-more').click(function(){
+      $('#press-coverage-show-more').hide();
+      $('.press-coverage-rest').removeClass("d-none");
+      gtag('event', 'Engagement', 'Show press coverage');
+    });
+
+    $('#speaking-events-show-more').click(function(){
+      $('#speaking-events-show-more').hide();
+      $('.speaking-event-rest').removeClass("d-none");
+      gtag('event', 'Engagement', 'Show speaking events');
     });
 
     $("#eth-tip").click(async function() {
