@@ -207,7 +207,7 @@ title: William Entriken, Reading List
         <dt class="col-4">Published</dt><dd class="col-8">{{ book.publishdate | default: "" | escape }}</dd>
         <dt class="col-4">Publisher</dt><dd class="col-8">{{ book.publisher | escape }}</dd>
         <dt class="col-4">Pages</dt><dd class="col-8">{{ book.pages | escape }}</dd>
-        <dt class="col-4">Date read</dt><dd class="col-8">{{ book.dateread | escae }}</dd>
+        <dt class="col-4">Date read</dt><dd class="col-8">{{ book.dateread | escape }}</dd>
         <dt class="col-4">ISBN</dt><dd class="col-8">
 {% assign isbn13 = book.isbn | remove: "-" %}
 {% assign isbn13size = isbn13 | size %}
