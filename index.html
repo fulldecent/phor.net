@@ -8,166 +8,58 @@ title: William Entriken, Portfolio
   <meta charset="utf-8">
   <title>{{ page.title | escape }}</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css" integrity="sha256-PDJQdTN7dolQWDASIoBVrjkuOEaI137FI15sqI3Oxu8=" crossorigin="anonymous">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css" integrity="sha256-8M+b2Hj+vy/2J5tZ9pYDHeuPD59KsaEZn1XXj3xVhjg=" crossorigin="anonymous">
   <link href="{% link /assets/site.css %}" rel="stylesheet">
   <link href="{{ page.url | prepend: site.baseurl | prepend: site.url | escape }}" rel="canonical">
 </head>
 <body>
 <!--
-TODO: ADD THESE
+MORE STUFF WHERE TO PUT THIS
 
-== Add Yul auditing work to phor project resume
-- GasToken 2 improvement
-https://github.com/projectchicago/gastoken/issues/6
-- Wrote EIP-165
-- Reviewed EIP-1167 minimal proxy https://github.com/optionality/clone-factory/issues/10
-
-https://www.yuhanzhangdesign.com great stuff
-Things I may or may not be able to talk about because of NDA:
-- https://www.ey.com/en_ph/news/2021/05/birra-peroni-is-the-first-industrial-organization-to-mint-unique-non-fungible-tokens-using-ey-opschain-traceability
-
-to post on phor.net
-
-- Heroines - Diablo Swing Orchestra · Webamp · Winamp 2 in your browser
-- Decentralising scientific publishing: can the blockchain improve science communication?
-- ISPE COP : Communities : GAMP Blockchain Special Interest Group (SIG)
-- ADD TO PHOR Dual_EC_DRBG - Wikipedia
-- GitHub - azirbel/touch-bar-timer: Simple stopwatch for the mac touchbar
-- 0xcert - Token-Curated Registries
-
-- Magazin für Computertechnik | c’t Magazin | c’t 05/2018, S. 48 
-  - https://www.heise.de/ct/ausgabe/2018-5-Freeware-die-den-PC-auf-Mittelwelle-senden-laesst-System-Bus-Radio-3966599.html
-  - https://www.heise.de/ct/entdecken/?jahr=2018;ausgabe=5;sort=seite_auf
-  - @ctmagazin
-- https://www.ndss-symposium.org/wp-content/uploads/2020/02/24449.pdf
-- 2019 Red, Cointime: <a href=“http://www.cointime.com/news/blockchain/11375.html”>Lead Author of ERC-721: Enterprise Use Will Be The Future Of Blockchain</a></li>
-- Times Chronicle Glenside News June 19 1996 Sixth Grade Student Saves the Day for Highland Teacher
-- http://thetriangle.org/2011/06/03/anasquare
-- https://www.casact.org/admissions/passlist/win08/Exam_1P.pdf
-- https://www.casact.org/admissions/passlist/oct10/Exam_2fm_F2010.pdf
-- A008793 - OEIS, A000984 - OEIS, MATH RESEARCH / A119733 - OEIS WRITE A BLOG POST ON THIS https://oeis.org/A119733
-- Random laws I changed:
-  - Lower Moreland Zoning - Transit Oriented Development rules for developers
-  - Florida Board of Medicine standards of care for surgery.
-
-TITLE
-add lead author to top line?
-
-SOME PUBLISHED PRODUCT PHOTOS
-https://www.amazon.com/gp/product/B01M0OYQQ9/ref=s9_acsd_hps_bw_c_x_2_w
-https://www.amazon.com/Hybrid-Covers-Conditioner-Waterproof-Protection/dp/B01LZ2GH23/ref=lp_12022463011_1_1?srs=12022463011&ie=UTF8&qid=1500351789&sr=8-1
-https://www.amazon.com/gp/product/B01LZPV3K6/ref=s9_acsd_hps_bw_c_x_3_w
-
-http://www.shinhwa.hk/news/news/31.html
--->
-
-<!--
-GENIE.XYZ VERSION
-Just wanted to follow-up on a topic that came up in ✨〡main a few nights ago. 
-
-A handful of you expressed an interest in learning solidity. The lightbulb went off and I started shopping around for someone reputable to come join Origins to start teaching classes. After a few days of interviews, we landed Will Entriken (@fulldecent).
-
-Will is the lead author of ERC-721 and an entrepreneur with clients that include EY, Arianee, and GenoBank.io. He was a public speaker at numerous large events including NFTNYC (in 2019 and 2021), DCentral Miami, and the EY Global Blockchain Summit.
-
-Classes will be made available to anyone holding an Origins pass and will take place every Tuesday from 5:00-7:00pm PST / 8:00-10:00pm EST. These will be recorded for those who can't make it.
-
-Though we are still finalizing the rubric and agenda, you can expect the following: 
-   - Q&A / Current Events recap (i.e. breaking down the recent adidas hack)
-   - The basics of learning how to write smart contracts
-   - Deploying a dapp
-   - ...and maybe some homework
-
-I greatly appreciate the community stepping up to ask for these types of things. As is no secret, we're always looking to push the boundaries of what is possible. 
-
-Thanks again!
-
-You can learn more about Will here:
-
-https://twitter.com/fulldecent 
-https://phor.net/
-
-DOUCHE VERSION
-
-<p class="lead">Corporate acquisition experience in valuation, business planning, and integration with a diverse engineering/finance background. Research interests in data mining and information theory.</p>
-
-SUPER DOUCHE VERSION
-
-William Entriken is an experienced financial professional who understands M&A, business, and technology concepts and goes that extra step to deliver increased sales or process transformations. William is currently a Senior Financial Analyst at a publicly-traded integrated engineering and technology services organization. William has responsibility for the budget and forecasting process & systems for the $1bn company, valuation of business segments, and leading technology initiatives to improve finance processes. From 2002 to 2006, William started a consulting business to create websites for clients with experience in branding, referral business, and sale of digital products, as well as collaboration with government agencies to secure online vulnerabilities - successfully paying for college. William's formal education includes a three-summer engineering apprenticeship with the U.S. Navy for ship system programming, a B.S. Computer and Electrical Engineering from Villanova, and a M.S. Finance and MBA dual masters from Drexel University.
-
-WILLIAM ENTRIKEN. Blockchain developer contributing to the Ethereum project focused on language design, interoperability and ERC-721. Also working on corporate development and security research.
-
-THE 0XCERT VERSION
-
-William is a remarkable thinker and a technological leader, an Ethereum blockchain developer and the lead author of ERC-721, which is a technological standard interface protocol for non-fungible tokens, also known as deeds. He is a passionate computer science professional who is helping to bring technology products to market. He has experience in business planning and acquisitions, and is active in researching several computer science topics. As the Non Fungibles has been identified as the new driver behind the Blockchain revolution, first example of this are everyone’s favourite CryptoKitties, his fame is rising rapidly and has gained on GitHub, home of more than 20 million developers from all over the world, a cult status.
-
-MORE SPEAKER BIOS
-- Lead author of ERC-721 / the standard for tracking physical assets on Ethereum. I have studied many practical issues related to tracking and transferring ownership/custody/risk of assets and recording these to a ledger. All relevant projects, to date, have adopted this standard.
-- Event organizer of Chain 76 / a conference and hands-on workshop for pharmaceuticals, supply chain, and blockchain. This event focused on drug serialization, GxP, DSCSA, and drew a great audience from Phila/NYC area, including people here. (Thank you!)
-- Founder of Su Squares / a scaleable blockchain project. This simple project, named after my wife, is a bunch of cute squares that you can buy and personalize. But also it is a project that demonstrates scaleable concepts (millions, trillions, sextillions of assets) on the public blockchain.
-- Contributor to Solidity / the language used for Hyperledger, POA and Ethereum networks. I contribute to the language design of the programming language used for developing smart contracts.
-
-William Entriken - Advisor to 0xcert and Independent Blockchain Developer. He is the lead author of ERC-721 which is a technological standard protocol for tracking persons' identity and ownership of physical assets. He currently works at Pacific Medical Training and previously worked for Google, the United States Navy, and public and private engineering companies in the defense and research sector.
-
-FRENCH FOUNDERS INTRO
-William Entriken advises Arianee, EY and other clients working on enterprise blockchain applications. He is the lead author of the Ethereum standard for tracking physical assets (ERC-721) and he works with a passion for reducing fraud in commerce and improving the value of brands.
-
-OTHER STUFF WHERE TO PUT THIS
-- https://twitter.com/fulldecent/status/1093247870046736384
-- Worked on Kimball integration
-- Companies I'm advising
-- Security auditing: Compound Finance, "a major sports player assn", 
-- https://github.com/0xcert/ethereum/issues/21
-- https://github.com/0xcert/ethereum-erc721/issues?utf8=✓&q=+author%3Afulldecent+
-https://www.crunchbase.com/organization/blmp-network#section-overview
-- https://thetokenizer.io/2019/05/20/the-story-of-non-fungible-tokens/
-
-SUCCESSFUL OUTREACH FOR ONE CLIENT
-* I have audited the MLB Crypto Baseball project (now MLB Champions) -- this included 30 findings ranging from advisory to material -- client allows me to say this but has not yet published that report* I reviewed the prerelease version of 0xcert Framework v1 -- client wished to make all issues public so the report is just a listing (attached)* I have reported a vulnerability against Aion (steal any token) -- https://github.com/jennijuju/ATS_CI/pull/2/files* I am an author of ERC-165 and a last-call reviewer of ERC-1167, both used here* Other than blockchain, I am credited with vulnerability findings against: Apple.com store homepage, a stock brokerage, Penna. business tax records. All posted at https://privacylog.blogspot.com. I also published the first zero-day on Slashdot.
-
-过去3年我咨询的顾客在做NFT市场平台、发表和销售。我的顾客（和他们的顾客）包括：Microsoft、EY、Merck、上海BCWF和各种ICO/艺术家。再次我开演讲会和作坊让世界知道什么是NFT和这么用NFT。
-
-
-这是NFT最初的时候的标准化
-
-
-谢谢。不是。我是ERC-721的主作者。
-
-
-Of course. Currently I am working in the Western and Asian markets to release new NFT project.
-
-Some of these are individual collectable NFTs. But others are long-term deals.
-
-
-Specifically, I am selling Su Squares https://tenthousandsu.com. This is the first ERC-721 NFT, still not sold out.
-
-
-And a new project from Hong Kong is https://area.world
-
-
-But at the same time I am working with event venues and music publishers in the US and Europe to create digital collectables for fans.
-
-These are traditional music publishers with established brands so these will take years to complete.
-
-
-Past wins include:
-
-https://www.ey.com/en_us/news/2020/12/ey-and-microsoft-expand-xbox-enterprise-blockchain-platform-for-rights-and-royalties-management
-
-https://www.ey.com/en_gl/news/2019/04/ey-ops-chain-industrializes-the-blockchain-at-scale-for-enterprises
-
-https://chain76.org
-
-
-
-
-
-Let me introduce my friend William Entriken, who is the author of ERC 721 Non-Fungible Token Standard, an advisor to numerous blockchain projects, a corporate developer, and an entrepreneur.  He took notice of the recent announcement of the COVID App on Algorand and the new details of the Algorand Virtual Machine, he is looking to work with Algorand. He has helped develop and launch the first Blockchain COVID App in Latin America earlier this year, which has government partnerships in Mexico as well as agreements with most laboratories doing COVID-19. GenoBank.io is the first anonymous DNA Test kit with Blokchain which implements secure systems for tracking medical diagnostic testing. It is built on Ethereum and Avalanche. William is exploring the option to move the product to the new Algorand Virtual Machine without impacting any customers. He can also make any standards (Non-fungible tokens) so that other developers can build their own applications on Algorand in a compatible way which will also work with other marketplaces and wallets to be made in the future.
-
-My most notable pull reuqests:
-https://issuetracker.google.com/issues/122995598
-https://github.com/google/libphonenumber/actions
-
+- Auditing Yul and EVM
+  - GasToken 2 improvement https://github.com/projectchicago/gastoken/issues/6
+  - Wrote EIP-165
+  - Reviewed EIP-1167 minimal proxy https://github.com/optionality/clone-factory/issues/10
+- Code review
+  - https://github.com/0xcert/ethereum-erc721/issues?utf8=✓&q=+author%3Afulldecent+
+  - AION steal any token https://github.com/jennijuju/ATS_CI/pull/2/files
+- Waiting for NDA to expire before I can talk about these
+  - https://www.ey.com/en_ph/news/2021/05/birra-peroni-is-the-first-industrial-organization-to-mint-unique-non-fungible-tokens-using-ey-opschain-traceability
+  - https://www.ey.com/en_us/news/2020/12/ey-and-microsoft-expand-xbox-enterprise-blockchain-platform-for-rights-and-royalties-management
+  - https://www.ey.com/en_gl/news/2019/04/ey-ops-chain-industrializes-the-blockchain-at-scale-for-enterprises
+- Favorite sites
+  - Good times
+    - https://webamp.org
+  - They are spying on you
+    - Dual_EC_DRBG - Wikipedia
+- Publications 
+  - https://medium.com/0xcert/token-curated-registries-8035d7fac2b7
+- Professional associations
+  - ISPE COP : Communities : GAMP Blockchain Special Interest Group (SIG)
+- Citations
+  - Magazin für Computertechnik | c’t Magazin | c’t 05/2018, S. 48 
+    - https://www.heise.de/ct/ausgabe/2018-5-Freeware-die-den-PC-auf-Mittelwelle-senden-laesst-System-Bus-Radio-3966599.html
+    - https://www.heise.de/ct/entdecken/?jahr=2018;ausgabe=5;sort=seite_auf
+    - @ctmagazin
+  - 2019 Red, Cointime: Lead Author of ERC-721: Enterprise Use Will Be The Future Of Blockchain</li>
+  - Times Chronicle Glenside News June 19 1996 Sixth Grade Student Saves the Day for Highland Teacher
+  - https://www.casact.org/admissions/passlist/win08/Exam_1P.pdf
+  - https://www.casact.org/admissions/passlist/oct10/Exam_2fm_F2010.pdf
+  - A008793 - OEIS, A000984 - OEIS, MATH RESEARCH / A119733 - OEIS WRITE A BLOG POST ON THIS https://oeis.org/A119733
+  - https://thetokenizer.io/2019/05/20/the-story-of-non-fungible-tokens/
+- Published: product photos
+  - https://www.amazon.com/gp/product/B01M0OYQQ9/ref=s9_acsd_hps_bw_c_x_2_w
+  - https://www.amazon.com/Hybrid-Covers-Conditioner-Waterproof-Protection/dp/B01LZ2GH23/ref=lp_12022463011_1_1?srs=12022463011&ie=UTF8&qid=1500351789&sr=8-1
+  - https://www.amazon.com/gp/product/B01LZPV3K6/ref=s9_acsd_hps_bw_c_x_3_w
+- M&A transactions
+  - Worked on Kimball integration
+  - project-resume.md
+- Organized events
+  - https://chain76.org
+- My second most notable pull request
+  - https://issuetracker.google.com/issues/122995598
+  - https://github.com/google/libphonenumber/actions
 -->
 
 
@@ -175,16 +67,26 @@ https://github.com/google/libphonenumber/actions
     <div class="container-md py-5">
 
       <div id="hour" class="mb-5 d-none">
-        <h1>Quick links (NFT/Web3 Community Service Hour):</h1>
+        <h1>NFT/Web3 Community Service Hour:</h1>
         <p>
           <strong>Every Tuesday at 6pm New York time.</strong>
         </p>
-        <div class="list-group">
-          <a target="_blank" href="https://docs.google.com/document/d/1ta_6tSCGfC31iIfhz4bfC_oBKyNZGEdDsZkD-BRXY_Y/edit" class="list-group-item list-group-item-action"><i class="bi bi-file-word"></i> Meeting minutes (add questions here)</a>
-          <a target="_blank" href="https://twitter.com/fulldecent" class="list-group-item list-group-item-action"><i class="bi bi-twitter"></i> @fulldecent (access Space here)</a>
-          <a target="_blank" href="https://twitch.com/fulldecent" class="list-group-item list-group-item-action"><i class="bi bi-twitch"></i> @fulldecent (access screen share here)</a>
-          <a class="list-group-item list-group-item-action" href="https://calendar.google.com/event?action=TEMPLATE&tmeid=NHA4ZXBrZWJkczlsamdmMzJpYmc2MnVqNWxfMjAyMjA2MjFUMjIwMDAwWiBsaXVyaGI1Y3F2YXIyaTZuNmVrZWFuYXA0NEBn&tmsrc=liurhb5cqvar2i6n6ekeanap44%40group.calendar.google.com&scp=ALL"><i class="bi bi-calendar"></i> Add to calendar (Google Calendar)</a>
-          <a class="list-group-item list-group-item-action" href="https://calendar.google.com/calendar/ical/liurhb5cqvar2i6n6ekeanap44%40group.calendar.google.com/public/basic.ics"><i class="bi bi-calendar"></i> Add to calendar: (ICS file)</a>
+        <div class="row">
+          <div class="col">
+            <div class="list-group">
+              <a target="_blank" href="https://docs.google.com/document/d/1ta_6tSCGfC31iIfhz4bfC_oBKyNZGEdDsZkD-BRXY_Y/edit" class="list-group-item list-group-item-action"><i class="bi bi-file-word"></i> Show notes (add questions here)</a>
+              <a target="_blank" href="https://twitter.com/fulldecent" class="list-group-item list-group-item-action"><i class="bi bi-twitter"></i> @fulldecent (access Space)</a>
+              <a target="_blank" href="https://twitch.com/fulldecent" class="list-group-item list-group-item-action"><i class="bi bi-twitch"></i> @fulldecent (access screen share)</a>
+              <a class="list-group-item list-group-item-action" href="https://calendar.google.com/calendar/ical/liurhb5cqvar2i6n6ekeanap44%40group.calendar.google.com/public/basic.ics"><i class="bi bi-calendar"></i> Add to calendar (ICS file)</a>
+              <a class="list-group-item list-group-item-action" href="https://calendar.google.com/event?action=TEMPLATE&tmeid=NHA4ZXBrZWJkczlsamdmMzJpYmc2MnVqNWxfMjAyMjA2MjFUMjIwMDAwWiBsaXVyaGI1Y3F2YXIyaTZuNmVrZWFuYXA0NEBn&tmsrc=liurhb5cqvar2i6n6ekeanap44%40group.calendar.google.com&scp=ALL"><i class="bi bi-calendar"></i> Add to Google Calendar</a>
+            </div>    
+          </div>
+          <div class="col-auto">
+            <a href="images/community-service-hour.jpg">
+              <img src="images/community-service-hour.jpg" class="img-fluid" alt="Community Service Hour" style="max-height:16rem">
+            </a>
+          </div>
+
         </div>
         <hr class="my-5 py-1">
       </div>
@@ -228,9 +130,6 @@ https://github.com/google/libphonenumber/actions
         <div class="col-sm-10">
           <h1>William Entriken<!--, M.Fin., M.B.A. --></h1>
           <p class="lead"><span class="text text-success">Mission</span>: Verify seller claims &amp; authenticity for most things you buy</p>
-<!--
-          <p class="lead"><span class="text text-success">Corporate development and solutions architect.</span> Here's some products, deals and research I'm doing.</p>
--->
           <p class="lead"><i class="bi bi-globe" aria-hidden="true"></i> Philadelphia USA / 中国上海</p>
           <p class="lead text-muted">Updated {{ site.time | date: "%Y-%m-%d"}}</p>
           <p class="lead">Lead author of ERC-721 standard</p>
@@ -241,11 +140,8 @@ https://github.com/google/libphonenumber/actions
         <a class="link-primary" href="advisory">
           <i class="bi bi-bullseye" aria-hidden="true"></i> Be my client <span class="badge bg-warning">SEPTEMBER WAITLIST</span>
         </a>
-        <a class="link-primary" href="https://phor.net/WmEntriken%20resume%202020-01-02%20WEB.pdf">
+        <a class="link-primary" href="/resume.pdf">
           <i class="bi bi-file-pdf" aria-hidden="true"></i> Resume (PDF)
-        </a>
-        <a class="link-primary" href="project-resume">
-          <i class="bi bi-file-pdf" aria-hidden="true"></i> Silicon Valley resume
         </a>
         <a target="_blank" class="link-primary" href="https://docs.google.com/forms/d/e/1FAIpQLSe4fKndAs-Aaaq-5IzOqrYQ5L5mUTbYLSJDV4lB3mBNBQ1BNQ/viewform?usp=sf_link">
           <i class="bi bi-pencil" aria-hidden="true"></i> Interview requests
@@ -256,7 +152,6 @@ https://github.com/google/libphonenumber/actions
     <svg style="width:100%; transform: rotate(180deg); height:2em; fill: #F8F9FA;" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
       <path d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V0H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z" class="shape-fill"></path>
     </svg>
-
   </header>
 
   <section class="bg-light">
@@ -265,207 +160,65 @@ https://github.com/google/libphonenumber/actions
         background: linear-gradient(to right, #d49139 0%, #ad1919 100%);
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;">NFT drops</span></h2>
-        <p><a href="mailto:phor@phor.net">Email me</a> if you need help buying/bidding on any of these.</p>
-      <div class="row row-cols-1 row-cols-md-2 mb-3">
-        <div class="col col-md-8">
-          <p><strong>First artist collaborations (one-of-ones)</strong></p>
-
-          <div class="row row-cols-1 row-cols-lg-2">
-            <div class="col">
-              <div class="d-flex align-items-center mb-2">
-                <div class="flex-shrink-0">
-                  <a target="_blank" href="https://rarible.com/token/0xF6793dA657495ffeFF9Ee6350824910Abc21356C:109311712358823457578622280509458864447004054068294590227262744976292923310081?tab=bids">
-                    <img class="rounded-3" src="assets/nfts/NHM.jpg" alt="NFT HYPEMAN × WILLIAM ENTRIKEN" style="height: 100px; width: 100px; object-fit: contain;">
-                  </a>
-                </div>
-                <div class="flex-grow-1 ms-3">
-                  <em>NFT HYPEMAN × WILLIAM ENTRIKEN</em><br>
-                  With NFT HYPEMAN<br>
-                  <a target="_blank" href="https://rarible.com/token/0xF6793dA657495ffeFF9Ee6350824910Abc21356C:109311712358823457578622280509458864447004054068294590227262744976292923310081?tab=bids">
-                    Available on Rarible / 0.01 Ether
-                  </a>
-                </div>
-              </div>
-            </div>
-            <div class="col">
-              <div class="d-flex align-items-center mb-2">
-                <div class="flex-shrink-0">
-                  <a target="_blank" href="https://www.mintbase.io/thing/NUK-NZC8sGkLLMiY9_G54aXUwFI8Ss-KeK1G6Zyk_H0:nftcollab.mintbase1.near">
-                    <img class="rounded-3" src="assets/nfts/The Birth of an Idea.jpg" alt="The Birth of an Idea" style="height: 100px; width: 100px; object-fit: contain;">
-                  </a>
-                </div>
-                <div class="flex-grow-1 ms-3">
-                  <em>The Birth of an Idea</em><br>
-                  With Sean from ConwellsClub<br>
-                  <a target="_blank" href="https://www.mintbase.io/thing/NUK-NZC8sGkLLMiY9_G54aXUwFI8Ss-KeK1G6Zyk_H0:nftcollab.mintbase1.near">
-                    Available on Mintbase / 1,000 NEAR
-                  </a>
-                </div>
-              </div>
-            </div>
-            <div class="col">
-              <div class="d-flex align-items-center mb-2">
-                <div class="flex-shrink-0">
-                  <a target="_blank" href="https://foundation.app/@fulldecent/~/110909">
-                    <img class="rounded-3" src="assets/nfts/All Kindsa Media.gif" alt="All Kindsa Media" style="height: 100px; width: 100px; object-fit: contain;">
-                  </a>
-                </div>
-                <div class="flex-grow-1 ms-3">
-                  <em>All Kindsa Media</em><br>
-                  With Living With Will, Julio Slim, Indigo<br>
-                  <a target="_blank" href="https://foundation.app/@fulldecent/~/110909">
-                    Available on Foundation / 1 ETH
-                  </a>
-                </div>
-              </div>
-            </div>
-            <div class="col">
-              <div class="d-flex align-items-center mb-2">
-                <div class="flex-shrink-0">
-                  <a target="_blank" href="https://mintable.app/art/item/Golden-Landscape-A-nighttime-windy-scene-of-foraging/GiBKhbmRsH_9Rp7">
-                    <img class="rounded-3" src="assets/nfts/Golden Landscape.jpg" alt="Golden Landscape" style="height: 100px; width: 100px; object-fit: contain;">
-                  </a>
-                </div>
-                <div class="flex-grow-1 ms-3">
-                  <em>Golden Landscape</em><br>
-                  With Hai von Son<br>
-                  <a target="_blank" href="https://mintable.app/art/item/Golden-Landscape-A-nighttime-windy-scene-of-foraging/GiBKhbmRsH_9Rp7">
-                    Available on Mintable / 0.1 ETH
-                  </a>
-                </div>
-              </div>    
-            </div>
-            <div class="col">
-              <div class="d-flex align-items-center mb-2">
-                <div class="flex-shrink-0">
-                  <a target="_blank" href="https://opensea.io/assets/matic/0x2953399124f0cbb46d2cbacd8a89cf0599974963/97858314391699003502907348387324178864992602497446540910380188335690836082689/">
-                    <img class="rounded-3" src="assets/nfts/Ella's Dreams.gif" alt="Ella's Dreams" style="height: 100px; width: 100px; object-fit: contain;">
-                  </a>
-                </div>
-                <div class="flex-grow-1 ms-3">
-                  <em>Ella's Dreams</em><br>
-                  With VjDeliria<br>
-                  <a target="_blank" href="https://opensea.io/assets/matic/0x2953399124f0cbb46d2cbacd8a89cf0599974963/97858314391699003502907348387324178864992602497446540910380188335690836082689/">
-                    Available on OpenSea / 1 ETH
-                  </a>
-                </div>
-              </div>    
-            </div>
-            <div class="col">
-              <div class="d-flex align-items-center">
-                <div class="flex-shrink-0">
-                  <a target="_blank" href="https://zora.co/collections/0xabEFBc9fD2F806065b4f3C237d4b59D9A97Bcac7/6377">
-                    <img class="rounded-3" src="assets/nfts/On the road to El Chalten.jpg" alt="On the road to El Chalten" style="height: 100px; width: 100px; object-fit: contain;">
-                  </a>
-                </div>
-                <div class="flex-grow-1 ms-3">
-                  <em>On the road to El Chalten</em><br>
-                  With Elia Locardi<br>
-                  <a target="_blank" href="https://zora.co/collections/0xabEFBc9fD2F806065b4f3C237d4b59D9A97Bcac7/6377">
-                    <del> Available on Zora / 0.1 ETH</del><span class="badge bg-info">SOLD</span>
-                  </a>
-                </div>
-              </div>    
-            </div>
-          </div>
-        </div>
-        <div class="col col-md-4">
-          <p><strong>The first ERC-721 NFT</strong></p>
-          Su Squares <a target="_blank" href="https://tenthousandsu.com/">about 6,500 left to mint</a>
-        </div>
-      </div>
-
-
-      <h2>What's hot</h2>
-      <div class="row row-cols-1 row-cols-md-3">
+      <div class="row">
         <div class="col">
-          <div class="bg-white rounded shadow p-3 h-100">
-            <h4>Pacific Medical Training</h4>
-            <p class="card-text">We employ thousands of workers in entry-level medical jobs. We are also the world's first company to release <a href="https://pacificmedicaltraining.com/">CPR and advanced life support training courses</a> when new science guidelines are published.</p>
-            <p class="card-text"><small class="text-muted">V.P., General Manager since 2013</small></p>
-          </div>
-        </div>
-<!--
-        <div class="col">
-          <div class="bg-white rounded shadow p-3">
-            <h4>Language learning apps</h4>
-            <div class="row">
-              <div class="col">
-                <a href="https://github.com/fulldecent/formant-analyzer"><img class="rounded img-fluid" src="images/formant-analyzer-120.jpg" alt="Formant Analyzer"></a>
-              </div>
-              <div class="col">
-                <a href="https://learnwithecho.com/"><img class="rounded img-fluid" src="images/echo.png" alt="Echo"></a>
-              </div>
+          <p><strong>First collaborations (one-of-ones)</strong></p>
+          <div class="hstack gap-3 flex-wrap">
+            <div class="text-center">
+              <a title="NFT HYPEMAN × WILLIAM ENTRIKEN" target="_blank" href="https://rarible.com/token/0xF6793dA657495ffeFF9Ee6350824910Abc21356C:109311712358823457578622280509458864447004054068294590227262744976292923310081?tab=bids">
+                <img class="rounded-3" src="assets/nfts/NHM.jpg" alt="NFT HYPEMAN × WILLIAM ENTRIKEN" style="height: 100px; width: 100px; object-fit: contain;">
+              </a>
+              <p>For sale</p>
             </div>
-            <p class="card-text">My wife is Chinese and these help improve her English accent. Practice any language with native speakers.</p>
-            <p class="card-text"><small class="text-muted">Founder/developer since 2012</small></p>
-          </div>
-        </div>
--->
-<!--
-        <div class="col">
-          <div class="bg-white rounded shadow p-3 h-100">
-            <h4>Code.mil</h4>
-            <div class="row">
-              <div class="col text-center">
-                <a href="http://www.code.mil/"><img class="rounded img-fluid" src="images/code-mil-120.png" alt="Code.mil"></a>
-              </div>
+            <div class="text-center">
+              <a title="The Birth of an Idea" target="_blank" href="https://www.mintbase.io/thing/NUK-NZC8sGkLLMiY9_G54aXUwFI8Ss-KeK1G6Zyk_H0:nftcollab.mintbase1.near">
+                <img class="rounded-3" src="assets/nfts/The Birth of an Idea.jpg" alt="The Birth of an Idea" style="height: 100px; width: 100px; object-fit: contain;">
+              </a>
+              <p>For sale</p>
             </div>
-            <p class="card-text">This project helps the US Department of Defense share more computer science projects with the public by helping its project managers set code release policies.</p>
-            <p class="card-text"><small class="text-muted">Contributor since 2017</small></p>
-          </div>
-        </div>
-      -->
-        <div class="col">
-          <div class="bg-white rounded shadow p-3 h-100">
-            <h4>Nineteen Eighty-Five</h4>
-            <div class="row">
-              <div class="col text-center">
-                <a href="https://www.amazon.ca/William-Entriken/e/B091JWDTRW/ref=dp_byline_cont_pop_book_2"><img style="max-width:125px; width: 100%;" class="rounded img-fluid" src="assets/project-images/nineteen-eighty-five.jpg" alt="Nineteen Eighty-Five"></a>
-              </div>
+            <div class="text-center">
+              <a title="All Kindsa Media" target="_blank" href="https://foundation.app/@fulldecent/~/110909">
+                <img class="rounded-3" src="assets/nfts/All Kindsa Media.gif" alt="All Kindsa Media" style="height: 100px; width: 100px; object-fit: contain;">
+              </a>
+              <p>For sale</p>
             </div>
-            <p class="card-text">
-              A modern printing of the classic George Orwell book. Orwell’s protagonist battles with his own incriminating <strong>#searchhistory</strong>, the prying eye of the <strong>Social Justice Warriors</strong> watching him through his <strong>smart device</strong>&hellip;            
-            </p>
-            <p class="card-text"><small class="text-muted">Published 2021</small></p>
+            <div class="text-center">
+              <a title="Golden Landscape" target="_blank" href="https://mintable.app/art/item/Golden-Landscape-A-nighttime-windy-scene-of-foraging/GiBKhbmRsH_9Rp7">
+                <img class="rounded-3" src="assets/nfts/Golden Landscape.jpg" alt="Golden Landscape" style="height: 100px; width: 100px; object-fit: contain;">
+              </a>
+              <p>For sale</p>
+            </div>
+            <div class="text-center">
+              <a title="Ella's Dreams" target="_blank" href="https://opensea.io/assets/matic/0x2953399124f0cbb46d2cbacd8a89cf0599974963/97858314391699003502907348387324178864992602497446540910380188335690836082689/">
+                <img class="rounded-3" src="assets/nfts/Ella's Dreams.gif" alt="Ella's Dreams" style="height: 100px; width: 100px; object-fit: contain;">
+              </a>
+              <p>For sale</p>
+            </div>
+            <div class="text-center">
+              <a title="On the road to El Chalten" target="_blank" href="https://zora.co/collections/0xabEFBc9fD2F806065b4f3C237d4b59D9A97Bcac7/6377">
+                <img class="rounded-3" src="assets/nfts/On the road to El Chalten.jpg" alt="On the road to El Chalten" style="height: 100px; width: 100px; object-fit: contain;">
+              </a>
+              <p><del>Sold</del></p>
+            </div>
           </div>
         </div>
-        <div class="col">
-          <div class="bg-white rounded shadow p-3 h-100">
-            <h4>Blockchain standards</h4>
-            <p>I promote intellectual property and stop fraud using blockchain. This standardizes the sale of physical assets on the Ethereum blockchain.</p>
-            <p>Engagement as an advisor to blockchain projects, training &amp; developer relations for corporate accounts and <a href="https://github.com/erasureprotocol/erasure-protocol/pull/253#pullrequestreview-318470827" target="_blank">code</a> <a href="https://github.com/aionnetwork/AVM/issues/created_by/fulldecent" target="_blank">review</a> <a href="https://ethereum-magicians.org/t/eip-615-subroutines-and-static-jumps-for-the-evm-last-call/3472/3" target="_blank">for</a> developers.</p>
-            <p>This work was sponsored in part by Ethereum Foundation.</p>
-            <p>I am hustling to answer everybody's questions about NFT. <a target="_blank" href="https://ethereum.stackexchange.com/users/26015/william-entriken?tab=answers">Day in and day out</a>.</p>
-            <p class="card-text"><small class="text-muted">ERC-721 lead author since 2018</small></p>
-          </div>
+        <div class="col-lg-3">
+          <p><strong>Advertise your project</strong></p>
+          <div>
+            <a href="https://tenthousandsu.com" target="_blank">
+              <img src="https://tenthousandsu.com/assets/logo-su-squares.svg" alt="Su Squares" style="height: 100px; width: 100px; object-fit: contain;">
+            </a>
+            <p>About 6,500 left to mint</p>
+          </div>          
         </div>
       </div>
     </div>
   </section>
-
   <section class="container-md py-4">
-    <h2>Civic projects</h2>
-    <div class="row">
-      <div class="col-md">
-        <h3>EMCCC, PA</h3>
-        <p>Eastern Montgomery County Chamber of Commerce, PA, co-chair government affairs committee board. We work with local, state and federal government representatives to connect local businesses with elected officials.</p>
-      </div>
-      <div class="col-md">
-        <h3>SEPTA rail scheduling</h3>
-        <p>I consult with SEPTA to help set their rail schedules. Also, I independently measure On-Time Performance of all SEPTA trains. If you are ever late for work because of a late train, <a href="https://apps.phor.net/septa/">use my website</a> as proof so you have an excuse. <a target="_blank" href="https://patents.google.com/patent/US20200317242A1/en?q=transit+scheduling&inventor=Entriken&oq=Entriken+transit+scheduling">Patent application</a>.
-        </p>
-      </div>
-      <div class="col-md">
-        <h3>Philadelphia Traffic Court</h3>
-        <p>Philadelphia Traffic Court made national headlines throughout 2014 as its offices were raided by the FBI and 9 current and former judges face indictments on 77 counts. I successfully petitioned the Philadelphia government to <a href="https://github.com/fulldecent/philadelphia-traffic-court-rtk/blob/master/README.md">make public their entire database of traffic violations</a>. Now lawyers use it to appeal old tickets and some people have used the data to find evidence of wrongdoing.
-        </p>
-      </div>
-    </div>
-
     <h2>Advisory and vulnerability research</h2>
-    <div class="row">
-      <div class="col">
+    <p>I am the lead author of <a target="_blank" href="https://eips.ethereum.org/EIPS/eip-721">ERC-721</a>, the document that started NFTs as we know them, and its vision.</p>
+    <div class="row row-cols-1 row-cols-md-3">
+      <div class="col mb-3">
         <p><strong>Clients</strong></p>
         <p>My clients include:
           Arianee, <!-- Publicly listed on their homepage -->
@@ -493,15 +246,23 @@ https://github.com/google/libphonenumber/actions
           <li><a target="_blank" href="https://github.com/search?q=org%3AArianee+author%3Afulldecent&type=Issues">Informal audit of Arianee</a></li>
           <li><a target="_blank" href="https://github.com/aionnetwork/AVM/issues/created_by/fulldecent">Review of Aion Network</a></li>
           <li><a target="_blank" href="https://github.com/erasureprotocol/erasure-protocol/pull/253#pullrequestreview-318470827">Contract review of Erasure Bay</a></li>
+          <li><a target="_blank" href="https://ethereum-magicians.org/t/eip-615-subroutines-and-static-jumps-for-the-evm-last-call/3472/3">Review of EIP-615 (DRAFT) proposal</a></li>
         </ul>
       </div>
-      <div class="col">
+      <div class="col mb-3">
+        <p><strong>Advisory services</strong></p>        
+        <p>I promote intellectual property and stop fraud using blockchain. This standardizes the sale of physical assets on the Ethereum blockchain.</p>
+        <p>Publicly available to answer your questions each week during <a href="/#hour">NFT/Web3 Community Service Hour</a> and <a target="_blank" href="https://ethereum.stackexchange.com/users/26015/william-entriken?tab=answers">day in and day out</a> on questions websites.</p>
+        <p>Please see more about <a href="advisory">advisory services <span class="badge bg-warning">AUGUST WAITLIST</span></a>.</p>
+        <p class="card-text"><small class="text-muted">ERC-721 lead author since 2018</small></p>
+      </div>
+      <div class="col mb-3">
         <p><strong><a target="_blank" href="https://privacylog.blogspot.com/">Privacy Log</a></strong></p>
-        <p>I am active in doing technical research of smart contracts and websites. This includes work with the FBI and Apple. Usually I publish these on Privacy Log, and sometimes these publications are live zero-days if the vendor failed to take corrective action. (Of coures, I never post zero-days against paid advisory clients.)</p>
+        <p>I perform technical research of smart contracts and websites. This includes work with the FBI and Apple. Usually I publish these on Privacy Log, and sometimes these publications are live zero-days if the vendor failed to take corrective action. (Of course, I never post zero-days against advisory clients.)</p>
         <p>Recent zero-days:</p>
         <ul>
           <li><a target="_blank" href="https://privacylog.blogspot.com/2021/05/github-pages-zero-day-with-wildcard.html">GitHub Pages: anyone can publish to your site</a> <span class="badge bg-info">live</span></li>
-          <li><a target="_blank" href="https://privacylog.blogspot.com/2019/10/compound-finance-zero-day-prices-can.html">Compound Finance: prices can move faster than advertised</a></li>
+          <li><a target="_blank" href="https://privacylog.blogspot.com/2019/10/compound-finance-zero-day-prices-can.html">Compound Finance: prices can move faster than advertised</a> <a target="_blank" href="https://nvd.nist.gov/vuln/detail/CVE-2019-20809">CVE-2019-20809</a></li>
         </ul>
         <p class="card-text"><small class="text-muted">Monthly updates since 2008</small></p>
       </div>
@@ -509,8 +270,8 @@ https://github.com/google/libphonenumber/actions
 
     <h2>Press coverage</h2>
     <ul>
-{%- assign press-coverage-first = site.data.press-coverage | slice: 0, 10 -%}
-{%- assign press-coverage-rest = site.data.press-coverage | slice: 10, 999 -%}
+{%- assign press-coverage-first = site.data.press-coverage | slice: 0, 8 -%}
+{%- assign press-coverage-rest = site.data.press-coverage | slice: 8, 999 -%}
 {% for press-coverage in press-coverage-first %}
       <li>
         <cite>
@@ -531,20 +292,20 @@ https://github.com/google/libphonenumber/actions
         </cite>
       </li>
 {% endfor %}
+      <li id="press-coverage-show-more"><span style="cursor: pointer;" class="link-primary text-decoration-underline">Show more&hellip;</span></li>
     </ul>
-    <p id="press-coverage-show-more"><span class="btn btn-link">Show more&hellip;</span></p>
     <p><a href="self-portraits">Self portraits for media</a></p>
 
-    <h2 id="speaking">Speaking events (<a href="https://twitter.com/fulldecent">updates on Twitter</a>)</h2>
+    <h2 id="speaking">Speaking events <!--<a class="btn btn-secondary" target="_blank" href="https://calendar.google.com/calendar/ical/liurhb5cqvar2i6n6ekeanap44%40group.calendar.google.com/public/basic.ics"><i class="bi bi-bell"></i> Add to Calendar (ICS)</a> <a class="btn btn-secondary" target="_blank" href="https://docs.google.com/document/d/1ta_6tSCGfC31iIfhz4bfC_oBKyNZGEdDsZkD-BRXY_Y/edit#"><i class="bi bi-bell"></i> Add to Google Calendar</a>--></h2>
     <p>
-      <em>I attend events to speak and give workshops based on invitations, client engagements, and <a target="_blank" href="https://blog.phor.net/2022/04/15/My-travel-intentions.html">the travel mantra</a>.</em>
+      <em>I attend events to give workshops and inspire people to act, <a target="_blank" href="https://blog.phor.net/2022/04/15/My-travel-intentions.html">invite me to your event</a>.</em>
     </p>
 
     <ul>
-      <li><span class="badge bg-success">Free</span> Tuesdays at 18:00 (New York). <a href="https://twitter.com/fulldecent/status/1475851800322453504">NFT/Web3 Community Service Hour</a> / <a href="https://www.twitch.tv/fulldecent/schedule"><i class="bi bi-twitch"></i></a> <a class="btn btn-sm btn-secondary" href="https://calendar.google.com/calendar/ical/liurhb5cqvar2i6n6ekeanap44%40group.calendar.google.com/public/basic.ics"><i class="bi bi-calendar"></i> Add to Calendar (ICS)</a> <a class="btn btn-sm btn-secondary" href="https://calendar.google.com/calendar/embed?src=liurhb5cqvar2i6n6ekeanap44%40group.calendar.google.com&ctz=America%2FNew_York"><i class="bi bi-calendar"></i> Add to Calendar (Google Calendar)</a> <a class="btn btn-sm btn-secondary" href="https://docs.google.com/document/d/1ta_6tSCGfC31iIfhz4bfC_oBKyNZGEdDsZkD-BRXY_Y/edit#"><i class="bi bi-file-earmark-word"></i></a> </li>
+      <li><span class="badge bg-success">Free</span> Tuesdays at 18:00 (New York). <a href="https://docs.google.com/document/d/1ta_6tSCGfC31iIfhz4bfC_oBKyNZGEdDsZkD-BRXY_Y/edit#">NFT/Web3 Community Service Hour</a> / <a class="btn btn-sm btn-secondary" href="https://calendar.google.com/calendar/ical/liurhb5cqvar2i6n6ekeanap44%40group.calendar.google.com/public/basic.ics"><i class="bi bi-calendar"></i> Add to Calendar (ICS)</a> <a class="btn btn-sm btn-secondary" href="https://calendar.google.com/calendar/embed?src=liurhb5cqvar2i6n6ekeanap44%40group.calendar.google.com&ctz=America%2FNew_York"><i class="bi bi-calendar"></i> Add to Google Calendar</a></li>
       <!-- CANCELLED FOR MAY <li>Wednesdays 12:00 (Beijing). <a href="https://discord.com/invite/originsNFT">OriginsNFT Solidity 高级课程（中文 / <a href="https://twitter.com/jumpmanft/status/1478951732193366018"><i class="bi bi-twitter"></i></a></li> -->
-{%- assign speaking-events-first = site.data.speaking-events | slice: 0, 10 -%}
-{%- assign speaking-events-rest = site.data.speaking-events | slice: 10, 999 -%}
+{%- assign speaking-events-first = site.data.speaking-events | slice: 0, 8 -%}
+{%- assign speaking-events-rest = site.data.speaking-events | slice: 8, 999 -%}
 {% for speaking-event in speaking-events-first %}
       <li>
         {{ speaking-event.date | escape }}.
@@ -593,106 +354,316 @@ https://github.com/google/libphonenumber/actions
         {% endif %}        
       </li>
 {% endfor %}
-    </ul>
-    <p id="speaking-events-show-more"><span class="btn btn-link">Show more&hellip;</span></p>
-    <p>This work was sponsored in part by Ethereum Foundation.</p>
+      <li id="speaking-events-show-more"><span style="cursor: pointer;" class="link-primary text-decoration-underline">Show more&hellip;</span></li>
+</ul>
+    <p class="text-muted">This work was sponsored in part by Ethereum Foundation.</p>
+  </section>
 
-    <h2>More products and research</h2>
-    <div class="row">
-      <div class="col-md">
-        <a class="thumbnail" href="https://apps.phor.net/19q/">
-          <figure>
-            <img class="d-block mx-auto my-3" src="images/19q.png" alt="19 Questions machine learning game">
-            <figcaption>
-              <strong>19 Questions</strong>
-              <p>Crowd-sourced machine learning research, in the form of a simple game</p>
-            </figcaption>
-          </figure>
-        </a>
-        <span id="showstalker" class="text-muted">π</span>
+  <section class="bg-info">
+    <div class="container-md py-5">
+      <h2>Full product cycles</h2>
+      <p>Here are some products I brought from idea to market. Includes commercial successes, open sourced that you can copy.</p>
+      <div class="row row-cols-1 row-cols-md-4" id="product-cycles-list">
+        <div class="col mb-3">
+          <div class="card">
+            <div class="card-body text-center">
+              <a href="https://apps.phor.net/19q/">
+                <img style="max-height: 10rem; color:black" class="rounded" src="images/19q.svg" alt="19 Questions machine learning game">
+              </a>
+            </div>
+            <div class="card-body">
+              <p class="card-text">
+                <a href="https://apps.phor.net/19q/"><strong>19 Questions</strong></a> is a machine learning game that asks you questions about the world.
+              </p>
+              <p class="card-text">
+                <small>
+                  <a class="badge bg-info" target="_blank" href="https://github.com/fulldecent/19-questions">open source</a>
+                  <span class="badge bg-secondary">bayesian statistics</span>
+                </small>
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col mb-3">
+          <div class="card">
+            <div class="card-body text-center">
+              <a href="https://www.amazon.ca/William-Entriken/e/B091JWDTRW/ref=dp_byline_cont_pop_book_2">
+                <img style="max-height:10rem; " class="rounded img-fluid" src="assets/project-images/nineteen-eighty-five.jpg" alt="Nineteen Eighty-Five">
+              </a>
+            </div>
+            <div class="card-body">
+              <p class="card-text">
+                <a href="https://kdp.amazon.com/amazon-dp-action/ca/dualbookshelf.marketplacelink/B091DWSM5J"><strong>Nineteen Eighty-Five</strong></a> is a modern printing of the classic George Orwell book. Orwell’s protagonist battles with his own incriminating <strong>#searchhistory</strong>, the prying eye of the <strong>Social Justice Warriors</strong> watching him through his <strong>smart device</strong>&hellip;
+              </p>
+              <p class="card-text text-muted">
+                <small>
+                  <a class="badge bg-info" target="_blank" href="https://github.com/fulldecent/Nineteen-Eighty-Five">open source</a>
+                  <span class="badge bg-secondary">Amazon KDP</span>
+                </small>
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col mb-3">
+          <div class="card">
+            <div class="card-body text-center">
+              <a href="https://apps.phor.net/septa/">
+                <img style="max-height:10rem; " class="rounded img-fluid" src="images/septa.png" alt="SEPTA rail schedules">
+              </a>
+            </div>
+            <div class="card-body">
+              <p class="card-text">
+                <a href="https://apps.phor.net/septa/"><strong>SEPTA OTP</strong></a> is my fork of Philadelphia rail schedules which the transit authority has incorporated. It also documents late trains, which you can use to excuse work lateness.
+              </p>
+              <p class="card-text text-muted">
+                <small>
+                  <a class="badge bg-info" target="_blank" href="https://github.com/fulldecent/septa-regionalrail-otp">open source</a>
+                  <a class="badge bg-info" target="_blank" href="https://patents.google.com/patent/US20200317242A1/en?q=transit+scheduling&inventor=Entriken&oq=Entriken+transit+scheduling">patent</a>
+                </small>
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col mb-3">
+          <div class="card">
+            <div class="card-body text-center">
+              <a href="https://itunes.apple.com/us/app/whos-the-impostor/id784258202?mt=8">
+                <img style="max-height:10rem; " class="rounded img-fluid" src="images/impostor.png" alt="Who's the Impostor">
+              </a>
+            </div>
+            <div class="card-body">
+              <p class="card-text">
+                <a href="https://itunes.apple.com/us/app/whos-the-impostor/id784258202?mt=8"><strong>Who's the Impostor (谁是卧底)</strong></a> is party word game for 3&ndash;12 players. Ranked in top 100 charts for MX, CN, RU.
+              </p>
+              <p class="card-text text-muted">
+                <small>
+                  <a class="badge bg-info" target="_blank" href="https://itunes.apple.com/us/app/whos-the-impostor/id784258202?mt=8">iOS</a>
+                </small>
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col mb-3">
+          <div class="card">
+            <div class="card-body text-center">
+              <a href="https://learnwithecho.com">
+                <img style="max-height:10rem; " class="rounded img-fluid" src="images/echo.png" alt="Echo">
+              </a>
+            </div>
+            <div class="card-body">
+              <p class="card-text">
+                <a href="https://learnwithecho.com"><strong>Echo</strong></a> lets you hear yourself and native speakers to improve pronunciation. This helps with language practice, speech pathology and accent reduction.
+              </p>
+              <p class="card-text text-muted">
+                <small>
+                  <a class="badge bg-info" target="_blank" href="https://github.com/fulldecent/echo">open source</a>
+                  <a class="badge bg-info" target="_blank" href="http://itunes.apple.com/us/app/echo-learning/id558585608?ls=1&mt=8">iOS</a>
+                </small>
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col mb-3">
+          <div class="card">
+            <div class="card-body text-center">
+              <a href="https://genobank.io/products/">
+                <img style="max-height:10rem; " class="rounded img-fluid" src="images/genobank-conversion-kit.jpg" alt="DNA privacy kit">
+              </a>
+            </div>
+            <div class="card-body">
+              <p class="card-text">
+                <a href="https://genobank.io/products/"><strong>23andMe privacy kit</strong></a> by GenoBank anonymizes your DNA collection using physical shuffling and end-to-end encryption.
+              </p>
+              <p class="card-text text-muted">
+                <small>
+                  <a class="badge bg-info" target="_blank" href="https://github.com/genobank">open source</a>
+                  <a class="badge bg-info" target="_blank" href="https://www.yuhanzhangdesign.com">packaging design</a>
+                  <a class="badge bg-info" target="_blank" href="https://rinkeby.etherscan.io/address/0xcfe0161f1b24cbca200cb4cdd3028fb048ed4b6f">Ethereum Rinkeby</a>
+                </small>
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col mb-3">
+          <div class="card">
+            <div class="card-body text-center">
+              <a href="https://github.com/fulldecent/formant-analyzer">
+              <img style="max-height:10rem; " class="rounded img-fluid" src="images/formant-analyzer.png" alt="Formant Analyzer">
+              </a>
+            </div>
+            <div class="card-body">
+              <p class="card-text">
+                <a href="https://itunes.apple.com/us/app/formant-analyzer/id799183655?mt=8&uo=4&at=11l6hc&ct=fnd"><strong>Formant Analyzer</strong></a> helped my wife improve vowel pronunciation (born in China living in USA) and is useful for speech pathologists.</p>
+              </p>
+              <p class="card-text text-muted">
+                <small>
+                  <a class="badge bg-info" target="_blank" href="https://github.com/fulldecent/formant-analyzer">open source</a>
+                  <a class="badge bg-info" target="_blank" href="https://itunes.apple.com/us/app/formant-analyzer/id799183655?mt=8&uo=4&at=11l6hc&ct=fnd">iOS</a>
+                </small>
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col mb-3">
+          <div class="card">
+            <div class="card-body text-center">
+              <a href="https://tenthousandsu.com">
+              <img style="max-height:10rem; " class="rounded img-fluid" src="https://tenthousandsu.com/assets/logo-su-squares.svg" alt="Su Squares">
+              </a>
+            </div>
+            <div class="card-body">
+              <p class="card-text">
+                <a href="https://tenthousandsu.com/"><strong>Su Squares</strong></a> is the first NFT using the ERC-721 standard. This ushered in an era of new applications and enormous media coverage.</p>
+              </p>
+              <p class="card-text text-muted">
+                <small>
+                  <a class="badge bg-info" target="_blank" href="https://github.com/su-squares/">open source</a>
+                  <a class="badge bg-info" target="_blank" href="https://etherscan.io/address/0xE9e3F9cfc1A64DFca53614a0182CFAD56c10624F">Ethereum Mainnet</a>
+                </small>
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col mb-3">
+          <div class="card">
+            <div class="card-body text-center">
+              <a href="https://scribeschool.net/">
+                <img style="max-height:10rem; height:10rem" class="rounded img-fluid" src="https://pacificmedicaltraining.net/assets/logo.svg" alt="PMT Scribe Academy">
+              </a>
+            </div>
+            <div class="card-body">
+              <p class="card-text">
+                <a href="https://scribeschool.net/"><strong>Scribe Academy</strong></a> is one of several online training program launched through Pacific Medical Training and accredited through American Medical Association.</p>
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col mb-3">
+          <div class="card">
+            <div class="card-body text-center">
+              <a href="https://www.gamesmagazine-online.com/">
+                <img style="max-height:10rem; " class="rounded img-fluid" src="images/anasquare.png" alt="Anasquare">
+              </a>
+            </div>
+            <div class="card-body">
+              <p class="card-text">
+                <a href="https://www.gamesmagazine-online.com/"><strong>Anasquare</strong></a> is a word puzzle published nationally in GAMES mazagine.
+              </p>
+              <p class="card-text text-muted">
+                <small>
+                  <a class="badge bg-info" target="_blank" href="https://github.com/fulldecent/anasquare-generator">open source</a>
+                </small>
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col mb-3">
+          <div class="card">
+            <div class="card-body text-center">
+              <a href="https://github.com/fulldecent/system-bus-radio">
+                <img style="max-height:10rem; height:10rem" class="rounded img-fluid" src="images/system-bus-radio.png" alt="System Bus Radio">
+              </a>
+            </div>
+            <div class="card-body">
+              <p class="card-text">
+                <a href="https://github.com/fulldecent/system-bus-radio"><strong>System Bus Radio</strong></a> implements an AM radio on computers and phones that do not have radio transmitting hardware. Unclassified implementation of TEMPEST data exfiltration.</p>
+              </p>
+              <p class="card-text text-muted">
+                <small>
+                  <a class="badge bg-info" target="_blank" href="https://github.com/fulldecent/system-bus-radio">open source</a>
+                </small>
+              </p>                
+            </div>
+          </div>
+        </div>
       </div>
-      <div class="col-md">
-        <a class="thumbnail" href="http://www.gamesmagazine-online.com/">
-          <figure>
-            <img class="d-block mx-auto my-3" src="images/anasquare.png" alt="Anasquare game">
-            <figcaption>
-              <strong>Anasquare</strong>
-              <p>A word puzzle I created which is published nationally in GAMES Magazine</p>
-              <!-- http://thetriangle.org/candp/anasquare/ -->
-            </figcaption>
-          </figure>
-        </a>
-      </div>
-      <div class="col-md">
-        <a href="http://fulldecent.blogspot.com/"><strong>Personal blog</strong></a>
-        <p>With analysis of football betting market inefficiencies, sentiment during the great depression, facial hair correlation to economic activity, and much musing. <span class="badge badge-primary">RSS</span></p>
+
+      <span id="showstalker" class="text-muted">π</span>
+
+
+      <div id="stalker" style="display:none">
+        <h2>Extra stuff for stalkers</h2>
+        <div class="row">
+          <div class="col">
+            <p>Math</p>
+            <ul>
+              <li><a href="https://tromp.github.io/chess/chess.html">Chess research with John Tromp</a> -- I am interested in parallel, exhaustive-search problems, this is one effort in that direction, <a href="https://groups.google.com/forum/#!topic/rec.games.chess.computer/vmvI0ePH2kI">Google Groups post</a></li>
+              <li><a href="https://fulldecent.blogspot.com/2009/12/interesting-properties-of-entropy.html">Original research on the entropy function</a> -- demonstrating a new, iterative way to calculate entropy, and necessary for my 19q game. Related: <a href="https://en.wikipedia.org/wiki/Perplexity">https://en.wikipedia.org/wiki/Perplexity</a></li>
+            </ul>
+            <p>Active projects you can join</p>
+            <ul>
+              <li>I am active <a href="https://github.com/fulldecent">on GitHub</a>, let's do something awesome together, also on SO and Kaggle</li>
+              <li><a href="https://kde.org/">KDE contributor and webadmin (commit access to homepage)</a></li>
+            </ul>
+            <p>Photography</p>
+            <ul>
+              <li>My wife and I run a boudoir photography studio. Check out https://glamourphilly.com/</li>
+            </ul>
+          </div>
+          <div class="col">
+            <p>Things I made that you can buy:</p>
+            <ul>
+              <li><span class="badge badge-info">iOS</span> <a href="https://itunes.apple.com/us/app/2017-patent-bar-exam-study-prep-and-pass/id994868838">US Patent Bar Study</a> -- a tool for students studying for the patent bar exam</li>
+              <li>
+                Observance&mdash;my first published guitar song
+                <a class="badge bg-secondary" target="_blank" href="https://itunes.apple.com/us/artist/will-entriken/id389914879">iTunes Music</a>
+                <a class="badge bg-secondary" target="_blank" href="https://open.spotify.com/track/09X5ClB6xTVzY8befFsyHZ">Spotify</a>
+              </li>
+            </ul>
+            <p>More music:</p>
+            <ul>
+              <li><a href="https://phor.net/media/Only.mp3">Only</a> (and <a href="https://www.youtube.com/watch?v=xWy4BfZKXsI">music video</a>)-- my award winning remix of Nine Inch Nails's song. I was a winner in <a href="https://web.archive.org/web/20060822171442/http://wysp.com/home.php">WYSP's First NIN Remix content (2005)</a> and got to meet the band. My track was runner up and the other guy was published on NIN's next album.</li>
+              <li><a href="https://phor.net/media/Air.m4a">Air</a> the first track my wife and I made together. Based on Air by Dzeko &amp; Torres.</li>
+            </ul>
+            <p>Civic projects:</p>
+            <ul>
+              <li>
+                <strong>EMCCC, PA</strong> Eastern Montgomery County Chamber of Commerce, PA, co-chair government affairs committee board. We work with local, state and federal government representatives to connect local businesses with elected officials.
+              </li>
+              <li>
+                <strong>SEPTA rail scheduling</strong> I consult with SEPTA to help set their rail schedules. Also, I independently measure On-Time Performance of all SEPTA trains. If you are ever late for work because of a late train, <a href="https://apps.phor.net/septa/">use my website</a> as proof so you have an excuse. <a target="_blank" href="https://patents.google.com/patent/US20200317242A1/en?q=transit+scheduling&inventor=Entriken&oq=Entriken+transit+scheduling">Patent application</a>.
+              </li>
+              <li>
+                <strong>Philadelphia Traffic Court</strong> Philadelphia Traffic Court made national headlines throughout 2014 as its offices were raided by the FBI and 9 current and former judges face indictments on 77 counts. I successfully petitioned the Philadelphia government to <a href="https://github.com/fulldecent/philadelphia-traffic-court-rtk/blob/master/README.md">make public their entire database of traffic violations</a>. Now lawyers use it to appeal old tickets and some people have used the data to find evidence of wrongdoing.
+              </li>
+            </ul>
+          </div>
+          <div class="col">
+            <p>Contributions / big projects</p>
+            <ul>
+              <li>Code.mil&mdash; This project helps the US Department of Defense share more computer science projects with the public by helping its project managers set code release policies.</p></li>
+              <li>Git &mdash; (2013) <a href="https://github.com/git/git/commit/75bf5e60e8c09075af1e4cd0d68a6d73fdf92c42">fixed</a> a <a href="http://git.661346.n2.nabble.com/PATCH-submodule-update-when-using-recursion-show-full-path-td7578351.html">recursion bug</a> for submodules</li>
+              <li>Linux kernel v2.2 &mdash; (1999) fixed Realtek ethernet driver</li>
+              <li>KDE &mdash; (2006) I used to lead http://cia.vc/ as a top committer in 2006 when I worked extensively on KDE, see also <a href="https://developers.google.com/open-source/gsoc/2006/?csw=1#kde">Google page on my contributions</a></li>
+              <li><a href="https://jekyllrb.com/news/2015/10/26/jekyll-3-0-released/">Jekyll 3.0 contributor</a></li>
+              <li>Archive.org &mdash; (2006) collection of <a href="https://archive.org/details/2006-AIM-IMChaos-WebShots-Collecting">collection of AOL Instant Messenger, IMChaos, WebShots</a></li>
+            </ul>
+          </div>
+        </div>
       </div>
     </div>
-
-    <div id="stalker" style="display:none">
-      <h2>Extra stuff for stalkers</h2>
+  </section>
+  <section>
+    <div class="container-md my-5">
+      <h2>Personal</h2>
       <div class="row">
         <div class="col">
-          <p>Math</p>
+          <p>My sizes</p>
           <ul>
-            <li><a href="https://tromp.github.io/chess/chess.html">Chess research with John Tromp</a> -- I am interested in parallel, exhaustive-search problems, this is one effort in that direction, <a href="https://groups.google.com/forum/#!topic/rec.games.chess.computer/vmvI0ePH2kI">Google Groups post</a></li>
-            <li><a href="http://fulldecent.blogspot.com/2009/12/interesting-properties-of-entropy.html">Original research on the entropy function</a> -- demonstrating a new, iterative way to calculate entropy, and necessary for my 19q game. Related: <a href="https://en.wikipedia.org/wiki/Perplexity">https://en.wikipedia.org/wiki/Perplexity</a></li>
+            <li>39L/40L suit</li>
+            <li>33 slack / 33 inseam</li>
+            <li>15 1/2 - 34/35 shirt</li>
           </ul>
-          <p>Active projects you can join</p>
-          <ul>
-            <li>I am active <a href="https://github.com/fulldecent">on GitHub</a>, let's do something awesome together, also on SO and Kaggle</li>
-            <li><a href="http://apps.phor.net">Other projects on Phor</a></li>
-            <li><a href="http://kde.org/">KDE contributor and webadmin (commit access to homepage)</a></li>
-          </ul>
-          <p>Photography</p>
-          <ul>
-            <li>My wife and I run a boudoir photography studio. Check out https://glamourphilly.com/</li>
-          </ul>
+          <p>Best marathon time: 9h : 55m</p>
         </div>
         <div class="col">
-          <p>Things I made that you can buy:</p>
           <ul>
-            <li><span class="badge badge-info">iOS</span> <a href="https://itunes.apple.com/us/app/2017-patent-bar-exam-study-prep-and-pass/id994868838">US Patent Bar Study</a> -- a tool for students studying for the patent bar exam</li>
-            <li><span class="badge badge-info">iOS</span> <a href="https://itunes.apple.com/us/app/whos-the-impostor/id784258202?mt=8">Who's the Impostor? / 谁是卧底</a> -- a chart-topping 3+ player game</li>
-            <li><a href="https://itunes.apple.com/us/artist/will-entriken/id389914879">Observance</a> -- my first published guitar song</li>
-          </ul>
-          <p>More music:</p>
-          <ul>
-            <li><a href="https://phor.net/media/Only.mp3">Only</a> (and <a href="https://www.youtube.com/watch?v=xWy4BfZKXsI">music video</a>)-- my award winning remix of Nine Inch Nails's song. I was a winner in <a href="https://web.archive.org/web/20060822171442/http://wysp.com/home.php">WYSP's First NIN Remix content (2005)</a> and got to meet the band. My track was runner up and the other guy was published on NIN's next album.</li>
-            <li><a href="https://phor.net/media/Air.m4a">Air</a> the first track my wife and I made together. Based on Air by Dzeko &amp; Torres.</li>
+            <li><a href="reading-list">Books I've read </a></li>
+            <li><a href="goals">My goals in life</a></li>
+            <li><a href="https://www.amazon.com/gp/registry/EE78A23EEGQB">Wish list at Amazon</a></li>
+            <li><a href="bookmarks">My favorite websites</a></li>
           </ul>
         </div>
-        <div class="col">
-          <p>Contributions / big projects</p>
-          <ul>
-            <li>Git &mdash; (2013) <a href="https://github.com/git/git/commit/75bf5e60e8c09075af1e4cd0d68a6d73fdf92c42">fixed</a> a <a href="http://git.661346.n2.nabble.com/PATCH-submodule-update-when-using-recursion-show-full-path-td7578351.html">recursion bug</a> for submodules</li>
-            <li>Linux kernel v2.2 &mdash; (1999) fixed Realtek ethernet driver</li>
-            <li>KDE &mdash; (2006) I used to lead http://cia.vc/ as a top committer in 2006 when I worked extensively on KDE, see also <a href="https://developers.google.com/open-source/gsoc/2006/?csw=1#kde">Google page on my contributions</a></li>
-            <li><a href="http://jekyllrb.com/news/2015/10/26/jekyll-3-0-released/">Jekyll 3.0 contributor</a></li>
-            <li>Archive.org &mdash; (2006) collection of <a href="https://archive.org/details/2006-AIM-IMChaos-WebShots-Collecting">collection of AOL Instant Messenger, IMChaos, WebShots</a></li>
-          </ul>
-        </div>
-      </div>
-    </div>
-
-    <h2>Personal</h2>
-    <div class="row">
-      <div class="col">
-        <p>My sizes</p>
-        <ul>
-          <li>39L/40L suit</li>
-          <li>33 slack / 33 inseam</li>
-          <li>15 1/2 - 34/35 shirt</li>
-        </ul>
-        <p>Best marathon time: 9h : 55m</p>
-      </div>
-      <div class="col">
-        <ul>
-          <li><a href="reading-list">Books I've read </a></li>
-          <li><a href="goals">My goals in life</a></li>
-          <li><a href="http://www.amazon.com/gp/registry/EE78A23EEGQB">Wish list at Amazon</a></li>
-          <li><a href="bookmarks">My favorite websites</a></li>
-        </ul>
       </div>
     </div>
   </section>
@@ -700,19 +671,20 @@ https://github.com/google/libphonenumber/actions
   <footer class="bg-light">
     <div class="container-md py-5">
       <h2>Call to action</h2>
-      <p class="lead">Thanks for your interest, now let's get in touch</p>
+      <p class="lead">Thanks for your interest, now let's get in touch.</p>
       <p>
         <a href="mailto:phor@phor.net?Subject=Hello&amp;Body=Hello&amp;body=Hi%20Will%2C%0A%0AI%20came%20across%20your%20information%20and%20thought%20it%20might%20be%20worth%20getting%20in%20touch." class="btn btn-lg btn-info">Email me</a>
         <a href="https://www.linkedin.com/in/fulldecent" class="btn btn-lg btn-secondary">Connect on LinkedIn</a>
         <a href="https://twitter.com/fulldecent" class="btn btn-lg btn-secondary">Stalk on Twitter</a>
-        <a href="https://scholar.google.com/citations?user=4rGYvTgAAAAJ" class="btn btn-lg btn-secondary">Follow on Google Scholar</a>
+        <a href="./assets/postcard-address.pdf" class="btn btn-lg btn-secondary">Send a Postcard</a>
+        <!--<a href="https://scholar.google.com/citations?user=4rGYvTgAAAAJ" class="btn btn-lg btn-secondary">Follow on Google Scholar</a>-->
       </p>
     </div>
   </footer>
   <footer class="bg-dark text-light">
     <div class="container-md py-5">
-      <h5 id="authentic-accounts">Authentic accounts</h5>
-      <p><em>Follow on all these places for good things. Accounts are not an endorsement of a platform.</em></p>
+      <h5 id="authentic-accounts"><i class="bi bi-bell"></i> Follow me</h5>
+      <p><em>Accounts are not an endorsement of a platform.</em></p>
       <div class="row">
         <div class="col-md">
           <h6>Discussion</h6>
@@ -727,7 +699,7 @@ https://github.com/google/libphonenumber/actions
             <li class="list-inline-item"><a class="link-light" target="_blank" href="https://blog.phor.net">Personal blog (NEW)</a></li>
             <li class="list-inline-item"><a class="link-light" target="_blank" href="https://fulldecent.blogspot.com">Personal blog (OLD)</a></li>
             <li class="list-inline-item"><a class="link-light" target="_blank" href="https://privacylog.blogspot.com">Zero-day blog</a></li>
-            <li class="list-inline-item"><a class="link-light" target="_blank" href="https://www.instagram.com/wmedesign/">Instagram</a></li>
+            <li class="list-inline-item"><a class="link-light" target="_blank" href="https://www.instagram.com/wmedesign/">Instagram (NSFW)</a></li>
           </ul>
         </div>
         <div class="col-md">
@@ -738,7 +710,6 @@ https://github.com/google/libphonenumber/actions
             <li class="list-inline-item"><a class="link-light" target="_blank" href="https://foundation.app/@fulldecent">Foundation</a></li>
             <li class="list-inline-item"><a class="link-light" target="_blank" href="https://mintable.app/u/fulldecent">Mintable</a></li>
             <li class="list-inline-item"><a class="link-light" target="_blank" href="https://www.mintbase.io/human/fulldecent.near">Mintbase</a></li>
-            <li class="list-inline-item"><a class="link-light" target="_blank" href="https://app.cargo.build/creator/0xd859d7d8603D2dAb768D679eEEC25930C8FC59C1">Cargo</a></li>
             <li class="list-inline-item"><a class="link-light" target="_blank" href="https://zora.co/fulldecent">ZORA</a></li>
           </ul>
         </div>
@@ -748,7 +719,7 @@ https://github.com/google/libphonenumber/actions
             <li class="list-inline-item"><a class="link-light" target="_blank" href="https://github.com/fulldecent">GitHub</a></li>
             <li class="list-inline-item"><a class="link-light" target="_blank" href="https://www.linkedin.com/in/fulldecent">LinkedIn</a></li>
             <li class="list-inline-item"><a class="link-light" target="_blank" href="https://www.amazon.ca/William-Entriken/e/B091JWDTRW/ref=dp_byline_cont_pop_ebooks_2">Amazon (author)</a></li>
-            <li class="list-inline-item"><a class="link-light" target="_blank" href="https://scholar.google.com/citations?user=4rGYvTgAAAAJ">Google Scholar</a></li>
+            <!--<li class="list-inline-item"><a class="link-light" target="_blank" href="https://scholar.google.com/citations?user=4rGYvTgAAAAJ">Google Scholar</a></li>-->
             <li class="list-inline-item"><a class="link-light" target="_blank" href="https://etherscan.io/address/0xd859d7d8603D2dAb768D679eEEC25930C8FC59C1">Ethereum Mainnet</a> <button id="eth-tip" class="btn btn-secondary btn-sm">send tip</button></li>
             <li class="list-inline-item"><a class="link-light" target="_blank" href="https://tronscan.org/#/searcherror/TG18qpVeKEanswrcPVWguRRr56Rirof5Ub">TRON Mainnet</a></li>
           </ul>
@@ -762,6 +733,7 @@ https://github.com/google/libphonenumber/actions
   $(function(){
     $('#showstalker').click(function(){
       $('#stalker').show();
+      $("#product-cycles-list div.col").show();
       gtag('event', 'Engagement', 'Stalker');
     });
 
@@ -794,6 +766,21 @@ https://github.com/google/libphonenumber/actions
         }],
       });
     });
+
+    // Project gallery
+    function shuffleArray(array) {
+      for (let i = array.length - 1; i > 0; i--) {
+        const j = Math.floor(Math.random() * (i + 1));
+        [array[i], array[j]] = [array[j], array[i]];
+      }
+    }
+    const $children = $("#product-cycles-list div.col");
+    $children.hide();
+    const children = $children.toArray();
+    shuffleArray(children);
+    for (let i = 0; i < 4; i++) {
+      $(children[i]).show();
+    }
 
     if (window.location.hash.substr(1)) { // Page is loaded with #... fragment (in QR codes)
       $("#quick-links-general").hide();
