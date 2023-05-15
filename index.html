@@ -807,6 +807,10 @@ MORE STUFF WHERE TO PUT THIS
     if (window.location.hash.substr(1)) { // Page is loaded with #... fragment (in QR codes)
       $("#quick-links-general").hide();
       $(window.location.hash).removeClass("d-none");
+      // hack to make #hours (and only #hours) work like #hour
+      if (window.location.hash == "#hours") {
+        $("#hour").removeClass("d-none");
+      }
     }
   });
   </script>
