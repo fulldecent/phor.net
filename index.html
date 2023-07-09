@@ -820,6 +820,11 @@ MORE STUFF WHERE TO PUT THIS
     var audio = new Audio('/media/pronounce.mp3');
     audio.play();
   });
+
+  // activate tooltips everywhere (if adding to DOM, you must activate those) ////
+  const tooltipTriggerList = document.querySelectorAll('[title]');
+  [...tooltipTriggerList].forEach(tooltipTriggerEl => new bootstrap.Tooltip(tooltipTriggerEl));
+
   </script>
   <script src="https://cdn.jsdelivr.net/npm/anchor-js@4.3.1/anchor.min.js" integrity="sha256-0WMZ9PF4b2hTF66Eglv/9H5Vwk6lnOG4AbmCJxo96WQ=" crossorigin="anonymous"></script>
   <script>
