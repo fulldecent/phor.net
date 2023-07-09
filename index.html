@@ -126,7 +126,7 @@ MORE STUFF WHERE TO PUT THIS
           <img class="img-fluid rounded-circle" src="images/will.jpeg" alt="William Entriken">
         </div>
         <div class="col-sm-10">
-          <h1>William Entriken<!--, M.Fin., M.B.A. --></h1>
+          <h1>William Entriken<!--, M.Fin., M.B.A. --> <i id="pronounce" title="wɪl ˈɛn.tɹɪ.kən" class="bi bi-play-btn"></i></h1>
           <p class="lead"><span class="text text-success">Mission</span>: Verify seller claims &amp; authenticity for most things you buy</p>
           <p class="lead"><i class="bi bi-globe" aria-hidden="true"></i> Philadelphia USA / 中国上海</p>
           <p class="lead text-muted">Updated {{ site.time | date: "%Y-%m-%d"}}</p>
@@ -814,6 +814,11 @@ MORE STUFF WHERE TO PUT THIS
         $("#hour").removeClass("d-none");
       }
     }
+  });
+
+  document.getElementById("pronounce").addEventListener("click", function() {
+    var audio = new Audio('/media/pronounce.mp3');
+    audio.play();
   });
   </script>
   <script src="https://cdn.jsdelivr.net/npm/anchor-js@4.3.1/anchor.min.js" integrity="sha256-0WMZ9PF4b2hTF66Eglv/9H5Vwk6lnOG4AbmCJxo96WQ=" crossorigin="anonymous"></script>
