@@ -8,8 +8,8 @@ title: William Entriken, Portfolio
   <meta charset="utf-8">
   <title>{{ page.title | escape }}</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css" integrity="sha256-8M+b2Hj+vy/2J5tZ9pYDHeuPD59KsaEZn1XXj3xVhjg=" crossorigin="anonymous">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" integrity="sha256-2IJPcGfN/qOK/sfp/68HISUmaCQgbWnvHxEtchU6UF4=" crossorigin="anonymous">
   <link href="{% link /assets/site.css %}" rel="stylesheet">
   <link href="{{ page.url | prepend: site.baseurl | prepend: site.url | escape }}" rel="canonical">
   <link type="application/rss+xml" rel="alternate" title="Community Service Hour Podcast" href="https://podcast.phor.net/feed.xml"/>
@@ -127,28 +127,26 @@ MORE STUFF WHERE TO PUT THIS
           <img class="img-fluid rounded-circle" src="images/will.jpeg" alt="William Entriken">
         </div>
         <div class="col-sm-10">
-          <h1>William Entriken<!--, M.Fin., M.B.A. --> <i id="pronounce" title="wɪl ˈɛn.tɹɪ.kən" class="bi bi-play-btn"></i></h1>
+          <h1>William Entriken<!--, M.Fin., M.B.A. --> <i id="pronounce" title="wɪl ˈɛn.tɹɪ.kən" class="bi bi-play-btn" style="cursor: pointer;"></i></h1>
           <p class="lead"><span class="text text-success">Mission</span>: Verify seller claims &amp; authenticity for most things you buy</p>
           <p class="lead"><i class="bi bi-globe" aria-hidden="true"></i> Philadelphia USA / 中国上海</p>
-          <p class="lead text-muted">Updated {{ site.time | date: "%Y-%m-%d"}}</p>
           <p class="lead">Lead author of ERC-721 standard</p>
+
+          <nav class="hstack mb-3 gap-2 mt-3">
+            <a class="btn btn-primary d-block d-md-none" href="./vcard.vcf" download="William Entriken.vcf"><i class="bi bi-person"></i> Add to Contacts</a>
+            <a class="btn btn-primary" href="http://phor.us9.list-manage.com/subscribe?u=8b49e10ddf197497c02ff4eae&id=e3fcfddf94&amp;MERGE1=phor.net%20homepage" title="Monthly emails about NFT, my workshops and research"><i class="bi bi-bell-fill"></i> Get Email Updates</a>
+            <a class="btn btn-primary" href="https://twitter.com/fulldecent"><i class="bi bi-twitter"></i> Twitter</a>
+            <a class="btn btn-primary d-none d-md-block" href="https://docs.google.com/forms/d/e/1FAIpQLSe4fKndAs-Aaaq-5IzOqrYQ5L5mUTbYLSJDV4lB3mBNBQ1BNQ/viewform?usp=sf_link"><i class="bi bi-pencil"></i> Interview Requests</a>
+
+            <!--
+            <a class="btn btn-primary" href="advisory"><i class="bi bi-bullseye"></i> Be my client <span class="badge bg-warning">SEP 2023 WAITLIST</span></a>
+            <a class="btn btn-primary" href="https://www.alephcrypto.xyz/"><i class="bi bi-stars"></i> Accelerator</a>
+            -->
+          </nav>
+    
         </div>
       </div>
 
-      <nav class="d-flex flex-column flex-md-row justify-content-center mb-3 gap-4 mt-5">
-        <a class="link-primary" href="advisory">
-          <i class="bi bi-bullseye" aria-hidden="true"></i> Be my client <span class="badge bg-warning">JUL 2023 WAITLIST</span>
-        </a>
-        <a class="link-primary" href="https://www.alephcrypto.xyz/">
-          <i class="bi bi-stars" aria-hidden="true"></i> Accelerator
-        </a>
-        <a target="_blank" class="link-primary" href="https://docs.google.com/forms/d/e/1FAIpQLSe4fKndAs-Aaaq-5IzOqrYQ5L5mUTbYLSJDV4lB3mBNBQ1BNQ/viewform?usp=sf_link">
-          <i class="bi bi-pencil" aria-hidden="true"></i> Interview requests
-        </a>
-        <a target="_blank" class="link-primary" href="./vcard.vcf">
-          <i class="bi bi-person" aria-hidden="true"></i> Add to contacts
-        </a>
-      </nav>
     </div>
 
     <svg style="width:100%; transform: rotate(180deg); height:2em; fill: #F8F9FA;" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
@@ -163,6 +161,15 @@ MORE STUFF WHERE TO PUT THIS
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;">NFT drops</span></h2>
       <div class="row">
+        <div class="col-lg-3">
+          <p><strong>Pixels:</strong></p>
+          <div>
+            <a href="https://tenthousandsu.com" target="_blank">
+              <img src="https://tenthousandsu.com/assets/logo-su-squares.svg" alt="Su Squares" style="height: 100px; width: 100px; object-fit: contain;">
+            </a>
+            <p>&lt;6,500 left to mint</p>
+          </div>          
+        </div>
         <div class="col">
           <p><strong>Art collaborations:</strong></p>
           <div class="hstack gap-3 flex-wrap">
@@ -203,15 +210,6 @@ MORE STUFF WHERE TO PUT THIS
               <p><del>Sold</del></p>
             </div>
           </div>
-        </div>
-        <div class="col-lg-3">
-          <p><strong>Other:</strong></p>
-          <div>
-            <a href="https://tenthousandsu.com" target="_blank">
-              <img src="https://tenthousandsu.com/assets/logo-su-squares.svg" alt="Su Squares" style="height: 100px; width: 100px; object-fit: contain;">
-            </a>
-            <p>About 6,500 left to mint</p>
-          </div>          
         </div>
       </div>
     </div>
@@ -256,7 +254,7 @@ MORE STUFF WHERE TO PUT THIS
         </ul>
       </div>
       <div class="col mb-3">
-        <p><strong>Advisory services</strong></p>        
+        <p><strong><a href="advisory">Advisory services</a></strong></p>        
         <p>I promote intellectual property and stop fraud using blockchain. This standardizes the sale of physical assets on the Ethereum blockchain.</p>
         <p>Publicly available to answer your questions each week during <a href="/#hour">NFT/Web3 Community Service Hour</a> and <a target="_blank" href="https://ethereum.stackexchange.com/users/26015/william-entriken?tab=answers">day in and day out</a> on questions websites.</p>
         <p>Please see more about <a href="advisory">advisory services</a>.</p>
@@ -752,10 +750,11 @@ MORE STUFF WHERE TO PUT THIS
           </ul>
         </div>
       </div>
-      <p class="mt-3">No cookies. No analytics. To let me know you are reading this, <a href="mailto:phor@phor.net?Subject=Hello&amp;Body=Hello&amp;body=Hi%20Will%2C%0A%0AI%20came%20across%20your%20website%20and%20thought%20it%20might%20be%20worth%20getting%20in%20touch." class="btn btn-lg btn-info">email me</a> or interact on each link immediately above.</p>
+      <p class="mt-3">No cookies. No analytics. To let me know you are reading this, <a href="mailto:phor@phor.net?Subject=Hello&amp;Body=Hello&amp;body=Hi%20Will%2C%0A%0AI%20came%20across%20your%20website%20and%20thought%20it%20might%20be%20worth%20getting%20in%20touch." class="btn btn-lg btn-info">email me</a> or interact on each link immediately above. Updated {{ site.time | date: "%Y-%m-%d"}}.</p>
     </div>
   </footer>
 
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
   <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
   <script>
   $(function(){
