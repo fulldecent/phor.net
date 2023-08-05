@@ -11,28 +11,22 @@ title: 20 Random Draft ICD-10-CM/PCS MS-DRGv28 codes
 	</table>
 </div>
 
-<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/pako/1.0.10/pako.min.js" integrity="sha256-Kc+gVCuYZLZkDP3MjxWxhNtkMbUy2ycCo86X5fKn/Bw=" crossorigin="anonymous"></script>
-
 <script>
 	var icd10Data = null;
-	
-	$.ajax({
-		url: 'icd-10-all-codes.tsv',
-		xhr: function(){
-			var xhr = new window.XMLHttpRequest();
-			xhr.addEventListener("progress", function(e){
-				console.log(e.loaded);
-			}, false);
-			return xhr;
-		},
-		success: function (res) {
-			icd10Data = res.split(/\r?\n/);
-			icd10Data = shuffle(icd10Data);
-			update();
-		}
-	});
-	
+
+	// new vanilla js code
+	const request = new XMLHttpRequest();
+	request.addEventListener("progress", function(e){
+		console.log(e.loaded);
+	}, false);
+	request.addEventListener("load", function(e){
+		icd10Data = e.target.responseText.split(/\r?\n/);
+		icd10Data = shuffle(icd10Data);
+		update();
+	}, false);
+	request.open("GET", "icd-10-all-codes.tsv");
+	request.send();
+
 	function shuffle(array) {
 		let counter = array.length;
 		// While there are elements in the array
@@ -48,16 +42,15 @@ title: 20 Random Draft ICD-10-CM/PCS MS-DRGv28 codes
 		}
 		return array;
 	}
-	
+
 	function update() {
-		$("#results").empty();
-		
-		const query = $('#query').val();
+		const query = document.getElementById("query").value;
 		let results = 0;
+		let html = "";
 		for (let i = 0; i < icd10Data.length; i++) {
 			if (icd10Data[i].toUpperCase().includes(query.toUpperCase())) {
 				const row = icd10Data[i].split(/\t/);
-				$("#results").append($("<tr><td>"+row[0]+"</td><td>"+row[1]+"</td></tr>"));
+				html += "<tr><td>"+row[0]+"</td><td>"+row[1]+"</td></tr>";
 				results++;
 			}
 			if (results >= 20) {
@@ -65,12 +58,13 @@ title: 20 Random Draft ICD-10-CM/PCS MS-DRGv28 codes
 			}
 		}
 		if (results === 20) {
-			$("#results").append($("<tr><td>and more...</td></tr>"));
+			html += "<tr><td>and more...</td></tr>";
 		}
+		document.getElementById("results").innerHTML = html;
 		icd10Data = shuffle(icd10Data);
-	}		
-	
-	$("#query").on("input", function(e) {
-		update()
+	}
+
+	document.getElementById("query").addEventListener("input", function(e) {
+		update();
 	});
 </script>
