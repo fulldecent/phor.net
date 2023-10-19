@@ -38,6 +38,13 @@
     "disclosure": "Disclosure: DMC is a portfolio company of AlephCrypyo, Aleph is my client. I receive no compensation as part of this interview or promotion. All opinions here are my own, and it is a great interview. English and Mandarin!"
   },
   {
+    "date": "2023-05-11",
+    "authors": ["Mason Marcobello"],
+    "publication": "CoinDesk",
+    "url": "https://www.coindesk.com/learn/what-are-eip-and-erc-and-how-are-they-connected/",
+    "title": "What Are EIP and ERC and How Are They Connected?"
+  },
+  {
     "date": "2023-04-30",
     "authors": ["NFT Horizon"],
     "publication": "NFT Horizon",
@@ -113,6 +120,13 @@
     "publication": "Drexel Magazine",
     "url": "https://drexelmagazine.org/2022/40-under-40-2022/",
     "title": "40 Under 40: 10th Anniversary"
+  },
+  {
+    "date": "2022-05-09",
+    "authors": ["Ian Allison"],
+    "publication": "CoinDesk",
+    "url": "https://www.coindesk.com/business/2022/05/09/arianee-raises-21m-to-bring-luxury-nfts-to-the-metaverse/",
+    "title": "Arianee Raises $21M to Bring Luxury NFTs to the Metaverse"
   },
   {
     "date": "2022-02-08",
@@ -200,10 +214,17 @@
   },
   {
     "date": "2021-02-23",
+    "authors": ["Joshua Mapperson"],
+    "publication": "Cointelegraph",
+    "url": "https://cointelegraph.com/news/new-report-predicts-nfts-will-explode-in-popularity-during-2021",
+    "title": "New report predicts NFTs will explode in popularity during 2021"
+  },
+  {
+    "date": "2021-02-23",
     "authors": ["Brady Dale"],
     "publication": "CoinDesk",
     "url": "https://www.coindesk.com/its-an-nft-boom-do-you-know-where-your-digital-art-lives",
-    "title": "It’s an NFT Boom. Do You Know Where Your Digital Art Lives?"
+    "title": "It's an NFT Boom. Do You Know Where Your Digital Art Lives?"
   },
   {
     "date": "2021-02-09",
@@ -365,6 +386,13 @@
     "publication": "区块链周刊 (BTWeek)",
     "url": "http://www.btweek.com/news/10217/",
     "title": "区块链不仅是技术还是原则，不应该把它概念化 (ERC-721)"
+  },
+  {
+    "date": "2018-02-16",
+    "authors": "Rachel-Rose O'Leary",
+    "publication": "CoinDesk",
+    "url": "https://www.coindesk.com/markets/2018/02/16/silent-no-more-ethereum-users-spurn-recovery-code/",
+    "title": "Silent No More: Ethereum Users Spurn Recovery Code"
   },
   {
     "date": "2018-01-01",
