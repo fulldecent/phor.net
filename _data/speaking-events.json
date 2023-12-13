@@ -1,5 +1,21 @@
 [
   {
+    "date": "2023-04-22",
+    "url": "https://bananaconf.xyz/",
+    "title": "BananaConf Tallin",
+    "coverage": [
+      "https://investinestonia.com/wp-content/uploads/events-estonia-2024.pdf",
+      "https://www.youtube.com/channel/UCFOCg1uIwXjIbB6O2UkX81g/videos"
+    ]
+  },
+  {
+    "date": "2023-04-03",
+    "url": "https://nft.nyc/",
+    "title": "NFT nyc",
+    "coverage": [
+    ]
+  },
+  {
     "date": "2023-11-07",
     "url": "https://www.regulations.gov/document/IRS-2023-0041-0001",
     "title": "Public comments for IRS Gross Proceeds and Basis Reporting by Brokers and Determination of Amount Realized and Basis for Digital Asset Transactions",
