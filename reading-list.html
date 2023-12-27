@@ -189,14 +189,15 @@ title: William Entriken, Reading List
 
 <div class="jumbotron">
   <div class="container">
-    <h1 class="display-4">Reading List</h1>
+    <h1 class="display-4">Reading list</h1>
     <p class="lead">These are books I've read and some brief commentary.</p>
     <p><em></em>Amazon links on this page include an affiliate code and I'll hopefully get paid if you click them.</em></p>
   </div>
 </div>
 
 <div class="container">
-{% for book in site.data.reading-list %}
+{% assign books = site.data.reading-list | reverse %}
+{% for book in books %}
   <h3 class="mt-3" id="{{ book.isbn | escape }}">{{ book.title | escape }}
     <a class="btn btn-sm btn-outline-primary pull-right" href="https://www.amazon.com/exec/obidos/ASIN/{{ book.isbn | escape }}/phornetandrel-20">Get on Amazon</a>
   </h3>
