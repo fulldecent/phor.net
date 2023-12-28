@@ -1,5 +1,40 @@
 [
   {
+    "date": "2024-11-30",
+    "url": "todo",
+    "title": "Slush, Helsinki (not confirmed)"
+  },
+  {
+    "date": "2024-11-12",
+    "url": "todo",
+    "title": "MoodleMoot, Mexico (not confirmed)"
+  },
+  {
+    "date": "2024-10-07",
+    "url": "todo",
+    "title": "Smashing Conf, New York (not confirmed)"
+  },
+  {
+    "date": "2024-08-13",
+    "url": "todo",
+    "title": "EduTECH Expo, Melborne (not confirmed)"
+  },
+  {
+    "date": "2024-07-24",
+    "url": "todo",
+    "title": "Palo Alto, CA"
+  },
+  {
+    "date": "2024-07-01",
+    "url": "todo",
+    "title": "Buenos Aires blockchain workshop (not confirmed)"
+  },
+  {
+    "date": "2024-06-01",
+    "url": "private",
+    "title": "China venture capital events (private)"
+  },
+  {
     "date": "2024-04-22",
     "url": "https://bananaconf.xyz/",
     "title": "BananaConf Tallinn",
@@ -7,6 +42,11 @@
       "https://investinestonia.com/wp-content/uploads/events-estonia-2024.pdf",
       "https://www.youtube.com/channel/UCFOCg1uIwXjIbB6O2UkX81g/videos"
     ]
+  },
+  {
+    "date": "2024-04-12",
+    "url": "https://www.pubcon.com/pubcon-las-vegas-2024-the-exciting-new-realities-of-search",
+    "title": "Pubcon (not confirmed)"
   },
   {
     "date": "2024-04-03",

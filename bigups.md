@@ -1,6 +1,6 @@
 ---
 layout: page
-title: #bigups
+title: "#bigups"
 ---
 
 # #bigups

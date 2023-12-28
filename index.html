@@ -296,20 +296,12 @@ MORE STUFF WHERE TO PUT THIS
 
     <h2>Press coverage</h2>
     <ul>
-{%- assign press-coverage-first = site.data.press-coverage | slice: 0, 8 -%}
-{%- assign press-coverage-rest = site.data.press-coverage | slice: 8, 999 -%}
-{% for press-coverage in press-coverage-first %}
-      <li>
-        <cite>
-          <time title="{{ press-coverage.date | date: "%Y-%m-%d" }}" datetime="{{ press-coverage.date | date: "%Y-%m-%d" }}">{{ press-coverage.date | date: "%Y" }}</time>.
-          {{ press-coverage.authors | join: ", " | escape }}.
-          {{ press-coverage.publication | escape }}.
-          <a href="{{ press-coverage.url | escape }}">{{ press-coverage.title | escape }}</a>.
-        </cite>
-      </li>
-{% endfor %}
-{% for press-coverage in press-coverage-rest %}
+{% for press-coverage in site.data.press-coverage %}
+{% if forloop.index > 5 %}
       <li class="d-none press-coverage-rest">
+{% else %}
+      <li>
+{% endif %}
         <cite>
           <time title="{{ press-coverage.date | date: "%Y-%m-%d" }}" datetime="{{ press-coverage.date | date: "%Y-%m-%d" }}">{{ press-coverage.date | date: "%Y" }}</time>.
           {{ press-coverage.authors | join: ", " | escape }}.
@@ -324,17 +316,23 @@ MORE STUFF WHERE TO PUT THIS
 
     <h2 id="speaking">Events, travel</h2>
     <p>
-      <em>I attend events to give workshops and inspire people to act, <a target="_blank" href="https://blog.phor.net/2022/04/15/My-travel-intentions.html">invite me to your event</a>.</em>
+      <em>Learn at my workshops and speeches, <a target="_blank" href="https://blog.phor.net/2022/04/15/My-travel-intentions.html">invite me to your event</a>.</em>
     </p>
 
-    <ul>
-      <li><span class="badge bg-success">Free</span> Every Tuesday. <a href="https://docs.google.com/document/d/1ta_6tSCGfC31iIfhz4bfC_oBKyNZGEdDsZkD-BRXY_Y/edit#">Community Service Hour</a> / <a class="btn btn-sm btn-secondary" href="https://calendar.google.com/calendar/ical/liurhb5cqvar2i6n6ekeanap44%40group.calendar.google.com/public/basic.ics"><i class="bi bi-calendar"></i> Add to Calendar (ICS)</a> <a class="btn btn-sm btn-secondary" href="https://calendar.google.com/calendar/embed?src=liurhb5cqvar2i6n6ekeanap44%40group.calendar.google.com&ctz=America%2FNew_York"><i class="bi bi-calendar"></i> Add to Google Calendar</a></li>
-{%- assign speaking-events-first = site.data.speaking-events | slice: 0, 8 -%}
-{%- assign speaking-events-rest = site.data.speaking-events | slice: 8, 999 -%}
-{% for speaking-event in speaking-events-first %}
+    <ul id="speaking-events">
       <li>
-        {{ speaking-event.date | escape }}.
-        <a href="{{ speaking-event.url | escape }}">{{ speaking-event.title | escape }}</a>
+        <a href="https://twitter.com/intent/tweet?text=Hello%20@fulldecent%20I%20have%20a%20question%20for%20%23CommunityServiceHour" target="_blank" class="btn btn-primary btn-sm my-1">Ask question</a>
+        Every Tuesday.
+        <a href="https://docs.google.com/document/d/1ta_6tSCGfC31iIfhz4bfC_oBKyNZGEdDsZkD-BRXY_Y/edit#">Community Service Hour</a>
+        <!-- / <a class="btn btn-sm btn-secondary" href="https://calendar.google.com/calendar/ical/liurhb5cqvar2i6n6ekeanap44%40group.calendar.google.com/public/basic.ics"><i class="bi bi-calendar"></i> Add to Calendar (ICS)</a> <a class="btn btn-sm btn-secondary" href="https://calendar.google.com/calendar/embed?src=liurhb5cqvar2i6n6ekeanap44%40group.calendar.google.com&ctz=America%2FNew_York"><i class="bi bi-calendar"></i> Add to Google Calendar</a></li>-->
+{% for speaking-event in site.data.speaking-events %}
+{% if forloop.index > 12 %}
+      <li class="d-none speaking-event-rest">
+{% else %}
+      <li>
+{% endif %}
+        <time class="speaking-event-date" datetime="{{ speaking-event.date | escape }}">{{ speaking-event.date | escape }}</time>
+        <a class="speaking-event-title" href="{{ speaking-event.url | escape }}">{{ speaking-event.title | escape }}</a>
         {% if speaking-event.coverage %}
         /
           {% for coverage in speaking-event.coverage %}
@@ -350,30 +348,6 @@ MORE STUFF WHERE TO PUT THIS
               {%- else -%}
                 <i class="bi bi-newspaper"></i>
               {%- endif -%}
-            </a>
-          {% endfor %}
-        {% endif %}        
-      </li>
-{% endfor %}
-{% for speaking-event in speaking-events-rest %}
-      <li class="d-none speaking-event-rest">
-        {{ speaking-event.date | escape }}.
-        <a href="{{ speaking-event.url | escape }}">{{ speaking-event.title | escape }}</a>
-        {% if speaking-event.coverage %}
-        /
-          {% for coverage in speaking-event.coverage %}
-            <a href="{{ coverage | escape }}">
-              {% if coverage contains "youtube" %}
-                <i class="bi bi-youtube"></i>
-              {% elsif coverage contains "youtu.be" %}
-                <i class="bi bi-youtube"></i>
-              {% elsif coverage contains "x" %}
-                <i class="bi bi-twitter-x"></i>
-              {% elsif coverage contains ".jpg" %}
-                <i class="bi bi-file-image"></i>
-              {% else %}
-                <i class="bi bi-newspaper"></i>
-              {% endif %}
             </a>
           {% endfor %}
         {% endif %}        
@@ -826,6 +800,30 @@ MORE STUFF WHERE TO PUT THIS
       var audio = new Audio('/media/pronounce.mp3');
       audio.play();
     });
+
+    // On each #speaking-event, if it's in the future add:
+    //  - "LMK you'll go" button to compose a tweet to @fulldecent with "I'll go to <title>", .speaking-event-title
+    //  - "Add to calendar" button, .speaking-event-date
+    document.querySelectorAll("#speaking-events li").forEach(el => {
+      const datetimeEl = el.querySelector(".speaking-event-date");
+      if (!datetimeEl) {
+        return;
+      }
+
+      const date = new Date(datetimeEl.attributes.datetime.value);      
+      if (date > new Date()) {
+        const title = el.querySelector(".speaking-event-title").innerHTML;
+        const tweetURL = "https://twitter.com/intent/tweet?text=I%27ll%20go%20to%20" + encodeURIComponent(title) + "%20%40fulldecent";
+        const link = document.createElement("a");
+        link.href = tweetURL;
+        link.target = "_blank";
+        link.classList.add("btn", "btn-primary", "btn-sm", "my-1");
+        link.innerHTML = "I'm going too";
+        // add link before
+        el.insertBefore(link, el.firstChild);
+      }
+    });
+    
   </script>
   <script src="https://cdn.jsdelivr.net/npm/anchor-js@4.3.1/anchor.min.js" integrity="sha256-0WMZ9PF4b2hTF66Eglv/9H5Vwk6lnOG4AbmCJxo96WQ=" crossorigin="anonymous"></script>
   <script>
