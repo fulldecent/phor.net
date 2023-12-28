@@ -13,6 +13,12 @@ title: William Entriken, portfolio
   <link href="{% link /assets/site.css %}" rel="stylesheet">
   <link href="{{ page.url | prepend: site.baseurl | prepend: site.url | escape }}" rel="canonical">
   <link type="application/rss+xml" rel="alternate" title="Community Service Hour Podcast" href="https://podcast.phor.net/feed.xml"/>
+  <style>
+    :root {
+      --bs-primary-rgb: 82, 47, 184;
+      --bs-link-color-rgb: 82, 47, 184;
+    }
+  </style>
 </head>
 <body>
 <!--
@@ -127,9 +133,12 @@ MORE STUFF WHERE TO PUT THIS
         </div>
         <div class="col-sm-10">
           <h1>William Entriken<!--, M.Fin., M.B.A. --> <i id="pronounce" title="wɪl ˈɛn.tɹɪ.kən" class="bi bi-play-btn" style="cursor: pointer;"></i></h1>
-          <p class="lead"><span class="text text-success">Mission</span>: Verify seller claims &amp; authenticity for most things you buy</p>
           <p class="lead"><i class="bi bi-globe" aria-hidden="true"></i> Philadelphia USA / 中国上海</p>
-          <p class="lead">Lead author of ERC-721 standard</p>
+          <p class="lead">
+            <a href="advisory">Blockchain advisors</a>,
+            <a href="https://hour.gg">open source</a>,
+            <a href="https://privacylog.blogspot.com/"><code>#0day</code> research</a>
+          </p>
 
           <nav class="hstack mb-3 gap-2 mt-3">
             <a class="btn btn-primary d-block d-md-none" href="./vcard.vcf" download="William Entriken.vcf"><i class="bi bi-person"></i> Add to Contacts</a>
@@ -162,12 +171,12 @@ MORE STUFF WHERE TO PUT THIS
       <h2><span style="
         background: linear-gradient(to right, #d49139 0%, #ad1919 100%);
         -webkit-background-clip: text;
-        -webkit-text-fill-color: transparent;">NFT drops</span></h2>
+        -webkit-text-fill-color: transparent;">Limited OG NFTs (2021 &amp; earlier)</span></h2>
       <div class="row">
         <div class="col-lg-3">
           <p><strong>Pixels:</strong></p>
           <div>
-            <a href="https://tenthousandsu.com" target="_blank">
+            <a href="https://tenthousandsu.com" target="_blank" title="Su Squares, the first ERC-721 NFT">
               <img src="https://tenthousandsu.com/assets/logo-su-squares.svg" alt="Su Squares" style="height: 100px; width: 100px; object-fit: contain;">
             </a>
             <p>3,000+ minted</p>
@@ -189,10 +198,16 @@ MORE STUFF WHERE TO PUT THIS
               <p>For sale 1/1</p>
             </div>
             <div class="text-center">
-              <a title="All Kindsa Media" target="_blank" href="https://foundation.app/@fulldecent/foundation/110909">
+              <a title="All Kindsa Media" target="_blank" href="https://foundation.app/@fulldecent/foundation/110909?ref=0xd859d7d8603D2dAb768D679eEEC25930C8FC59C1">
                 <img class="rounded-3" src="assets/nfts/All Kindsa Media.gif" alt="All Kindsa Media" style="height: 100px; width: 100px; object-fit: contain;">
               </a>
               <p>For sale 1/1</p>
+            </div>
+            <div class="text-center">
+              <a title="On the road to El Chalten" target="_blank" href="https://zora.co/collections/0xabEFBc9fD2F806065b4f3C237d4b59D9A97Bcac7/6377">
+                <img class="rounded-3" src="assets/nfts/On the road to El Chalten.jpg" alt="On the road to El Chalten" style="height: 100px; width: 100px; object-fit: contain;">
+              </a>
+              <p><del>Sold out</del></p>
             </div>
             <div class="text-center">
               <a title="Golden Landscape" target="_blank" href="https://mintable.app/art/item/Golden-Landscape-A-nighttime-windy-scene-of-foraging/GiBKhbmRsH_9Rp7">
@@ -206,12 +221,6 @@ MORE STUFF WHERE TO PUT THIS
               </a>
               <p>For sale 1/1</p>
             </div>
-            <div class="text-center">
-              <a title="On the road to El Chalten" target="_blank" href="https://zora.co/collections/0xabEFBc9fD2F806065b4f3C237d4b59D9A97Bcac7/6377">
-                <img class="rounded-3" src="assets/nfts/On the road to El Chalten.jpg" alt="On the road to El Chalten" style="height: 100px; width: 100px; object-fit: contain;">
-              </a>
-              <p><del>Sold</del></p>
-            </div>
           </div>
         </div>
       </div>
@@ -221,7 +230,7 @@ MORE STUFF WHERE TO PUT THIS
     <h2>Advisory services</h2>
     <p>I am the lead author of <a target="_blank" href="https://eips.ethereum.org/EIPS/eip-721">ERC-721</a>, the document that started NFTs as we know them, and its vision.</p>
     <p class="alert alert-info">
-      Contact me for free on my <a href="https://hour.gg">weekly ask-me-anything call</a> or enroll in paid <a href="advisory">advisory services</a>.
+      Get answers to your pressing NFT and blockchain questions on <a href="https://hour.gg">a free, public ask-me-anything call</a> or enroll in <a href="advisory">paid  advisory services</a>.
     </p>
 
     <div class="row row-cols-1 row-cols-md-3">
@@ -236,7 +245,7 @@ MORE STUFF WHERE TO PUT THIS
       </div>
       <div class="col mb-3">
         <p><strong>Clients</strong></p>
-        <p>My present/past clients include:
+        <p>See how clients like 
           <!-- A game company -->
           Arianee, <!-- Publicly listed on their homepage -->
           EY, <!-- Publicly listed at https://github.com/orgs/EYBlockchain/people -->
@@ -256,6 +265,7 @@ MORE STUFF WHERE TO PUT THIS
           TRON DAO, <!-- https://twitter.com/trondao/status/1544667577250611202 -->
           a hedge fund, <!-- TODO: review if I can release name -->          
           expert witness for litigation <!-- Philly based project, actually no NDA, should I say this? -->
+          have overcome challenges with my expertise.
         </p>
         <p><strong>Code reviews</strong></p>
         <p>Some typical design and code review work I have done includes:</p>
@@ -317,7 +327,7 @@ MORE STUFF WHERE TO PUT THIS
     </p>
 
     <ul>
-      <li><span class="badge bg-success">Free</span> Tuesdays at 18:00 (New York). <a href="https://docs.google.com/document/d/1ta_6tSCGfC31iIfhz4bfC_oBKyNZGEdDsZkD-BRXY_Y/edit#">Community Service Hour</a> / <a class="btn btn-sm btn-secondary" href="https://calendar.google.com/calendar/ical/liurhb5cqvar2i6n6ekeanap44%40group.calendar.google.com/public/basic.ics"><i class="bi bi-calendar"></i> Add to Calendar (ICS)</a> <a class="btn btn-sm btn-secondary" href="https://calendar.google.com/calendar/embed?src=liurhb5cqvar2i6n6ekeanap44%40group.calendar.google.com&ctz=America%2FNew_York"><i class="bi bi-calendar"></i> Add to Google Calendar</a></li>
+      <li><span class="badge bg-success">Free</span> Every Tuesday. <a href="https://docs.google.com/document/d/1ta_6tSCGfC31iIfhz4bfC_oBKyNZGEdDsZkD-BRXY_Y/edit#">Community Service Hour</a> / <a class="btn btn-sm btn-secondary" href="https://calendar.google.com/calendar/ical/liurhb5cqvar2i6n6ekeanap44%40group.calendar.google.com/public/basic.ics"><i class="bi bi-calendar"></i> Add to Calendar (ICS)</a> <a class="btn btn-sm btn-secondary" href="https://calendar.google.com/calendar/embed?src=liurhb5cqvar2i6n6ekeanap44%40group.calendar.google.com&ctz=America%2FNew_York"><i class="bi bi-calendar"></i> Add to Google Calendar</a></li>
 {%- assign speaking-events-first = site.data.speaking-events | slice: 0, 8 -%}
 {%- assign speaking-events-rest = site.data.speaking-events | slice: 8, 999 -%}
 {% for speaking-event in speaking-events-first %}
