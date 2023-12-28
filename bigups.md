@@ -9,7 +9,7 @@ These are products that I have used and can personally endorse. This is exactly 
 
 Remember back when you would read your friends' blogrolls and notes like this versus now when most people search Google for fake reviews mostly created by robots?
 
-Older #bigups https://twitter.com/search?q=(%23bigups)%20(from%3Afulldecent)&src=typed_query
+Older #bigups https://x.com/search?q=(%23bigups)%20(from%3Afulldecent)&src=typed_query
 
 I receive no compensation for any of these, and any links do not have affiliate codes.
 

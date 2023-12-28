@@ -120,7 +120,7 @@ https://opensource.guide/building-community/
 
 [A Mozilla study found that](https://docs.google.com/presentation/d/1hsJLv1ieSqtXBzd5YZusY-mB8e1VJzaeOmh8Q4VeMio/edit#slide=id.g43d857af8_0177) contributors who received code reviews within 48 hours had a much higher rate of return and repeat contribution.
 
-Conversations about your project could also be happening in other places around the internet, such as Stack Overflow, Twitter, or Reddit. You can set up notifications in some of these places so you are alerted when someone mentions your project.
+Conversations about your project could also be happening in other places around the internet, such as Stack Overflow, X, or Reddit. You can set up notifications in some of these places so you are alerted when someone mentions your project.
 
 - **Give every contributor commit access.** [@felixge](https://github.com/felixge) found that this made people [more excited to polish their patches](http://felixge.de/2013/03/11/the-pull-request-hack.html), and he even found new maintainers for projects that he hadn’t worked on in awhile.
 
