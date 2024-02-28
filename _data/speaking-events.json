@@ -1,13 +1,8 @@
 [
   {
-    "date": "2024-11-30",
-    "url": "todo",
-    "title": "Slush, Helsinki (not confirmed)"
-  },
-  {
     "date": "2024-11-12",
     "url": "todo",
-    "title": "MoodleMoot, Mexico (not confirmed)"
+    "title": "MoodleMoot, Mexico"
   },
   {
     "date": "2024-10-07",
@@ -15,19 +10,14 @@
     "title": "Smashing Conf, New York (not confirmed)"
   },
   {
-    "date": "2024-08-13",
+    "date": "2024-08-01",
     "url": "todo",
-    "title": "EduTECH Expo, Melborne (not confirmed)"
+    "title": "Buenos Aires blockchain workshop (not confirmed)"
   },
   {
     "date": "2024-07-24",
     "url": "todo",
     "title": "Palo Alto, CA"
-  },
-  {
-    "date": "2024-07-01",
-    "url": "todo",
-    "title": "Buenos Aires blockchain workshop (not confirmed)"
   },
   {
     "date": "2024-06-01",
@@ -44,16 +34,16 @@
     ]
   },
   {
-    "date": "2024-04-12",
-    "url": "https://www.pubcon.com/pubcon-las-vegas-2024-the-exciting-new-realities-of-search",
-    "title": "Pubcon (not confirmed)"
-  },
-  {
     "date": "2024-04-03",
     "url": "https://nft.nyc/",
     "title": "NFT nyc",
     "coverage": [
     ]
+  },
+  {
+    "date": "2024-03-04",
+    "url": "https://www.pubcon.com/pubcon-las-vegas-2024-the-exciting-new-realities-of-search",
+    "title": "Pubcon, Las Vegas"
   },
   {
     "date": "2023-11-07",
