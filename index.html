@@ -167,7 +167,7 @@ MORE STUFF WHERE TO PUT THIS
       <h2><span style="
         background: linear-gradient(to right, #d49139 0%, #ad1919 100%);
         -webkit-background-clip: text;
-        -webkit-text-fill-color: transparent;">Selling NFTs (2021 &amp; earlier)</span></h2>
+        -webkit-text-fill-color: transparent;">Selling NFTs (2018&ndash;2021)</span></h2>
       <div class="row">
         <div class="col-lg-3">
           <p><strong>Pixels:</strong></p>
@@ -229,7 +229,7 @@ MORE STUFF WHERE TO PUT THIS
     </div>
   </section>
   <section class="container-md py-4">
-    <h2>Advisory services</h2>
+    <h2>Open source every day</h2>
     <p>I am the lead author of <a target="_blank" href="https://eips.ethereum.org/EIPS/eip-721">ERC-721</a>, the document that started NFTs as we know them, and its vision.</p>
     <p class="alert alert-info">
       Get answers to your pressing tech and business questions on <a href="https://hour.gg">a public ask-me-anything call</a> or enroll in <a href="advisory">advisory services</a>.
@@ -318,52 +318,63 @@ MORE STUFF WHERE TO PUT THIS
       <li id="press-coverage-show-more"><span style="cursor: pointer;" class="link-primary text-decoration-underline">Show more&hellip;</span></li>
     </ul>
     <p><a href="self-portraits">Self portraits for media</a></p>
+  </section>
+  
+  <section class="bg-info">
+    <figure>
+      <img src="assets/on-stage.jpg" class="w-100" alt="On stage" style="width: 100%; mask-image: linear-gradient(to bottom, black 90%, transparent 100%);">
+      <div class="container-md">
+        <figcaption class="figure-caption">William interviewing ministry officials, Estonia, 2022</caption>
+      </div>  
+    </figure>
 
-    <h2 id="speaking">Events, travel</h2>
-    <p>
+    <div class="container-md py-4">
+      <h2 id="speaking">On stage, travel</h2>
+      <p>
       <em>Learn at my workshops and speeches, <a target="_blank" href="https://blog.phor.net/2022/04/15/My-travel-intentions.html">invite me to your event</a>.</em>
-    </p>
+      </p>
 
-    <ul id="speaking-events">
+      <ul id="speaking-events">
       <li>
         <a href="https://twitter.com/intent/tweet?text=Hello%20@fulldecent%20I%20have%20a%20question%20for%20%23CommunityServiceHour" target="_blank" class="btn btn-primary btn-sm my-1">Ask question</a>
         Every Tuesday.
         <a href="https://docs.google.com/document/d/1ta_6tSCGfC31iIfhz4bfC_oBKyNZGEdDsZkD-BRXY_Y/edit#">Community Service Hour</a>
         <!-- / <a class="btn btn-sm btn-secondary" href="https://calendar.google.com/calendar/ical/liurhb5cqvar2i6n6ekeanap44%40group.calendar.google.com/public/basic.ics"><i class="bi bi-calendar"></i> Add to Calendar (ICS)</a> <a class="btn btn-sm btn-secondary" href="https://calendar.google.com/calendar/embed?src=liurhb5cqvar2i6n6ekeanap44%40group.calendar.google.com&ctz=America%2FNew_York"><i class="bi bi-calendar"></i> Add to Google Calendar</a></li>-->
-{% for speaking-event in site.data.speaking-events %}
-{% if forloop.index > 12 %}
-      <li class="d-none speaking-event-rest">
-{% else %}
-      <li>
-{% endif %}
-        <time class="speaking-event-date" datetime="{{ speaking-event.date | escape }}">{{ speaking-event.date | escape }}</time>
-        <a class="speaking-event-title" href="{{ speaking-event.url | escape }}">{{ speaking-event.title | escape }}</a>
-        {% if speaking-event.coverage %}
-        /
-          {% for coverage in speaking-event.coverage %}
-            <a href="{{ coverage | escape }}">
-              {%- if coverage contains "youtube" -%}
-                <i class="bi bi-youtube"></i>
-              {%- elsif coverage contains "youtu.be" -%}
-                <i class="bi bi-youtube"></i>
-              {%- elsif coverage contains "x" -%}
-                <i class="bi bi-twitter-x"></i>
-              {%- elsif coverage contains ".jpg" -%}
-                <i class="bi bi-file-image"></i>
-              {%- else -%}
-                <i class="bi bi-newspaper"></i>
-              {%- endif -%}
-            </a>
-          {% endfor %}
-        {% endif %}        
-      </li>
-{% endfor %}
-      <li id="speaking-events-show-more"><span style="cursor: pointer;" class="link-primary text-decoration-underline">Show more&hellip;</span></li>
-    </ul>
-    <p class="text-muted">This work was sponsored in part by Ethereum Foundation and Microsoft.</p>
+  {% for speaking-event in site.data.speaking-events %}
+  {% if forloop.index > 12 %}
+        <li class="d-none speaking-event-rest">
+  {% else %}
+        <li>
+  {% endif %}
+          <time class="speaking-event-date" datetime="{{ speaking-event.date | escape }}">{{ speaking-event.date | escape }}</time>
+          <a class="speaking-event-title" href="{{ speaking-event.url | escape }}">{{ speaking-event.title | escape }}</a>
+          {% if speaking-event.coverage %}
+          /
+            {% for coverage in speaking-event.coverage %}
+              <a href="{{ coverage | escape }}">
+                {%- if coverage contains "youtube" -%}
+                  <i class="bi bi-youtube"></i>
+                {%- elsif coverage contains "youtu.be" -%}
+                  <i class="bi bi-youtube"></i>
+                {%- elsif coverage contains "x" -%}
+                  <i class="bi bi-twitter-x"></i>
+                {%- elsif coverage contains ".jpg" -%}
+                  <i class="bi bi-file-image"></i>
+                {%- else -%}
+                  <i class="bi bi-newspaper"></i>
+                {%- endif -%}
+              </a>
+            {% endfor %}
+          {% endif %}        
+        </li>
+  {% endfor %}
+        <li id="speaking-events-show-more"><span style="cursor: pointer;" class="link-primary text-decoration-underline">Show more&hellip;</span></li>
+      </ul>
+      <p class="text-muted">This work was sponsored in part by Ethereum Foundation and Microsoft.</p>
+    </div>
   </section>
 
-  <section class="bg-info">
+  <section class="bg-light">
     <div class="container-md py-5">
       <h2>Full product cycles</h2>
       <p>Here are some products I brought from idea to market. Includes commercial successes, open sourced that you can copy.</p>
