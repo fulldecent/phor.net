@@ -47,3 +47,9 @@
 .btn-primary:focus {
   outline: none !important;
 }
+
+abbr {
+  text-decoration: none;
+  border-bottom: 1px dotted #000;
+  cursor: help;
+}

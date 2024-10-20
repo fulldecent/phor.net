@@ -61,7 +61,7 @@ layout: null
       anchors.add();
     });
     // Activate BS5 tooltips everywhere
-    [].slice.call(document.querySelectorAll('[title]')).forEach(el => new bootstrap.Tooltip(el));
+    document.querySelectorAll('[title]').forEach(el => new bootstrap.Tooltip(el));
   </script>
 </body>
 </html>
