@@ -4,30 +4,37 @@ title: William Entriken, portfolio
 ---
 <!doctype html>
 <html lang="en">
+
 <head>
   <meta charset="utf-8">
   <title>{{ page.title | escape }}</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css" integrity="sha256-u2/YzYU5TLNn6KxY5HKS8taOsoj6Evq2jmVDCl3fzkg=" crossorigin="anonymous">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css"
+    integrity="sha256-u2/YzYU5TLNn6KxY5HKS8taOsoj6Evq2jmVDCl3fzkg=" crossorigin="anonymous">
   <link href="{% link /assets/site.css %}" rel="stylesheet">
   <link href="{{ page.url | prepend: site.baseurl | prepend: site.url | escape }}" rel="canonical">
-  <link type="application/rss+xml" rel="alternate" title="Community Service Hour Podcast" href="https://podcast.phor.net/feed.xml"/>
+  <link type="application/rss+xml" rel="alternate" title="Community Service Hour Podcast"
+    href="https://podcast.phor.net/feed.xml" />
   <style>
     :root {
       --bs-primary-rgb: 82, 47, 184;
       --bs-link-color-rgb: 82, 47, 184;
     }
+
     .gray {
       filter: grayscale(1);
     }
+
     .invert {
       filter: invert(1);
     }
   </style>
 </head>
+
 <body>
-<!--
+  <!--
 MORE STUFF WHERE TO PUT THIS
 
 - Auditing Yul and EVM
@@ -74,6 +81,10 @@ MORE STUFF WHERE TO PUT THIS
   - https://issuetracker.google.com/issues/122995598
   - https://github.com/google/libphonenumber/actions
 - https://web.archive.org/web/20010522235410/http://fulld.cjb.net/
+- Open source turnaround projects
+  - Chart.js 2
+  - Inkscape
+  - KDE
 -->
 
 
@@ -84,16 +95,20 @@ MORE STUFF WHERE TO PUT THIS
           <img class="img-fluid rounded-circle" src="images/will.jpeg" alt="William Entriken">
         </div>
         <div class="col-sm-10">
-          <h1>William Entriken<!--, M.Fin., M.B.A. --> <i id="pronounce" title="wɪl ˈɛn.tɹɪ.kən" class="bi bi-play-btn" style="cursor: pointer;"></i></h1>
+          <h1>William Entriken<!--, M.Fin., M.B.A. --> <i id="pronounce" title="wɪl ˈɛn.tɹɪ.kən" class="bi bi-play-btn"
+              style="cursor: pointer;"></i></h1>
           <p class="lead">
-            Building <strong>product</strong>, <strong>developer communities</strong> and publishing <strong>zero-day research</strong>.
+            Building <strong>product</strong>, <strong>developer communities</strong> and publishing <strong>zero-day
+              research</strong>.
           </p>
           <p class="lead">
-            Lead author of <a href="https://eips.ethereum.org/EIPS/eip-721">ERC-721</a>, the document that started NFTs as we know them.
+            Lead author of <a href="https://eips.ethereum.org/EIPS/eip-721">ERC-721</a>, the document that started NFTs
+            as we know them.
           </p>
 
           <nav class="hstack mb-3 gap-2 mt-3">
-            <a class="btn btn-primary d-block d-md-none" href="./vcard.vcf" download="William Entriken.vcf"><i class="bi bi-person"></i> Add to Contacts</a>
+            <a class="btn btn-primary d-block d-md-none" href="./vcard.vcf" download="William Entriken.vcf"><i
+                class="bi bi-person"></i> Add to Contacts</a>
 
             <!--
             <a class="btn btn-primary" href="http://phor.us9.list-manage.com/subscribe?u=8b49e10ddf197497c02ff4eae&id=e3fcfddf94&amp;MERGE1=phor.net%20homepage" title="Monthly email about NFT, my workshops and research"><i class="bi bi-bell-fill"></i> Get Email Updates</a>
@@ -104,7 +119,8 @@ MORE STUFF WHERE TO PUT THIS
             -->
 
             <!-- Button trigger modal -->
-            <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#bookACall" title="Discuss your project, find opportunities">
+            <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#bookACall"
+              title="Discuss your project, find opportunities">
               <i class="bi bi-calendar-date"></i>
               Book a call
             </button>
@@ -119,7 +135,7 @@ MORE STUFF WHERE TO PUT THIS
                   </div>
                   <div class="modal-body">
                     <!-- Show all time zones -->
-                     <!--
+                    <!--
                     <div class="row align-items-center">
                       <div class="col">
                         Timezone:
@@ -131,8 +147,10 @@ MORE STUFF WHERE TO PUT THIS
                     </div>
                     -->
                     <div class="time-options d-flex gap-3">
-                      <a href="mailto:phor@phor.net?Subject=Hello&amp;Body=Hello&amp;body=Hi%20Will%2C%0A%0AI%20came%20across%20your%20information%20and%20thought%20it%20might%20be%20worth%20getting%20in%20touch." class="book-a-call btn btn-primary">Next Monday 18:00 New York</a>
-                      <a href="mailto:phor@phor.net?Subject=Hello&amp;Body=Hello&amp;body=Hi%20Will%2C%0A%0AI%20came%20across%20your%20information%20and%20thought%20it%20might%20be%20worth%20getting%20in%20touch." class="book-a-call btn btn-primary">The following Monday 18:00 New York</a>
+                      <a href="mailto:phor@phor.net?Subject=Hello&amp;Body=Hello&amp;body=Hi%20Will%2C%0A%0AI%20came%20across%20your%20information%20and%20thought%20it%20might%20be%20worth%20getting%20in%20touch."
+                        class="book-a-call btn btn-primary">Next Monday 18:00 New York</a>
+                      <a href="mailto:phor@phor.net?Subject=Hello&amp;Body=Hello&amp;body=Hi%20Will%2C%0A%0AI%20came%20across%20your%20information%20and%20thought%20it%20might%20be%20worth%20getting%20in%20touch."
+                        class="book-a-call btn btn-primary">The following Monday 18:00 New York</a>
                     </div>
                   </div>
                 </div>
@@ -143,8 +161,11 @@ MORE STUFF WHERE TO PUT THIS
       </div>
     </div>
 
-    <svg style="width:100%; transform: rotate(180deg); height:2em; fill: #F8F9FA;" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
-      <path d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V0H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z" class="shape-fill"></path>
+    <svg style="width:100%; transform: rotate(180deg); height:2em; fill: #F8F9FA;" xmlns="http://www.w3.org/2000/svg"
+      viewBox="0 0 1200 120" preserveAspectRatio="none">
+      <path
+        d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V0H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z"
+        class="shape-fill"></path>
     </svg>
   </header>
 
@@ -154,7 +175,10 @@ MORE STUFF WHERE TO PUT THIS
       <div class="col-12 col-lg-7 order-lg-1">
         <h3>How to build a developer community?</h3>
         <p>
-          The critical step for attracting and exciting developers in your community is helping them <em>compile the code</em>. Here's the simple test: If an <abbr title="Your customer, not necessarily somebody that can write software">end user</abbr> is slightly interested, but not religious, about your project could they contribute something useful within 7 minutes?
+          The critical step for attracting and exciting developers in your community is helping them <em>compile the
+            code</em>. Here's the simple test: If an <abbr
+            title="Your customer, not necessarily somebody that can write software">end user</abbr> is slightly
+          interested, but not religious, about your project could they contribute something useful within 7 minutes?
         </p>
         <p>
           If so, great! Your project is growing!
@@ -168,20 +192,26 @@ MORE STUFF WHERE TO PUT THIS
             <li>Built the standards process for new standards</li>
             <li>Improved Solidity, the smart contracts language</li>
           </ul>
-          <p>And now today, NFTs are the primary onramp for new developers to blockchain. And it is the only legal use case in China.</p>
+          <p>And now today, NFTs are the primary onramp for new developers to blockchain. And it is the only legal use
+            case in China.</p>
           <p class="text-muted mb-0">My work was sponsored in part by Ethereum Foundation and Microsoft/GitHub.</p>
         </div>
         <p>
-          The seven-minute test is easy to say and hard to pass. 
+          The seven-minute test is easy to say and hard to pass.
         </p>
         <h3>How to make hackathons and community events</h3>
         <p>
-          Like any great party, you need a great theme. Don't pick the theme "a bunch of college kids showing up to learn about your product and do your work without pay," that's so 2010's! Instead, try "career development," "apprenticeship," "serene getaway" and nothing wrong with "performative," "experimental," or "turnt."
+          Like any great party, you need a great theme. Don't pick the theme "a bunch of college kids showing up to
+          learn about your product and do your work without pay," that's so 2010's! Instead, try "career development,"
+          "apprenticeship," "serene getaway" and nothing wrong with "performative," "experimental," or "turnt."
         </p>
 
-        <p>I build communities for technology events and products. This includes hackathons like the <a href="https://www.instagram.com/p/Ck7eOAoodpC/">TRON DAO Hackatron</a> and exciting, interactive workshops to explain what is NFT/blockchain.</p>
+        <p>I build communities for technology events and products. This includes hackathons like the <a
+            href="https://www.instagram.com/p/Ck7eOAoodpC/">TRON DAO Hackatron</a> and exciting, interactive workshops
+          to explain what is NFT/blockchain.</p>
         <p>Usually these events are public, see <a href="#speaking">some past appearances</a>.</p>
-        <p>Here is a paid promotional video I did for <a href="https://www.youtube.com/watch?v=8mMCT7rQBe0">TRON vs. Ethereum</a>.</p>
+        <p>Here is a paid promotional video I did for <a href="https://www.youtube.com/watch?v=8mMCT7rQBe0">TRON vs.
+            Ethereum</a>.</p>
       </div>
       <div class="col-12 col-lg-5 order-lg-0">
         <a href="https://www.instagram.com/p/Ck7eOAoodpC/" class="mb-3 d-block">
@@ -190,18 +220,20 @@ MORE STUFF WHERE TO PUT THIS
         <div class="row row-cols-2 mb-3">
           <div class="col">
             <a href="https://x.com/JulianneSloane/status/997511136315674624/photo/1">
-              <img class="img-fluid" src="assets/communities/julianne.jpg" alt="Julianne Flesher @ DLT Education workshop">
+              <img class="img-fluid" src="assets/communities/julianne.jpg"
+                alt="Julianne Flesher @ DLT Education workshop">
             </a>
           </div>
           <div class="col">
             <a href="https://x.com/DheerajValluru/status/1591534435375382528">
-              <img class="img-fluid" src="assets/communities/demarcus.jpg" alt="Demarcus Madelon @ Harvard hacker house">
+              <img class="img-fluid" src="assets/communities/demarcus.jpg"
+                alt="Demarcus Madelon @ Harvard hacker house">
             </a>
           </div>
         </div>
       </div>
 
-      
+
     </div>
 
   </section>
@@ -210,15 +242,24 @@ MORE STUFF WHERE TO PUT THIS
       <h3>Client list</h3>
       <p><em>(With permission)</em></p>
       <div class="d-flex gray gap-3 flex-wrap mb-4">
-        <img src="assets/client-logos/airbus.svg" title="Airbus A3" alt="Airbus A³" class="img-fluid" style="max-height: 2rem;">
-        <img src="assets/client-logos/tron-dao.svg" title="TRON DAO" alt="TRON DAO" class="img-fluid" style="max-height: 2rem;">
-        <img src="assets/client-logos/arianee.svg" title="Arianee" alt="Arianee" class="img-fluid" style="max-height: 2rem;">
-        <img src="assets/client-logos/ey.svg" title="EY, formerly Ernst & Young" alt="EY" class="img-fluid" style="max-height: 2rem;">
-        <img src="assets/client-logos/dream-syndicate.svg" title="Dream Syndicate" alt="Dream Syndicate" class="img-fluid" style="max-height: 2rem;">
-        <img src="assets/client-logos/treasure.svg" title="Treasure, formerly TreasureDAO" alt="TreasureDAO" class="img-fluid invert" style="max-height: 2rem;">
-        <img src="assets/client-logos/aleph-crypto-fund.png" title="Aleph Crypto Fund" alt="Aleph Crypto Fund" class="img-fluid" style="max-height: 2rem;">
-        <img src="assets/client-logos/nftnyc.svg" title="NFT.nyc" alt="NFT.nyc" class="img-fluid" style="max-height: 2rem;">
-        <img src="assets/client-logos/banana-conf.png" title="BananaConf, formerly BananaCorp, NFTTallinn, ETH Tallinn" alt="BananaConf" class="img-fluid" style="max-height: 2rem;">
+        <img src="assets/client-logos/airbus.svg" title="Airbus A3" alt="Airbus A³" class="img-fluid"
+          style="max-height: 2rem;">
+        <img src="assets/client-logos/tron-dao.svg" title="TRON DAO" alt="TRON DAO" class="img-fluid"
+          style="max-height: 2rem;">
+        <img src="assets/client-logos/arianee.svg" title="Arianee" alt="Arianee" class="img-fluid"
+          style="max-height: 2rem;">
+        <img src="assets/client-logos/ey.svg" title="EY, formerly Ernst & Young" alt="EY" class="img-fluid"
+          style="max-height: 2rem;">
+        <img src="assets/client-logos/dream-syndicate.svg" title="Dream Syndicate" alt="Dream Syndicate"
+          class="img-fluid" style="max-height: 2rem;">
+        <img src="assets/client-logos/treasure.svg" title="Treasure, formerly TreasureDAO" alt="TreasureDAO"
+          class="img-fluid invert" style="max-height: 2rem;">
+        <img src="assets/client-logos/aleph-crypto-fund.png" title="Aleph Crypto Fund" alt="Aleph Crypto Fund"
+          class="img-fluid" style="max-height: 2rem;">
+        <img src="assets/client-logos/nftnyc.svg" title="NFT.nyc" alt="NFT.nyc" class="img-fluid"
+          style="max-height: 2rem;">
+        <img src="assets/client-logos/banana-conf.png" title="BananaConf, formerly BananaCorp, NFTTallinn, ETH Tallinn"
+          alt="BananaConf" class="img-fluid" style="max-height: 2rem;">
       </div>
       <p class="d-none">
         <!-- Publicly listed at https://github.com/orgs/EYBlockchain/people -->
@@ -232,19 +273,20 @@ MORE STUFF WHERE TO PUT THIS
         <!-- 0xcert NOT ACTIVE // Publicly listed at from their homepage, get Wayback link -->
         <!-- Entree One, NOT ACTIVE // Publicly listed at from their homepage -->
         <!-- CattleProof, NOT ACTIVE // -->
-        Lucid Sight (MLB Champions), <!-- Permission to post at https://mail.google.com/mail/u/0/#search/lucid+sight/KtbxLwgVWZfxpbQJKCmHrpnTGCKcBjgFCg-->
+        Lucid Sight (MLB Champions),
+        <!-- Permission to post at https://mail.google.com/mail/u/0/#search/lucid+sight/KtbxLwgVWZfxpbQJKCmHrpnTGCKcBjgFCg-->
         Dream Syndicate (Rawlings NFT), <!-- Permission from Howard on 2022-08-04 phone call -->
         a checkout processor in the sports/events industry, <!-- NDA expires 2022-01-04 plus 5 years -->
         TreasureDAO,
         Nebula Revelation, <!-- Publicly listed me at https://whitepaper.nebularevelation.com -->
         Aleph Crypto Fund, <!-- Publicly listed at https://alephcrypto.xyz/ -->
-        a hedge fund, <!-- TODO: review if I can release name -->          
+        a hedge fund, <!-- TODO: review if I can release name -->
         expert witness for investor lawsuit <!-- Philly based project, actually no NDA, should I say this? -->
         BananaConf, <!-- No NDA -->
         NFT.nyc, <!-- No NDA -->
         Fog Works, <!-- Mentioned publicly on X Spaces -->
         Namefi.io, <!-- Mentioned publicly on X Spaces -->
-        Kred, 
+        Kred,
         EPIK Prime,
         DLT.education,
         GenoBank.io,
@@ -255,13 +297,20 @@ MORE STUFF WHERE TO PUT THIS
 
       <h4>Client brand projects</h4>
       <div class="d-flex gray gap-3 flex-wrap">
-        <img src="assets/client-logos/xbox.svg" title="Microsoft Xbox" alt="Xbox" class="img-fluid" style="max-height: 2rem;">
-        <img src="assets/client-logos/breitling.svg" title="Breitling, a fine watch brand" alt="Breitling" class="img-fluid" style="max-height: 2rem;">
-        <img src="assets/client-logos/lacoste.svg" title="Lacoste clothing" alt="Lacoste" class="img-fluid" style="max-height: 2rem;">
-        <img src="assets/client-logos/merck-animal-health.svg" title="Merck Animal Health" alt="Merck Animal Health" class="img-fluid" style="max-height: 2rem;">
-        <img src="assets/client-logos/moncler.svg" title="Moncler" alt="Moncler" class="img-fluid" style="max-height: 2rem;">
-        <img src="assets/client-logos/quintana-roo.png" title="The government of Quintana Roo, Mexico" alt="Quintana Roo" class="img-fluid" style="max-height: 2rem;">
-        <img src="assets/client-logos/somos.jpg" title="SOMOS Ancestria ancestry testing" alt="SOMOS Ancestria" class="img-fluid" style="max-height: 2rem;">
+        <img src="assets/client-logos/xbox.svg" title="Microsoft Xbox" alt="Xbox" class="img-fluid"
+          style="max-height: 2rem;">
+        <img src="assets/client-logos/breitling.svg" title="Breitling, a fine watch brand" alt="Breitling"
+          class="img-fluid" style="max-height: 2rem;">
+        <img src="assets/client-logos/lacoste.svg" title="Lacoste clothing" alt="Lacoste" class="img-fluid"
+          style="max-height: 2rem;">
+        <img src="assets/client-logos/merck-animal-health.svg" title="Merck Animal Health" alt="Merck Animal Health"
+          class="img-fluid" style="max-height: 2rem;">
+        <img src="assets/client-logos/moncler.svg" title="Moncler" alt="Moncler" class="img-fluid"
+          style="max-height: 2rem;">
+        <img src="assets/client-logos/quintana-roo.png" title="The government of Quintana Roo, Mexico"
+          alt="Quintana Roo" class="img-fluid" style="max-height: 2rem;">
+        <img src="assets/client-logos/somos.jpg" title="SOMOS Ancestria ancestry testing" alt="SOMOS Ancestria"
+          class="img-fluid" style="max-height: 2rem;">
       </div>
     </div>
 
@@ -281,7 +330,8 @@ MORE STUFF WHERE TO PUT THIS
               <h3 class="card-title">💪 Building yourself?</h3>
               <p class="display-5">1 hr/week</p>
               <p>Public X Space call</p>
-              <p>Do open source every week with me on the <a href="https://hour.gg">Community Service Hour</a> live call and podcast.</p>
+              <p>Do open source every week with me on the <a href="https://hour.gg">Community Service Hour</a> live call
+                and podcast.</p>
               <hr>
               <ul class="list-unstyled">
                 <li class="mb-2 d-flex align-items-start">
@@ -317,7 +367,8 @@ MORE STUFF WHERE TO PUT THIS
               <h3 class="card-title">🚀 Building a company?</h3>
               <p class="display-5">2+ hrs/week</p>
               <p>Private call advisory</p>
-              <p>I work with promising projects to launch their creator community. See my <a href="advisory">advisory services</a>.</p>
+              <p>I work with promising projects to launch their creator community. See my <a href="advisory">advisory
+                  services</a>.</p>
               <hr>
               <ul class="list-unstyled">
                 <li class="mb-2 d-flex align-items-start">
@@ -358,117 +409,140 @@ MORE STUFF WHERE TO PUT THIS
       <div class="row row-cols-3 row-cols-lg-6">
         <figure class="col">
           <a href="https://www.youtube.com/watch?v=tJ-xaTTsZfo">
-            <img src="assets/speeches/2021-11-01-nft-nyc-nft-10-year-plan.jpg" class="img-fluid rounded" alt="NFT NYC 10 year plan">
+            <img src="assets/speeches/2021-11-01-nft-nyc-nft-10-year-plan.jpg" class="img-fluid rounded"
+              alt="NFT NYC 10 year plan">
           </a>
-          <figcaption class="figure-caption"><strong>NFT 10-year plan</strong> <span class="d-none d-md-inline">gives the three phases of NFTs: tech artists, traditional artists, physical products</span></figcaption>
+          <figcaption class="figure-caption"><strong>NFT 10-year plan</strong> <span class="d-none d-md-inline">gives
+              the three phases of NFTs: tech artists, traditional artists, physical products</span></figcaption>
         </figure>
         <figure class="col">
           <a href="https://www.youtube.com/watch?v=z8bzQHV5cvY&list=PL9oQ7yETvN11Ju0MTJ8yJ6dPYzNpW3_fn&index=18">
-            <img src="assets/speeches/2022-04-19-emerging-technologies-for-the-enterprise-architecture-design-for-blockchain-projects.jpg" class="img-fluid rounded" alt="Emerging Technologies for the Enterprise">
+            <img
+              src="assets/speeches/2022-04-19-emerging-technologies-for-the-enterprise-architecture-design-for-blockchain-projects.jpg"
+              class="img-fluid rounded" alt="Emerging Technologies for the Enterprise">
           </a>
-          <figcaption class="figure-caption"><strong>Architecture design for blockchain projects</strong> <span class="d-none d-md-inline">is a blueprint for scaling your blockchain project and its infrastructure</span></figcaption>
+          <figcaption class="figure-caption"><strong>Architecture design for blockchain projects</strong> <span
+              class="d-none d-md-inline">is a blueprint for scaling your blockchain project and its
+              infrastructure</span></figcaption>
         </figure>
         <figure class="col">
           <a href="https://www.youtube.com/watch?v=oYUB_ALbW3Y">
-            <img src="assets/speeches/2023-04-12-desci-nyc-funding-science-research.jpg" class="img-fluid rounded" alt="Funding science research">
+            <img src="assets/speeches/2023-04-12-desci-nyc-funding-science-research.jpg" class="img-fluid rounded"
+              alt="Funding science research">
           </a>
-          <figcaption class="figure-caption"><strong>Funding science research</strong> <span class="d-none d-md-inline">inspired from the the first data DAO in the 1900s</span></figcaption>
+          <figcaption class="figure-caption"><strong>Funding science research</strong> <span
+              class="d-none d-md-inline">inspired from the the first data DAO in the 1900s</span></figcaption>
         </figure>
         <figure class="col">
           <a href="https://www.youtube.com/watch?v=7LoMoqltRzM">
-            <img src="assets/speeches/2024-04-22-bananaconf-how-does-the-estonian-regulatory-climate-differ-from-the-rest-of-the-world.jpg" class="img-fluid rounded" alt="Estonian regulatory climate">
+            <img
+              src="assets/speeches/2024-04-22-bananaconf-how-does-the-estonian-regulatory-climate-differ-from-the-rest-of-the-world.jpg"
+              class="img-fluid rounded" alt="Estonian regulatory climate">
           </a>
-          <figcaption class="figure-caption"><strong>Baltic regulatory climate</strong><span class="d-none d-md-inline">, and the end of money laundering</span></figcaption>
+          <figcaption class="figure-caption"><strong>Baltic regulatory climate</strong><span
+              class="d-none d-md-inline">, and the end of money laundering</span></figcaption>
         </figure>
         <figure class="col">
           <a href="https://youtu.be/cQ1QOLGJPIw">
-            <img src="assets/speeches/2023-05-09-nft-tallinn-innovation-in-estonia-and-leading-eu.jpg" class="img-fluid rounded" alt="Innovation in Estonia and leading EU">
+            <img src="assets/speeches/2023-05-09-nft-tallinn-innovation-in-estonia-and-leading-eu.jpg"
+              class="img-fluid rounded" alt="Innovation in Estonia and leading EU">
           </a>
-          <figcaption class="figure-caption"><strong>Innovation in Estonia and leading EU</strong><span class="d-none d-md-inline">, how this one country has successfully deployed online voting, citizen services all using decentralized systems</span></figcaption>
+          <figcaption class="figure-caption"><strong>Innovation in Estonia and leading EU</strong><span
+              class="d-none d-md-inline">, how this one country has successfully deployed online voting, citizen
+              services all using decentralized systems</span></figcaption>
         </figure>
         <figure class="col">
           <a href="https://twitter.com/bledstratforum/status/1039482666024947712">
             <img src="assets/project-images/bled2019-1.jpg" class="img-fluid rounded" alt="Bled Strategic Forum">
           </a>
-          <figcaption class="figure-caption"><strong>Initiatives in the Balkans</strong><span class="d-none d-md-inline">, and the future of government transparency</span></figcaption>
+          <figcaption class="figure-caption"><strong>Initiatives in the Balkans</strong><span
+              class="d-none d-md-inline">, and the future of government transparency</span></figcaption>
         </figure>
-      </div>            
+      </div>
 
       <ul id="speaking-events">
         <li>
           <div class="alert alert-warning" role="alert">
-            Invite me to your next event. <a href="https://blog.phor.net/travel-intentions" class="btn btn-primary">Invite</a>
+            Invite me to your next event. <a href="https://blog.phor.net/travel-intentions"
+              class="btn btn-primary">Invite</a>
         </li>
-      <li>
-        <!--
+        <li>
+          <!--
         <a href="https://twitter.com/intent/tweet?text=Hello%20@fulldecent%20I%20have%20a%20question%20for%20%23CommunityServiceHour" target="_blank" class="btn btn-primary btn-sm my-1">Ask question</a>
       -->
-        Every Tuesday.
-        <a href="https://docs.google.com/document/d/1ta_6tSCGfC31iIfhz4bfC_oBKyNZGEdDsZkD-BRXY_Y/edit#">Community Service Hour</a>
-        <!-- / <a class="btn btn-sm btn-secondary" href="https://calendar.google.com/calendar/ical/liurhb5cqvar2i6n6ekeanap44%40group.calendar.google.com/public/basic.ics"><i class="bi bi-calendar"></i> Add to Calendar (ICS)</a> <a class="btn btn-sm btn-secondary" href="https://calendar.google.com/calendar/embed?src=liurhb5cqvar2i6n6ekeanap44%40group.calendar.google.com&ctz=America%2FNew_York"><i class="bi bi-calendar"></i> Add to Google Calendar</a></li>-->
-  {% for speaking-event in site.data.speaking-events %}
-  {% if forloop.index > 12 %}
+          Every Tuesday.
+          <a href="https://docs.google.com/document/d/1ta_6tSCGfC31iIfhz4bfC_oBKyNZGEdDsZkD-BRXY_Y/edit#">Community
+            Service Hour</a>
+          <!-- / <a class="btn btn-sm btn-secondary" href="https://calendar.google.com/calendar/ical/liurhb5cqvar2i6n6ekeanap44%40group.calendar.google.com/public/basic.ics"><i class="bi bi-calendar"></i> Add to Calendar (ICS)</a> <a class="btn btn-sm btn-secondary" href="https://calendar.google.com/calendar/embed?src=liurhb5cqvar2i6n6ekeanap44%40group.calendar.google.com&ctz=America%2FNew_York"><i class="bi bi-calendar"></i> Add to Google Calendar</a></li>-->
+          {% for speaking-event in site.data.speaking-events %}
+          {% if forloop.index > 12 %}
         <li class="d-none speaking-event-rest">
-  {% else %}
+          {% else %}
         <li>
-  {% endif %}
-          <time class="speaking-event-date" datetime="{{ speaking-event.date | escape }}">{{ speaking-event.date | escape }}</time>
-          <a class="speaking-event-title" href="{{ speaking-event.url | escape }}">{{ speaking-event.title | escape }}</a>
+          {% endif %}
+          <time class="speaking-event-date" datetime="{{ speaking-event.date | escape }}">{{ speaking-event.date |
+            escape }}</time>
+          <a class="speaking-event-title" href="{{ speaking-event.url | escape }}">{{ speaking-event.title | escape
+            }}</a>
           {% if speaking-event.coverage %}
           /
-            {% for coverage in speaking-event.coverage %}
-              <a href="{{ coverage | escape }}">
-                {%- if coverage contains "youtube" -%}
-                  <i class="bi bi-youtube"></i>
-                {%- elsif coverage contains "youtu.be" -%}
-                  <i class="bi bi-youtube"></i>
-                {%- elsif coverage contains "x" -%}
-                  <i class="bi bi-twitter-x"></i>
-                {%- elsif coverage contains ".jpg" -%}
-                  <i class="bi bi-file-image"></i>
-                {%- else -%}
-                  <i class="bi bi-newspaper"></i>
-                {%- endif -%}
-              </a>
-            {% endfor %}
-          {% endif %}        
+          {% for coverage in speaking-event.coverage %}
+          <a href="{{ coverage | escape }}">
+            {%- if coverage contains "youtube" -%}
+            <i class="bi bi-youtube"></i>
+            {%- elsif coverage contains "youtu.be" -%}
+            <i class="bi bi-youtube"></i>
+            {%- elsif coverage contains "x" -%}
+            <i class="bi bi-twitter-x"></i>
+            {%- elsif coverage contains ".jpg" -%}
+            <i class="bi bi-file-image"></i>
+            {%- else -%}
+            <i class="bi bi-newspaper"></i>
+            {%- endif -%}
+          </a>
+          {% endfor %}
+          {% endif %}
         </li>
-  {% endfor %}
-        <li id="speaking-events-show-more"><span style="cursor: pointer;" class="link-primary text-decoration-underline">Show more&hellip;</span></li>
+        {% endfor %}
+        <li id="speaking-events-show-more"><span style="cursor: pointer;"
+            class="link-primary text-decoration-underline">Show more&hellip;</span></li>
       </ul>
       <p class="text-muted">This work was sponsored in part by Ethereum Foundation and Microsoft.</p>
     </div>
 
     <figure>
-      <img src="assets/on-stage.jpg" class="w-100" alt="On stage" style="width: 100%; mask-image: linear-gradient(to bottom, black 90%, transparent 100%);">
+      <img src="assets/on-stage.jpg" class="w-100" alt="On stage"
+        style="width: 100%; mask-image: linear-gradient(to bottom, black 90%, transparent 100%);">
       <div class="container-md">
         <figcaption class="figure-caption">William interviewing ministry officials, Estonia, 2022</caption>
-      </div>  
+      </div>
     </figure>
   </section>
 
   <section class="container-md py-4">
     <h2>Press coverage</h2>
     <ul>
-  {% for press-coverage in site.data.press-coverage %}
-  {% if forloop.index > 5 %}
+      {% for press-coverage in site.data.press-coverage %}
+      {% if forloop.index > 5 %}
       <li class="d-none press-coverage-rest">
-  {% else %}
+        {% else %}
       <li>
-  {% endif %}
+        {% endif %}
         <cite>
-          <time title="{{ press-coverage.date | date: "%Y-%m-%d" }}" datetime="{{ press-coverage.date | date: "%Y-%m-%d" }}">{{ press-coverage.date | date: "%Y" }}</time>.
+          <time title="{{ press-coverage.date | date: " %Y-%m-%d" }}" datetime="{{ press-coverage.date | date: "
+            %Y-%m-%d" }}">{{ press-coverage.date | date: "%Y" }}</time>.
           {{ press-coverage.authors | join: ", " | escape }}.
           {{ press-coverage.publication | escape }}.
           <a href="{{ press-coverage.url | escape }}">{{ press-coverage.title | escape }}</a>.
         </cite>
       </li>
-  {% endfor %}
-      <li id="press-coverage-show-more"><span style="cursor: pointer;" class="link-primary text-decoration-underline">Show more&hellip;</span></li>
+      {% endfor %}
+      <li id="press-coverage-show-more"><span style="cursor: pointer;"
+          class="link-primary text-decoration-underline">Show more&hellip;</span></li>
     </ul>
     <p><a href="self-portraits">Self portraits for media</a></p>
   </section>
-  
+
 
   <section class="bg-light">
     <div class="container-md py-5">
@@ -484,7 +558,8 @@ MORE STUFF WHERE TO PUT THIS
             </div>
             <div class="card-body">
               <p class="card-text">
-                <a href="https://fogworks.io"><strong>Foggie</strong></a> is a backup device that comes in pairs. All your files, always backed up, to two places.
+                <a href="https://fogworks.io"><strong>Foggie</strong></a> is a backup device that comes in pairs. All
+                your files, always backed up, to two places.
               </p>
               <p class="card-text">
                 <small>
@@ -498,16 +573,19 @@ MORE STUFF WHERE TO PUT THIS
           <div class="card">
             <div class="card-body text-center">
               <a href="https://apps.phor.net/19q/">
-                <img style="max-height: 10rem; color:black" class="rounded" src="images/19q.svg" alt="19 Questions machine learning game">
+                <img style="max-height: 10rem; color:black" class="rounded" src="images/19q.svg"
+                  alt="19 Questions machine learning game">
               </a>
             </div>
             <div class="card-body">
               <p class="card-text">
-                <a href="https://apps.phor.net/19q/"><strong>19 Questions</strong></a> is a machine learning game that asks you questions about the world.
+                <a href="https://apps.phor.net/19q/"><strong>19 Questions</strong></a> is a machine learning game that
+                asks you questions about the world.
               </p>
               <p class="card-text">
                 <small>
-                  <a class="badge bg-info" target="_blank" href="https://github.com/fulldecent/19-questions">open source</a>
+                  <a class="badge bg-info" target="_blank" href="https://github.com/fulldecent/19-questions">open
+                    source</a>
                   <span class="badge bg-secondary">bayesian statistics</span>
                 </small>
               </p>
@@ -518,16 +596,21 @@ MORE STUFF WHERE TO PUT THIS
           <div class="card">
             <div class="card-body text-center">
               <a href="https://www.amazon.ca/William-Entriken/e/B091JWDTRW/ref=dp_byline_cont_pop_book_2">
-                <img style="max-height:10rem; " class="rounded img-fluid" src="assets/project-images/nineteen-eighty-five.jpg" alt="Nineteen Eighty-Five">
+                <img style="max-height:10rem; " class="rounded img-fluid"
+                  src="assets/project-images/nineteen-eighty-five.jpg" alt="Nineteen Eighty-Five">
               </a>
             </div>
             <div class="card-body">
               <p class="card-text">
-                <a href="https://kdp.amazon.com/amazon-dp-action/ca/dualbookshelf.marketplacelink/B091DWSM5J"><strong>Nineteen Eighty-Five</strong></a> is a modern printing of the classic George Orwell book. Orwell’s protagonist battles with his own incriminating <strong>#searchhistory</strong>, the prying eye of the <strong>Social Justice Warriors</strong> watching him through his <strong>smart device</strong>&hellip;
+                <a href="https://kdp.amazon.com/amazon-dp-action/ca/dualbookshelf.marketplacelink/B091DWSM5J"><strong>Nineteen
+                    Eighty-Five</strong></a> is a modern printing of the classic George Orwell book. Orwell’s
+                protagonist battles with his own incriminating <strong>#searchhistory</strong>, the prying eye of the
+                <strong>Social Justice Warriors</strong> watching him through his <strong>smart device</strong>&hellip;
               </p>
               <p class="card-text text-muted">
                 <small>
-                  <a class="badge bg-info" target="_blank" href="https://github.com/fulldecent/Nineteen-Eighty-Five">open source</a>
+                  <a class="badge bg-info" target="_blank"
+                    href="https://github.com/fulldecent/Nineteen-Eighty-Five">open source</a>
                   <span class="badge bg-secondary">Amazon KDP</span>
                 </small>
               </p>
@@ -538,17 +621,22 @@ MORE STUFF WHERE TO PUT THIS
           <div class="card">
             <div class="card-body text-center">
               <a href="https://apps.phor.net/septa/">
-                <img style="max-height:10rem; " class="rounded img-fluid" src="images/septa.png" alt="SEPTA rail schedules">
+                <img style="max-height:10rem; " class="rounded img-fluid" src="images/septa.png"
+                  alt="SEPTA rail schedules">
               </a>
             </div>
             <div class="card-body">
               <p class="card-text">
-                <a href="https://apps.phor.net/septa/"><strong>SEPTA OTP</strong></a> is my recommended changes to Philadelphia rail schedules which the transit authority has incorporated. It also documents late trains, which you can use to excuse work lateness.
+                <a href="https://apps.phor.net/septa/"><strong>SEPTA OTP</strong></a> is my recommended changes to
+                Philadelphia rail schedules which the transit authority has incorporated. It also documents late trains,
+                which you can use to excuse work lateness.
               </p>
               <p class="card-text text-muted">
                 <small>
-                  <a class="badge bg-info" target="_blank" href="https://github.com/fulldecent/septa-regionalrail-otp">open source</a>
-                  <a class="badge bg-info" target="_blank" href="https://patents.google.com/patent/US20200317242A1/en?q=transit+scheduling&inventor=Entriken&oq=Entriken+transit+scheduling">patent</a>
+                  <a class="badge bg-info" target="_blank"
+                    href="https://github.com/fulldecent/septa-regionalrail-otp">open source</a>
+                  <a class="badge bg-info" target="_blank"
+                    href="https://patents.google.com/patent/US20200317242A1/en?q=transit+scheduling&inventor=Entriken&oq=Entriken+transit+scheduling">patent</a>
                 </small>
               </p>
             </div>
@@ -558,17 +646,21 @@ MORE STUFF WHERE TO PUT THIS
           <div class="card">
             <div class="card-body text-center">
               <a href="https://itunes.apple.com/us/app/whos-the-impostor/id784258202?mt=8">
-                <img style="max-height:10rem; " class="rounded img-fluid" src="images/impostor.png" alt="Who's the Impostor">
+                <img style="max-height:10rem; " class="rounded img-fluid" src="images/impostor.png"
+                  alt="Who's the Impostor">
               </a>
             </div>
             <div class="card-body">
               <p class="card-text">
-                <a href="https://itunes.apple.com/us/app/whos-the-impostor/id784258202?mt=8"><strong>Who's the Impostor (谁是卧底)</strong></a> is a party word game for 3&ndash;12 players. Ranked in top 100 charts for MX, CN, RU.
+                <a href="https://itunes.apple.com/us/app/whos-the-impostor/id784258202?mt=8"><strong>Who's the Impostor
+                    (谁是卧底)</strong></a> is a party word game for 3&ndash;12 players. Ranked in top 100 charts for MX,
+                CN, RU.
               </p>
               <p class="card-text text-muted">
                 <small>
                   <a class="badge bg-info" target="_blank" href="https://github.com/fulldecent/impostor">open source</a>
-                  <a class="badge bg-info" target="_blank" href="https://itunes.apple.com/us/app/whos-the-impostor/id784258202?mt=8">iOS</a>
+                  <a class="badge bg-info" target="_blank"
+                    href="https://itunes.apple.com/us/app/whos-the-impostor/id784258202?mt=8">iOS</a>
                 </small>
               </p>
             </div>
@@ -583,7 +675,8 @@ MORE STUFF WHERE TO PUT THIS
             </div>
             <div class="card-body">
               <p class="card-text">
-                <a href="https://light.art"><strong>Light.art NFT drop</strong></a> is a series of NFTs published by high-profile professional photographers. Sold out for 100 Ether in hours.
+                <a href="https://light.art"><strong>Light.art NFT drop</strong></a> is a series of NFTs published by
+                high-profile professional photographers. Sold out for 100 Ether in hours.
               </p>
               <p class="card-text text-muted">
                 <small>
@@ -602,12 +695,14 @@ MORE STUFF WHERE TO PUT THIS
             </div>
             <div class="card-body">
               <p class="card-text">
-                <a href="https://learnwithecho.com"><strong>Echo</strong></a> lets you hear yourself and native speakers to improve pronunciation. This helps with language practice, speech pathology and accent reduction.
+                <a href="https://learnwithecho.com"><strong>Echo</strong></a> lets you hear yourself and native speakers
+                to improve pronunciation. This helps with language practice, speech pathology and accent reduction.
               </p>
               <p class="card-text text-muted">
                 <small>
                   <a class="badge bg-info" target="_blank" href="https://github.com/fulldecent/echo">open source</a>
-                  <a class="badge bg-info" target="_blank" href="http://itunes.apple.com/us/app/echo-learning/id558585608?ls=1&mt=8">iOS</a>
+                  <a class="badge bg-info" target="_blank"
+                    href="http://itunes.apple.com/us/app/echo-learning/id558585608?ls=1&mt=8">iOS</a>
                 </small>
               </p>
             </div>
@@ -617,18 +712,22 @@ MORE STUFF WHERE TO PUT THIS
           <div class="card">
             <div class="card-body text-center">
               <a href="https://genobank.io/products/">
-                <img style="max-height:10rem; " class="rounded img-fluid" src="images/genobank-conversion-kit.jpg" alt="DNA privacy kit">
+                <img style="max-height:10rem; " class="rounded img-fluid" src="images/genobank-conversion-kit.jpg"
+                  alt="DNA privacy kit">
               </a>
             </div>
             <div class="card-body">
               <p class="card-text">
-                <a href="https://genobank.io/products/"><strong>23andMe privacy kit</strong></a> by GenoBank anonymizes your DNA collection using physical shuffling and end-to-end encryption.
+                <a href="https://genobank.io/products/"><strong>23andMe privacy kit</strong></a> by GenoBank anonymizes
+                your DNA collection using physical shuffling and end-to-end encryption.
               </p>
               <p class="card-text text-muted">
                 <small>
                   <a class="badge bg-info" target="_blank" href="https://github.com/genobank">open source</a>
                   <a class="badge bg-info" target="_blank" href="https://www.yuhanzhangdesign.com">packaging design</a>
-                  <a class="badge bg-info" target="_blank" href="https://rinkeby.etherscan.io/address/0xcfe0161f1b24cbca200cb4cdd3028fb048ed4b6f">Ethereum Rinkeby</a>
+                  <a class="badge bg-info" target="_blank"
+                    href="https://rinkeby.etherscan.io/address/0xcfe0161f1b24cbca200cb4cdd3028fb048ed4b6f">Ethereum
+                    Rinkeby</a>
                 </small>
               </p>
             </div>
@@ -638,17 +737,23 @@ MORE STUFF WHERE TO PUT THIS
           <div class="card">
             <div class="card-body text-center">
               <a href="https://github.com/fulldecent/formant-analyzer">
-              <img style="max-height:10rem; " class="rounded img-fluid" src="images/formant-analyzer.png" alt="Formant Analyzer">
+                <img style="max-height:10rem; " class="rounded img-fluid" src="images/formant-analyzer.png"
+                  alt="Formant Analyzer">
               </a>
             </div>
             <div class="card-body">
               <p class="card-text">
-                <a href="https://itunes.apple.com/us/app/formant-analyzer/id799183655?mt=8&uo=4&at=11l6hc&ct=fnd"><strong>Formant Analyzer</strong></a> helped my wife improve vowel pronunciation (born in China living in USA) and is useful for speech pathologists.</p>
+                <a href="https://itunes.apple.com/us/app/formant-analyzer/id799183655?mt=8&uo=4&at=11l6hc&ct=fnd"><strong>Formant
+                    Analyzer</strong></a> helped my wife improve vowel pronunciation (born in China living in USA) and
+                is useful for speech pathologists.
+              </p>
               </p>
               <p class="card-text text-muted">
                 <small>
-                  <a class="badge bg-info" target="_blank" href="https://github.com/fulldecent/formant-analyzer">open source</a>
-                  <a class="badge bg-info" target="_blank" href="https://itunes.apple.com/us/app/formant-analyzer/id799183655?mt=8&uo=4&at=11l6hc&ct=fnd">iOS</a>
+                  <a class="badge bg-info" target="_blank" href="https://github.com/fulldecent/formant-analyzer">open
+                    source</a>
+                  <a class="badge bg-info" target="_blank"
+                    href="https://itunes.apple.com/us/app/formant-analyzer/id799183655?mt=8&uo=4&at=11l6hc&ct=fnd">iOS</a>
                 </small>
               </p>
             </div>
@@ -658,17 +763,21 @@ MORE STUFF WHERE TO PUT THIS
           <div class="card">
             <div class="card-body text-center">
               <a href="https://tenthousandsu.com">
-              <img style="max-height:10rem; " class="rounded img-fluid" src="https://tenthousandsu.com/assets/logo-su-squares.svg" alt="Su Squares">
+                <img style="max-height:10rem; " class="rounded img-fluid"
+                  src="https://tenthousandsu.com/assets/logo-su-squares.svg" alt="Su Squares">
               </a>
             </div>
             <div class="card-body">
               <p class="card-text">
-                <a href="https://tenthousandsu.com/"><strong>Su Squares</strong></a> is the first NFT using the ERC-721 standard. This ushered in an era of new applications and enormous media coverage.</p>
+                <a href="https://tenthousandsu.com/"><strong>Su Squares</strong></a> is the first NFT using the ERC-721
+                standard. This ushered in an era of new applications and enormous media coverage.
+              </p>
               </p>
               <p class="card-text text-muted">
                 <small>
                   <a class="badge bg-info" target="_blank" href="https://github.com/su-squares/">open source</a>
-                  <a class="badge bg-info" target="_blank" href="https://etherscan.io/address/0xE9e3F9cfc1A64DFca53614a0182CFAD56c10624F">Ethereum Mainnet</a>
+                  <a class="badge bg-info" target="_blank"
+                    href="https://etherscan.io/address/0xE9e3F9cfc1A64DFca53614a0182CFAD56c10624F">Ethereum Mainnet</a>
                 </small>
               </p>
             </div>
@@ -678,12 +787,16 @@ MORE STUFF WHERE TO PUT THIS
           <div class="card">
             <div class="card-body text-center">
               <a href="https://scribeschool.net/">
-                <img style="max-height:10rem; height:10rem" class="rounded img-fluid" src="images/pmt.svg" alt="PMT Scribe Academy">
+                <img style="max-height:10rem; height:10rem" class="rounded img-fluid" src="images/pmt.svg"
+                  alt="PMT Scribe Academy">
               </a>
             </div>
             <div class="card-body">
               <p class="card-text">
-                <a href="https://scribeschool.net/"><strong>Scribe Academy</strong></a> is one of several online training program launched through Pacific Medical Training and accredited through American Medical Association.</p>
+                <a href="https://scribeschool.net/"><strong>Scribe Academy</strong></a> is one of several online
+                training program launched through Pacific Medical Training and accredited through American Medical
+                Association.
+              </p>
               </p>
             </div>
           </div>
@@ -697,11 +810,13 @@ MORE STUFF WHERE TO PUT THIS
             </div>
             <div class="card-body">
               <p class="card-text">
-                <a href="https://www.gamesmagazine-online.com/"><strong>Anasquare</strong></a> is a word puzzle published nationally in GAMES magazine.
+                <a href="https://www.gamesmagazine-online.com/"><strong>Anasquare</strong></a> is a word puzzle
+                published nationally in GAMES magazine.
               </p>
               <p class="card-text text-muted">
                 <small>
-                  <a class="badge bg-info" target="_blank" href="https://github.com/fulldecent/anasquare-generator">open source</a>
+                  <a class="badge bg-info" target="_blank" href="https://github.com/fulldecent/anasquare-generator">open
+                    source</a>
                 </small>
               </p>
             </div>
@@ -711,18 +826,23 @@ MORE STUFF WHERE TO PUT THIS
           <div class="card">
             <div class="card-body text-center">
               <a href="https://github.com/fulldecent/system-bus-radio">
-                <img style="max-height:10rem; height:10rem" class="rounded img-fluid" src="images/system-bus-radio.png" alt="System Bus Radio">
+                <img style="max-height:10rem; height:10rem" class="rounded img-fluid" src="images/system-bus-radio.png"
+                  alt="System Bus Radio">
               </a>
             </div>
             <div class="card-body">
               <p class="card-text">
-                <a href="https://github.com/fulldecent/system-bus-radio"><strong>System Bus Radio</strong></a> implements an AM radio on computers and phones that do not have radio transmitting hardware. Unclassified implementation of TEMPEST data exfiltration.</p>
+                <a href="https://github.com/fulldecent/system-bus-radio"><strong>System Bus Radio</strong></a>
+                implements an AM radio on computers and phones that do not have radio transmitting hardware.
+                Unclassified implementation of TEMPEST data exfiltration.
+              </p>
               </p>
               <p class="card-text text-muted">
                 <small>
-                  <a class="badge bg-info" target="_blank" href="https://github.com/fulldecent/system-bus-radio">open source</a>
+                  <a class="badge bg-info" target="_blank" href="https://github.com/fulldecent/system-bus-radio">open
+                    source</a>
                 </small>
-              </p>                
+              </p>
             </div>
           </div>
         </div>
@@ -737,12 +857,19 @@ MORE STUFF WHERE TO PUT THIS
           <div class="col">
             <p>Math</p>
             <ul>
-              <li><a href="https://tromp.github.io/chess/chess.html">Chess research with John Tromp</a> -- I am interested in parallel, exhaustive-search problems, this is one effort in that direction, <a href="https://groups.google.com/forum/#!topic/rec.games.chess.computer/vmvI0ePH2kI">Google Groups post</a></li>
-              <li><a href="https://fulldecent.blogspot.com/2009/12/interesting-properties-of-entropy.html">Original research on the entropy function</a> -- demonstrating a new, iterative way to calculate entropy, and necessary for my 19q game. Related: <a href="https://en.wikipedia.org/wiki/Perplexity">https://en.wikipedia.org/wiki/Perplexity</a></li>
+              <li><a href="https://tromp.github.io/chess/chess.html">Chess research with John Tromp</a> -- I am
+                interested in parallel, exhaustive-search problems, this is one effort in that direction, <a
+                  href="https://groups.google.com/forum/#!topic/rec.games.chess.computer/vmvI0ePH2kI">Google Groups
+                  post</a></li>
+              <li><a href="https://fulldecent.blogspot.com/2009/12/interesting-properties-of-entropy.html">Original
+                  research on the entropy function</a> -- demonstrating a new, iterative way to calculate entropy, and
+                necessary for my 19q game. Related: <a
+                  href="https://en.wikipedia.org/wiki/Perplexity">https://en.wikipedia.org/wiki/Perplexity</a></li>
             </ul>
             <p>Active projects you can join</p>
             <ul>
-              <li>I am active <a href="https://github.com/fulldecent">on GitHub</a>, let's do something awesome together, also on SO and Kaggle</li>
+              <li>I am active <a href="https://github.com/fulldecent">on GitHub</a>, let's do something awesome
+                together, also on SO and Kaggle</li>
               <li><a href="https://kde.org/">KDE contributor and webadmin (commit access to homepage)</a></li>
             </ul>
             <p>Photography</p>
@@ -753,40 +880,71 @@ MORE STUFF WHERE TO PUT THIS
           <div class="col">
             <p>Things I made that you can buy:</p>
             <ul>
-              <li><span class="badge badge-info">iOS</span> <a href="https://itunes.apple.com/us/app/2017-patent-bar-exam-study-prep-and-pass/id994868838">US Patent Bar Study</a> -- a tool for students studying for the patent bar exam</li>
+              <li><span class="badge badge-info">iOS</span> <a
+                  href="https://itunes.apple.com/us/app/2017-patent-bar-exam-study-prep-and-pass/id994868838">US Patent
+                  Bar Study</a> -- a tool for students studying for the patent bar exam</li>
               <li>
                 Observance&mdash;my first published guitar song
-                <a class="badge bg-secondary" target="_blank" href="https://itunes.apple.com/us/artist/will-entriken/id389914879">iTunes Music</a>
-                <a class="badge bg-secondary" target="_blank" href="https://open.spotify.com/track/09X5ClB6xTVzY8befFsyHZ">Spotify</a>
+                <a class="badge bg-secondary" target="_blank"
+                  href="https://itunes.apple.com/us/artist/will-entriken/id389914879">iTunes Music</a>
+                <a class="badge bg-secondary" target="_blank"
+                  href="https://open.spotify.com/track/09X5ClB6xTVzY8befFsyHZ">Spotify</a>
               </li>
             </ul>
             <p>More music:</p>
             <ul>
-              <li><a href="https://phor.net/media/Only.mp3">Only</a> (and <a href="https://www.youtube.com/watch?v=xWy4BfZKXsI">music video</a>)-- my award winning remix of Nine Inch Nails's song. I was a winner in <a href="https://web.archive.org/web/20060822171442/http://wysp.com/home.php">WYSP's First NIN Remix content (2005)</a> and got to meet the band. My track was runner up and the other guy was published on NIN's next album.</li>
-              <li><a href="https://phor.net/media/Air.m4a">Air</a> the first track my wife and I made together. Based on Air by Dzeko &amp; Torres.</li>
+              <li><a href="https://phor.net/media/Only.mp3">Only</a> (and <a
+                  href="https://www.youtube.com/watch?v=xWy4BfZKXsI">music video</a>)-- my award winning remix of Nine
+                Inch Nails's song. I was a winner in <a
+                  href="https://web.archive.org/web/20060822171442/http://wysp.com/home.php">WYSP's First NIN Remix
+                  content (2005)</a> and got to meet the band. My track was runner up and the other guy was published on
+                NIN's next album.</li>
+              <li><a href="https://phor.net/media/Air.m4a">Air</a> the first track my wife and I made together. Based on
+                Air by Dzeko &amp; Torres.</li>
             </ul>
             <p>Civic projects:</p>
             <ul>
               <li>
-                <strong>EMCCC, PA</strong> Eastern Montgomery County Chamber of Commerce, PA, co-chair government affairs committee board. We work with local, state and federal government representatives to connect local businesses with elected officials.
+                <strong>EMCCC, PA</strong> Eastern Montgomery County Chamber of Commerce, PA, co-chair government
+                affairs committee board. We work with local, state and federal government representatives to connect
+                local businesses with elected officials.
               </li>
               <li>
-                <strong>SEPTA rail scheduling</strong> I consult with SEPTA to help set their rail schedules. Also, I independently measure On-Time Performance of all SEPTA trains. If you are ever late for work because of a late train, <a href="https://apps.phor.net/septa/">use my website</a> as proof so you have an excuse. <a target="_blank" href="https://patents.google.com/patent/US20200317242A1/en?q=transit+scheduling&inventor=Entriken&oq=Entriken+transit+scheduling">Patent application</a>.
+                <strong>SEPTA rail scheduling</strong> I consult with SEPTA to help set their rail schedules. Also, I
+                independently measure On-Time Performance of all SEPTA trains. If you are ever late for work because of
+                a late train, <a href="https://apps.phor.net/septa/">use my website</a> as proof so you have an excuse.
+                <a target="_blank"
+                  href="https://patents.google.com/patent/US20200317242A1/en?q=transit+scheduling&inventor=Entriken&oq=Entriken+transit+scheduling">Patent
+                  application</a>.
               </li>
               <li>
-                <strong>Philadelphia Traffic Court</strong> Philadelphia Traffic Court made national headlines throughout 2014 as its offices were raided by the FBI and 9 current and former judges face indictments on 77 counts. I successfully petitioned the Philadelphia government to <a href="https://github.com/fulldecent/philadelphia-traffic-court-rtk/blob/master/README.md">make public their entire database of traffic violations</a>. Now lawyers use it to appeal old tickets and some people have used the data to find evidence of wrongdoing.
+                <strong>Philadelphia Traffic Court</strong> Philadelphia Traffic Court made national headlines
+                throughout 2014 as its offices were raided by the FBI and 9 current and former judges face indictments
+                on 77 counts. I successfully petitioned the Philadelphia government to <a
+                  href="https://github.com/fulldecent/philadelphia-traffic-court-rtk/blob/master/README.md">make public
+                  their entire database of traffic violations</a>. Now lawyers use it to appeal old tickets and some
+                people have used the data to find evidence of wrongdoing.
               </li>
             </ul>
           </div>
           <div class="col">
             <p>Contributions / big projects</p>
             <ul>
-              <li>Code.mil&mdash; This project helps the US Department of Defense share more computer science projects with the public by helping its project managers set code release policies.</p></li>
-              <li>Git &mdash; (2013) <a href="https://github.com/git/git/commit/75bf5e60e8c09075af1e4cd0d68a6d73fdf92c42">fixed</a> a <a href="http://git.661346.n2.nabble.com/PATCH-submodule-update-when-using-recursion-show-full-path-td7578351.html">recursion bug</a> for submodules</li>
+              <li>Code.mil&mdash; This project helps the US Department of Defense share more computer science projects
+                with the public by helping its project managers set code release policies.</p>
+              </li>
+              <li>Git &mdash; (2013) <a
+                  href="https://github.com/git/git/commit/75bf5e60e8c09075af1e4cd0d68a6d73fdf92c42">fixed</a> a <a
+                  href="http://git.661346.n2.nabble.com/PATCH-submodule-update-when-using-recursion-show-full-path-td7578351.html">recursion
+                  bug</a> for submodules</li>
               <li>Linux kernel v2.2 &mdash; (1999) fixed Realtek ethernet driver</li>
-              <li>KDE &mdash; (2006) I used to lead http://cia.vc/ as a top committer in 2006 when I worked extensively on KDE, see also <a href="https://developers.google.com/open-source/gsoc/2006/?csw=1#kde">Google page on my contributions</a></li>
+              <li>KDE &mdash; (2006) I used to lead http://cia.vc/ as a top committer in 2006 when I worked extensively
+                on KDE, see also <a href="https://developers.google.com/open-source/gsoc/2006/?csw=1#kde">Google page on
+                  my contributions</a></li>
               <li><a href="https://jekyllrb.com/news/2015/10/26/jekyll-3-0-released/">Jekyll 3.0 contributor</a></li>
-              <li>Archive.org &mdash; (2006) collection of <a href="https://archive.org/details/2006-AIM-IMChaos-WebShots-Collecting">collection of AOL Instant Messenger, IMChaos, WebShots</a></li>
+              <li>Archive.org &mdash; (2006) collection of <a
+                  href="https://archive.org/details/2006-AIM-IMChaos-WebShots-Collecting">collection of AOL Instant
+                  Messenger, IMChaos, WebShots</a></li>
             </ul>
           </div>
         </div>
@@ -803,13 +961,32 @@ MORE STUFF WHERE TO PUT THIS
           <p><strong>Code reviews / smart contract audits</strong></p>
           <p>Some typical design and code review work I have done includes:</p>
           <ul>
-            <li><a target="_blank" href="https://github.com/ghoul-sol/treasure-staking/issues/69">Bridgeworld Harvesters contract review</a> <a href="assets/project-images/code-review-ghoul-sol_treasure-staking.pdf"><i class="bi bi-file-pdf"></i></a></li>
-            <li><a target="_blank" href="https://github.com/TreasureProject/treasure-marketplace-contracts/issues/74">Trove Marketplace contract review</a> <a href="assets/project-images/code-review-treasureproject_treasure-marketplace-contracts-trove.pdf"><i class="bi bi-file-pdf"></i></a></li>
-            <li><a target="_blank" href="https://github.com/ghoul-sol/treasure-marketplace/issues/25">Treasure Marketplace emergency review after hack</a> <a href="assets/project-images/code-review-treasureproject_treasure-marketplace-contracts-treasure.pdf"><i class="bi bi-file-pdf"></i></a></li>
-            <li><a target="_blank" href="https://github.com/search?q=org%3AArianee+author%3Afulldecent&type=Issues">Informal audit of Arianee</a> <a href="assets/project-images/code-review-ghoul-sol_treasure-staking.pdf"><i class="bi bi-file-pdf"></i></a></li>
-            <li><a target="_blank" href="https://github.com/aionnetwork/AVM/issues/created_by/fulldecent">Review of Aion Network</a> <a href="assets/project-images/code-review-aionnetwork_avm.pdf"><i class="bi bi-file-pdf"></i></a></li>
-            <li><a target="_blank" href="https://github.com/erasureprotocol/erasure-protocol/pull/253#pullrequestreview-318470827">Contract review of Erasure Bay</a> <a href="assets/project-images/code-review-erasureprotocol_erasure.pdf"><i class="bi bi-file-pdf"></i></a></li>
-            <li><a target="_blank" href="https://ethereum-magicians.org/t/eip-615-subroutines-and-static-jumps-for-the-evm-last-call/3472/3">Review of EIP-615 (DRAFT) proposal</a></li>
+            <li><a target="_blank" href="https://github.com/ghoul-sol/treasure-staking/issues/69">Bridgeworld Harvesters
+                contract review</a> <a href="assets/project-images/code-review-ghoul-sol_treasure-staking.pdf"><i
+                  class="bi bi-file-pdf"></i></a></li>
+            <li><a target="_blank"
+                href="https://github.com/TreasureProject/treasure-marketplace-contracts/issues/74">Trove Marketplace
+                contract review</a> <a
+                href="assets/project-images/code-review-treasureproject_treasure-marketplace-contracts-trove.pdf"><i
+                  class="bi bi-file-pdf"></i></a></li>
+            <li><a target="_blank" href="https://github.com/ghoul-sol/treasure-marketplace/issues/25">Treasure
+                Marketplace emergency review after hack</a> <a
+                href="assets/project-images/code-review-treasureproject_treasure-marketplace-contracts-treasure.pdf"><i
+                  class="bi bi-file-pdf"></i></a></li>
+            <li><a target="_blank"
+                href="https://github.com/search?q=org%3AArianee+author%3Afulldecent&type=Issues">Informal audit of
+                Arianee</a> <a href="assets/project-images/code-review-ghoul-sol_treasure-staking.pdf"><i
+                  class="bi bi-file-pdf"></i></a></li>
+            <li><a target="_blank" href="https://github.com/aionnetwork/AVM/issues/created_by/fulldecent">Review of Aion
+                Network</a> <a href="assets/project-images/code-review-aionnetwork_avm.pdf"><i
+                  class="bi bi-file-pdf"></i></a></li>
+            <li><a target="_blank"
+                href="https://github.com/erasureprotocol/erasure-protocol/pull/253#pullrequestreview-318470827">Contract
+                review of Erasure Bay</a> <a href="assets/project-images/code-review-erasureprotocol_erasure.pdf"><i
+                  class="bi bi-file-pdf"></i></a></li>
+            <li><a target="_blank"
+                href="https://ethereum-magicians.org/t/eip-615-subroutines-and-static-jumps-for-the-evm-last-call/3472/3">Review
+                of EIP-615 (DRAFT) proposal</a></li>
             <!--
             <li><a target="_blank" href="https://github.com/fulldecent/freescout-sidebar-webhook/pull/11">Review of PHP module to FreeScout</a></li>
             <li><a target="_blank" href="https://github.com/0xcert/framework/pull/522#pullrequestreview-266658697">0xcert 2.0 gateway contract</a> <a href="assets/project-images/code-review-0xcert_framework.pdf"><i class="bi bi-file-pdf"></i></a></li>
@@ -821,14 +998,24 @@ MORE STUFF WHERE TO PUT THIS
           <p><strong>Published</strong></p>
           <ul>
             <li>
-              With Apple, Inc: <a href="https://support.apple.com/en-us/HT201536">Apple leaking private customer information over insecure HTTP</a>
+              With Apple, Inc: <a href="https://support.apple.com/en-us/HT201536">Apple leaking private customer
+                information over insecure HTTP</a>
             </li>
             <li>
-              With the <abbr title="US Federal Bureau of Investigation">FBI</abbr>, <abbr title="Financial Industry Regulatory Authority">FINRA</abbr>, <abbr title="US National Computer Forensics Training Alliance">NCFTA</abbr>: <a href="https://privacylog.blogspot.com/2017/04/what-happens-when-you-send-zero-day-to.html">Trading stocks in other people's accounts on Zecco</a>
+              With the <abbr title="US Federal Bureau of Investigation">FBI</abbr>, <abbr
+                title="Financial Industry Regulatory Authority">FINRA</abbr>, <abbr
+                title="US National Computer Forensics Training Alliance">NCFTA</abbr>: <a
+                href="https://privacylog.blogspot.com/2017/04/what-happens-when-you-send-zero-day-to.html">Trading
+                stocks in other people's accounts on Zecco</a>
             </li>
-            <li><a target="_blank" href="https://privacylog.blogspot.com/2021/05/github-pages-zero-day-with-wildcard.html">GitHub Pages: anyone can publish to your site</a> <span class="badge bg-info">live</span></li>
+            <li><a target="_blank"
+                href="https://privacylog.blogspot.com/2021/05/github-pages-zero-day-with-wildcard.html">GitHub Pages:
+                anyone can publish to your site</a> <span class="badge bg-info">live</span></li>
             </li>
-            <li><a target="_blank" href="https://nvd.nist.gov/vuln/detail/CVE-2019-20809">CVE-2019-20809</a>: <a target="_blank" href="https://privacylog.blogspot.com/2019/10/compound-finance-zero-day-prices-can.html">Compound Finance: prices can move faster than advertised</a></li>
+            <li><a target="_blank" href="https://nvd.nist.gov/vuln/detail/CVE-2019-20809">CVE-2019-20809</a>: <a
+                target="_blank"
+                href="https://privacylog.blogspot.com/2019/10/compound-finance-zero-day-prices-can.html">Compound
+                Finance: prices can move faster than advertised</a></li>
             <li><a href="#press-coverage">More press coverage&hellip;</a></li>
           </ul>
           <p>
@@ -838,13 +1025,14 @@ MORE STUFF WHERE TO PUT THIS
         </div>
         <div class="col mb-3">
           <p><strong>White paper review and business planning</strong></p>
-          <p>Including technical and business review. Weekly cadence with CEO and CTO working on execution. See <a href="advisory">achieved outcomes</a> on my advisory page.</p>
+          <p>Including technical and business review. Weekly cadence with CEO and CTO working on execution. See <a
+              href="advisory">achieved outcomes</a> on my advisory page.</p>
           <p><em>Open source every week. For yourself, for your career, and for fun!</em></p>
         </div>
       </div>
     </div>
 
-    
+
   </section>
   <section>
     <div class="container-md my-5">
@@ -884,54 +1072,73 @@ MORE STUFF WHERE TO PUT THIS
         <div class="col-lg-3">
           <p><strong>Pixels:</strong></p>
           <div>
-            <a href="https://tenthousandsu.com" target="_blank" title="Su Squares, the first ERC-721 NFT, w/ Su Entriken">
-              <img src="https://tenthousandsu.com/assets/logo-su-squares.svg" alt="Su Squares" style="height: 100px; width: 100px; object-fit: contain;">
+            <a href="https://tenthousandsu.com" target="_blank"
+              title="Su Squares, the first ERC-721 NFT, w/ Su Entriken">
+              <img src="https://tenthousandsu.com/assets/logo-su-squares.svg" alt="Su Squares"
+                style="height: 100px; width: 100px; object-fit: contain;">
             </a>
             <p>3,000+ minted</p>
-          </div>          
+          </div>
         </div>
         <div class="col">
           <p><strong>Art (all 1 of 1):</strong></p>
           <div class="hstack gap-3 flex-wrap">
             <div class="text-center">
-              <a title="NFT HYPEMAN × WILLIAM ENTRIKEN" target="_blank" href="https://rarible.com/token/0xF6793dA657495ffeFF9Ee6350824910Abc21356C:109311712358823457578622280509458864447004054068294590227262744976292923310081?tab=bids">
-                <img class="rounded-3" src="assets/nfts/NHM.jpg" alt="NFT HYPEMAN × WILLIAM ENTRIKEN" style="height: 100px; width: 100px; object-fit: contain;">
+              <a title="NFT HYPEMAN × WILLIAM ENTRIKEN" target="_blank"
+                href="https://rarible.com/token/0xF6793dA657495ffeFF9Ee6350824910Abc21356C:109311712358823457578622280509458864447004054068294590227262744976292923310081?tab=bids">
+                <img class="rounded-3" src="assets/nfts/NHM.jpg" alt="NFT HYPEMAN × WILLIAM ENTRIKEN"
+                  style="height: 100px; width: 100px; object-fit: contain;">
               </a>
               <p>0.4 ETH</p>
             </div>
             <div class="text-center">
-              <a title="Genesis: Commemorating the First ERC-721 NFT" target="_blank" href="https://rarible.com/token/0x60f80121c31a0d46b5279700f9df786054aa5ee5:580921?tab=overview">
-                <img class="rounded-3" src="assets/nfts/Genesis.png" alt="Genesis: Commemorating the First ERC-721 NFT" style="height: 100px; width: 100px; object-fit: contain;">
+              <a title="Genesis: Commemorating the First ERC-721 NFT" target="_blank"
+                href="https://rarible.com/token/0x60f80121c31a0d46b5279700f9df786054aa5ee5:580921?tab=overview">
+                <img class="rounded-3" src="assets/nfts/Genesis.png" alt="Genesis: Commemorating the First ERC-721 NFT"
+                  style="height: 100px; width: 100px; object-fit: contain;">
               </a>
-              <p><del>Sold 15 ETH</del</p>
+              <p><del>Sold 15 ETH</del< /p>
             </div>
             <div class="text-center">
-              <a title="The Birth of an Idea w/ @conwellsclub" target="_blank" href="https://www.mintbase.io/thing/NUK-NZC8sGkLLMiY9_G54aXUwFI8Ss-KeK1G6Zyk_H0:nftcollab.mintbase1.near">
-                <img class="rounded-3" src="assets/nfts/The Birth of an Idea.jpg" alt="The Birth of an Idea w/ @conwellsclub" style="height: 100px; width: 100px; object-fit: contain;">
+              <a title="The Birth of an Idea w/ @conwellsclub" target="_blank"
+                href="https://www.mintbase.io/thing/NUK-NZC8sGkLLMiY9_G54aXUwFI8Ss-KeK1G6Zyk_H0:nftcollab.mintbase1.near">
+                <img class="rounded-3" src="assets/nfts/The Birth of an Idea.jpg"
+                  alt="The Birth of an Idea w/ @conwellsclub" style="height: 100px; width: 100px; object-fit: contain;">
               </a>
               <p>1,000 NEAR</p>
             </div>
             <div class="text-center">
-              <a title="All Kindsa Media w/ Julio Slim, Indigo Cowherd, Will Gaines" target="_blank" href="https://foundation.app/@fulldecent/foundation/110909?ref=0xd859d7d8603D2dAb768D679eEEC25930C8FC59C1">
-                <img class="rounded-3" src="assets/nfts/All Kindsa Media.gif" alt="All Kindsa Media w/ Julio Slim, Indigo Cowherd, Will Gaines" style="height: 100px; width: 100px; object-fit: contain;">
+              <a title="All Kindsa Media w/ Julio Slim, Indigo Cowherd, Will Gaines" target="_blank"
+                href="https://foundation.app/@fulldecent/foundation/110909?ref=0xd859d7d8603D2dAb768D679eEEC25930C8FC59C1">
+                <img class="rounded-3" src="assets/nfts/All Kindsa Media.gif"
+                  alt="All Kindsa Media w/ Julio Slim, Indigo Cowherd, Will Gaines"
+                  style="height: 100px; width: 100px; object-fit: contain;">
               </a>
               <p>1 ETH</p>
             </div>
             <div class="text-center">
-              <a title="On the road to El Chalten w/ Elia Locardi" target="_blank" href="https://zora.co/collections/0xabEFBc9fD2F806065b4f3C237d4b59D9A97Bcac7/6377">
-                <img class="rounded-3" src="assets/nfts/On the road to El Chalten.jpg" alt="On the road to El Chalten w/ Elia Locardi" style="height: 100px; width: 100px; object-fit: contain;">
+              <a title="On the road to El Chalten w/ Elia Locardi" target="_blank"
+                href="https://zora.co/collections/0xabEFBc9fD2F806065b4f3C237d4b59D9A97Bcac7/6377">
+                <img class="rounded-3" src="assets/nfts/On the road to El Chalten.jpg"
+                  alt="On the road to El Chalten w/ Elia Locardi"
+                  style="height: 100px; width: 100px; object-fit: contain;">
               </a>
               <p><del>Sold 0.1 ETH</del></p>
             </div>
             <div class="text-center">
-              <a title="Golden Landscape w/ Heidi von Son de Fernex" target="_blank" href="https://mintable.app/art/item/Golden-Landscape-A-nighttime-windy-scene-of-foraging/GiBKhbmRsH_9Rp7">
-                <img class="rounded-3" src="assets/nfts/Golden Landscape.jpg" alt="Golden Landscape w/ Heidi von Son de Fernex" style="height: 100px; width: 100px; object-fit: contain;">
+              <a title="Golden Landscape w/ Heidi von Son de Fernex" target="_blank"
+                href="https://mintable.app/art/item/Golden-Landscape-A-nighttime-windy-scene-of-foraging/GiBKhbmRsH_9Rp7">
+                <img class="rounded-3" src="assets/nfts/Golden Landscape.jpg"
+                  alt="Golden Landscape w/ Heidi von Son de Fernex"
+                  style="height: 100px; width: 100px; object-fit: contain;">
               </a>
               <p>0.1 ETH</p>
             </div>
             <div class="text-center">
-              <a title="Ella's Dreams w/ VjDeliria" target="_blank" href="https://opensea.io/assets/matic/0x2953399124f0cbb46d2cbacd8a89cf0599974963/97858314391699003502907348387324178864992602497446540910380188335690836082689/">
-                <img class="rounded-3" src="assets/nfts/Ella's Dreams.gif" alt="Ella's Dreams w/ VjDeliria" style="height: 100px; width: 100px; object-fit: contain;">
+              <a title="Ella's Dreams w/ VjDeliria" target="_blank"
+                href="https://opensea.io/assets/matic/0x2953399124f0cbb46d2cbacd8a89cf0599974963/97858314391699003502907348387324178864992602497446540910380188335690836082689/">
+                <img class="rounded-3" src="assets/nfts/Ella's Dreams.gif" alt="Ella's Dreams w/ VjDeliria"
+                  style="height: 100px; width: 100px; object-fit: contain;">
               </a>
               <p>1 ETH</p>
             </div>
@@ -946,8 +1153,10 @@ MORE STUFF WHERE TO PUT THIS
       <h2>Call to action</h2>
       <p class="lead">Thanks for your interest, now let's talk about you.</p>
       <p>
-        <a href="mailto:phor@phor.net?Subject=Hello&amp;Body=Hello&amp;body=Hi%20Will%2C%0A%0AI%20came%20across%20your%20information%20and%20thought%20it%20might%20be%20worth%20getting%20in%20touch." class="btn btn-lg btn-info">Email me</a>
-        <a title="For all my European friends!" href="https://www.linkedin.com/in/fulldecent" class="btn btn-lg btn-secondary">Connect on LinkedIn</a>
+        <a href="mailto:phor@phor.net?Subject=Hello&amp;Body=Hello&amp;body=Hi%20Will%2C%0A%0AI%20came%20across%20your%20information%20and%20thought%20it%20might%20be%20worth%20getting%20in%20touch."
+          class="btn btn-lg btn-info">Email me</a>
+        <a title="For all my European friends!" href="https://www.linkedin.com/in/fulldecent"
+          class="btn btn-lg btn-secondary">Connect on LinkedIn</a>
         <a href="https://x.com/fulldecent" class="btn btn-lg btn-secondary">Stalk on X</a>
         <a href="./assets/postcard-address.pdf" class="btn btn-link">Mailing address</a>
         <a href="https://hour.gg" class="btn btn-link">Weekly AMA</a>
@@ -963,55 +1172,81 @@ MORE STUFF WHERE TO PUT THIS
         <div class="col-md">
           <h6>Discuss</h6>
           <ul class="list-inline float-start">
-            <li class="list-inline-item"><a title="DMs are open" class="link-light" target="_blank" href="https://x.com/fulldecent">X</a></li>
-            <li class="list-inline-item"><a title="欢迎迷信" class="link-light" target="_blank" href="weixin://contacts/profile/858772059">微信</a></li>
-            <li class="list-inline-item"><a title="Primarily for people I meet at events in Europe" class="link-light" target="_blank" href="https://www.linkedin.com/in/fulldecent">LinkedIn</a></li>
+            <li class="list-inline-item"><a title="DMs are open" class="link-light" target="_blank"
+                href="https://x.com/fulldecent">X</a></li>
+            <li class="list-inline-item"><a title="欢迎迷信" class="link-light" target="_blank"
+                href="weixin://contacts/profile/858772059">微信</a></li>
+            <li class="list-inline-item"><a title="Primarily for people I meet at events in Europe" class="link-light"
+                target="_blank" href="https://www.linkedin.com/in/fulldecent">LinkedIn</a></li>
           </ul>
         </div>
         <div class="col-md">
           <h6>Read</h6>
           <ul class="list-inline float-start">
-            <li class="list-inline-item"><a title="Monthly posts about product development, tech industry" class="link-light" target="_blank" href="https://blog.phor.net">Blog</a></li>
-            <li class="list-inline-item"><a title="Clips from weekly call with creators" class="link-light" target="_blank" href="https://www.tiktok.com/@fulldecent">TikTok</a></li>
-            <li class="list-inline-item"><a title="关于新时代科技" class="link-light" target="_blank" href="https://v.douyin.com/iF2k8E1p/ 1@9.com">抖音</a></li>
-            <li class="list-inline-item"><a title="15 minutes a week building your career" class="link-light" target="_blank" href="https://www.youtube.com/@fulldecent">YouTube</a></li>
+            <li class="list-inline-item"><a title="Monthly posts about product development, tech industry"
+                class="link-light" target="_blank" href="https://blog.phor.net">Blog</a></li>
+            <li class="list-inline-item"><a title="Clips from weekly call with creators" class="link-light"
+                target="_blank" href="https://www.tiktok.com/@fulldecent">TikTok</a></li>
+            <li class="list-inline-item"><a title="关于新时代科技" class="link-light" target="_blank"
+                href="https://v.douyin.com/iF2k8E1p/ 1@9.com">抖音</a></li>
+            <li class="list-inline-item"><a title="15 minutes a week building your career" class="link-light"
+                target="_blank" href="https://www.youtube.com/@fulldecent">YouTube</a></li>
           </ul>
         </div>
         <div class="col-md">
           <h6>Create</h6>
           <ul class="list-inline float-start">
-            <li class="list-inline-item"><a title="Published daily, kopimi" class="link-light" target="_blank" href="https://github.com/fulldecent">GitHub</a> <span class="badge bg-secondary">top 1%</span></li>
+            <li class="list-inline-item"><a title="Published daily, kopimi" class="link-light" target="_blank"
+                href="https://github.com/fulldecent">GitHub</a> <span class="badge bg-secondary">top 1%</span></li>
           </ul>
         </div>
         <div class="follow-me-more d-none col-md">
           <h6>Curate my creations</h6>
           <ul class="list-inline float-start">
-            <li class="list-inline-item"><a class="link-light" target="_blank" href="https://opensea.io/fulldecent">OpenSea</a></li>
-            <li class="list-inline-item"><a class="link-light" target="_blank" href="https://rarible.com/fulldecent">Rarible</a></li>
-            <li class="list-inline-item"><a class="link-light" target="_blank" href="https://foundation.app/@fulldecent">Foundation</a></li>
-            <li class="list-inline-item"><a class="link-light" target="_blank" href="https://mintable.app/u/fulldecent">Mintable</a></li>
-            <li class="list-inline-item"><a class="link-light" target="_blank" href="https://www.mintbase.io/human/fulldecent.near">Mintbase</a></li>
-            <li class="list-inline-item"><a class="link-light" target="_blank" href="https://zora.co/fulldecent">ZORA</a></li>
-            <li class="list-inline-item"><a class="link-light" target="_blank" href="https://www.amazon.ca/William-Entriken/e/B091JWDTRW/ref=dp_byline_cont_pop_ebooks_2">Amazon (author)</a></li>
+            <li class="list-inline-item"><a class="link-light" target="_blank"
+                href="https://opensea.io/fulldecent">OpenSea</a></li>
+            <li class="list-inline-item"><a class="link-light" target="_blank"
+                href="https://rarible.com/fulldecent">Rarible</a></li>
+            <li class="list-inline-item"><a class="link-light" target="_blank"
+                href="https://foundation.app/@fulldecent">Foundation</a></li>
+            <li class="list-inline-item"><a class="link-light" target="_blank"
+                href="https://mintable.app/u/fulldecent">Mintable</a></li>
+            <li class="list-inline-item"><a class="link-light" target="_blank"
+                href="https://www.mintbase.io/human/fulldecent.near">Mintbase</a></li>
+            <li class="list-inline-item"><a class="link-light" target="_blank"
+                href="https://zora.co/fulldecent">ZORA</a></li>
+            <li class="list-inline-item"><a class="link-light" target="_blank"
+                href="https://www.amazon.ca/William-Entriken/e/B091JWDTRW/ref=dp_byline_cont_pop_ebooks_2">Amazon
+                (author)</a></li>
           </ul>
         </div>
         <div class="follow-me-more d-none col-md">
           <h6>Send tokens of appreciation</h6>
           <ul class="list-inline float-start">
-            <li class="list-inline-item"><a class="link-light" target="_blank" href="https://etherscan.io/address/0xd859d7d8603D2dAb768D679eEEC25930C8FC59C1">Ethereum Mainnet</a></li>
-            <li class="list-inline-item"><a class="link-light" target="_blank" href="https://tronscan.io/#/address/TG18qpVeKEanswrcPVWguRRr56Rirof5Ub">TRON Mainnet</a></li>
+            <li class="list-inline-item"><a class="link-light" target="_blank"
+                href="https://etherscan.io/address/0xd859d7d8603D2dAb768D679eEEC25930C8FC59C1">Ethereum Mainnet</a></li>
+            <li class="list-inline-item"><a class="link-light" target="_blank"
+                href="https://tronscan.io/#/address/TG18qpVeKEanswrcPVWguRRr56Rirof5Ub">TRON Mainnet</a></li>
           </ul>
         </div>
         <div class="follow-me-more d-none col-md">
           <h6>Deep scroll</h6>
           <ul class="list-inline float-start">
-            <li class="list-inline-item"><a class="link-light" target="_blank" href="https://discordapp.com/channels/@me/fulldecent#8164/">Discord</a></li>
-            <li class="list-inline-item"><a class="link-light" target="_blank" href="https://www.instagram.com/wmedesign/">Instagram (NSFW)</a></li>
-            <li class="list-inline-item"><a class="link-light" target="_blank" href="https://fulldecent.blogspot.com">Blog (OLD)</a></li>
-            <li class="list-inline-item"><a class="link-light" target="_blank" href="https://privacylog.blogspot.com">Zero-day blog</a></li>
-            <li class="list-inline-item"><a class="link-light" target="_blank" href="https://scholar.google.com/citations?user=4rGYvTgAAAAJ">Google Scholar</a></li>
-            <li class="list-inline-item"><a class="link-light" target="_blank" href="https://en.wikipedia.org/wiki/William_Entriken">Wikipedia page</a></li>
-            <li class="list-inline-item"><a class="link-light" target="_blank" href="https://baike.baidu.com/item/      99%BA%E8%83%BD%E5%90%88%E7%BA%A6%E6%8A%80%E6%9C%AF%E4%B8%8E%E5%BC%80%E5%8F%91">百度百科</a></li>
+            <li class="list-inline-item"><a class="link-light" target="_blank"
+                href="https://discordapp.com/channels/@me/fulldecent#8164/">Discord</a></li>
+            <li class="list-inline-item"><a class="link-light" target="_blank"
+                href="https://www.instagram.com/wmedesign/">Instagram (NSFW)</a></li>
+            <li class="list-inline-item"><a class="link-light" target="_blank"
+                href="https://fulldecent.blogspot.com">Blog (OLD)</a></li>
+            <li class="list-inline-item"><a class="link-light" target="_blank"
+                href="https://privacylog.blogspot.com">Zero-day blog</a></li>
+            <li class="list-inline-item"><a class="link-light" target="_blank"
+                href="https://scholar.google.com/citations?user=4rGYvTgAAAAJ">Google Scholar</a></li>
+            <li class="list-inline-item"><a class="link-light" target="_blank"
+                href="https://en.wikipedia.org/wiki/William_Entriken">Wikipedia page</a></li>
+            <li class="list-inline-item"><a class="link-light" target="_blank"
+                href="https://baike.baidu.com/item/      99%BA%E8%83%BD%E5%90%88%E7%BA%A6%E6%8A%80%E6%9C%AF%E4%B8%8E%E5%BC%80%E5%8F%91">百度百科</a>
+            </li>
           </ul>
         </div>
         <div id="follow-me-show-more" class="col-md">
@@ -1023,29 +1258,30 @@ MORE STUFF WHERE TO PUT THIS
           Updated {{ site.time | date: "%Y-%m-%d"}}. No cookies. No analytics.
         </div>
         <div class="col text-end">
-           <i class="bi bi-globe" aria-hidden="true"></i> Philadelphia, USA / 中国上海
+          <i class="bi bi-globe" aria-hidden="true"></i> Philadelphia, USA / 中国上海
         </div>
       </div>
     </div>
   </footer>
 
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha256-CDOy6cOibCWEdsRiZuaHf8dSGGJRYuBGC+mjoJimHGw=" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha256-CDOy6cOibCWEdsRiZuaHf8dSGGJRYuBGC+mjoJimHGw=" crossorigin="anonymous"></script>
   <script>
     // Activate BS5 tooltips everywhere
     document.querySelectorAll('[title]').forEach(el => new bootstrap.Tooltip(el));
 
-    document.getElementById("showstalker").addEventListener("click", function() {
+    document.getElementById("showstalker").addEventListener("click", function () {
       document.getElementById("showstalker").classList.add("d-none");
       document.getElementById("stalker").classList.remove("d-none");
       document.querySelectorAll("#product-cycles-list div.col").forEach(el => el.classList.remove("d-none"));
     });
 
-    document.getElementById("press-coverage-show-more").addEventListener("click", function() {
+    document.getElementById("press-coverage-show-more").addEventListener("click", function () {
       document.getElementById("press-coverage-show-more").classList.add("d-none");
       document.querySelectorAll(".press-coverage-rest").forEach(el => el.classList.remove("d-none"));
     });
 
-    document.getElementById("speaking-events-show-more").addEventListener("click", function() {
+    document.getElementById("speaking-events-show-more").addEventListener("click", function () {
       document.getElementById("speaking-events-show-more").classList.add("d-none");
       document.querySelectorAll(".speaking-event-rest").forEach(el => el.classList.remove("d-none"));
     });
@@ -1074,7 +1310,7 @@ MORE STUFF WHERE TO PUT THIS
     }
 
     // Pronounce
-    document.getElementById("pronounce").addEventListener("click", function() {
+    document.getElementById("pronounce").addEventListener("click", function () {
       var audio = new Audio('/media/pronounce.mp3');
       audio.play();
     });
@@ -1088,7 +1324,7 @@ MORE STUFF WHERE TO PUT THIS
         return;
       }
 
-      const date = new Date(datetimeEl.attributes.datetime.value);      
+      const date = new Date(datetimeEl.attributes.datetime.value);
       if (date > new Date()) {
         const title = el.querySelector(".speaking-event-title").innerHTML;
         const tweetURL = "https://twitter.com/intent/tweet?text=I%27ll%20go%20to%20" + encodeURIComponent(title) + "%20%40fulldecent";
@@ -1103,7 +1339,7 @@ MORE STUFF WHERE TO PUT THIS
     });
 
     // #follow-me-show-more
-    document.getElementById("follow-me-show-more").addEventListener("click", function() {
+    document.getElementById("follow-me-show-more").addEventListener("click", function () {
       if (confirm("Did you already follow all the above accounts?")) {
         document.querySelectorAll(".follow-me-more").forEach(el => el.classList.remove("d-none"));
         document.getElementById("follow-me-show-more").classList.add("d-none");
@@ -1134,14 +1370,16 @@ MORE STUFF WHERE TO PUT THIS
     }
     */
 
-    
+
   </script>
-  <script src="https://cdn.jsdelivr.net/npm/anchor-js@4.3.1/anchor.min.js" integrity="sha256-0WMZ9PF4b2hTF66Eglv/9H5Vwk6lnOG4AbmCJxo96WQ=" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/anchor-js@4.3.1/anchor.min.js"
+    integrity="sha256-0WMZ9PF4b2hTF66Eglv/9H5Vwk6lnOG4AbmCJxo96WQ=" crossorigin="anonymous"></script>
   <script>
     // Add anchors on DOMContentLoaded
-    document.addEventListener('DOMContentLoaded', function(event) {
+    document.addEventListener('DOMContentLoaded', function (event) {
       anchors.add();
     });
   </script>
 </body>
+
 </html>
