@@ -1,10 +1,5 @@
 [
   {
-    "date": "2024-10-07",
-    "url": "todo",
-    "title": "Smashing Conf, New York"
-  },
-  {
     "date": "2024-07-24",
     "url": "todo",
     "title": "Palo Alto, CA"
@@ -29,8 +24,7 @@
     "date": "2024-04-03",
     "url": "https://nft.nyc/",
     "title": "NFT nyc",
-    "coverage": [
-    ]
+    "coverage": []
   },
   {
     "date": "2024-03-04",
@@ -41,22 +35,19 @@
     "date": "2023-11-07",
     "url": "https://www.regulations.gov/document/IRS-2023-0041-0001",
     "title": "Public comments for IRS Gross Proceeds and Basis Reporting by Brokers and Determination of Amount Realized and Basis for Digital Asset Transactions",
-    "coverage": [
-    ]
+    "coverage": []
   },
   {
     "date": "2023-07-19",
     "url": "https://www.eventbrite.com/e/workshop-exclusivo-meet-up-con-william-entriken-lead-author-del-erc-721-tickets-678311266257",
     "title": "Workshop exclusivo & meet-up con William Entriken",
-    "coverage": [
-    ]
+    "coverage": []
   },
   {
     "date": "2023-06-24",
     "url": "",
     "title": "RClub & ESCE百人ji论坛WEB3&AI人工智能创投专场",
-    "coverage": [
-    ]
+    "coverage": []
   },
   {
     "date": "2023-05-09",
@@ -83,8 +74,7 @@
     "date": "2022-11-12",
     "url": "n/a",
     "title": "Tron Hacker House, Boston, Harvard Campus",
-    "coverage": [
-    ]
+    "coverage": []
   },
   {
     "date": "2022-10-21",
@@ -214,8 +204,8 @@
     "title": "Bled Strategic Forum",
     "coverage": [
       "https://medium.com/bled-strategic-forum/direction-decentralization-72970cc7b3eb",
-       "https://bledstrategicforum.org/wp-content/uploads/2020/03/BSF-Bled-Strategic-Times_2018.pdf",
-       "/assets/project-images/bled2019-1.jpg"
+      "https://bledstrategicforum.org/wp-content/uploads/2020/03/BSF-Bled-Strategic-Times_2018.pdf",
+      "/assets/project-images/bled2019-1.jpg"
     ]
   },
   {
