@@ -1,42 +1,63 @@
 [
   {
+    "date": "2025-03-15",
+    "authors": [
+      "NYSE Wired"
+    ],
+    "publication": "SiliconANGLE theCUBE",
+    "url": "https://www.youtube.com/watch?v=N1nq1a2Lreg",
+    "title": "Wm Entriken Design | theCUBE + NYSE Wired: Crypto Trailblazers"
+  },
+  {
     "date": "2024-04-12",
-    "authors": ["David Berlind"],
+    "authors": [
+      "David Berlind"
+    ],
     "publication": "Blockchain Journal",
     "url": "https://blockchainjournal.com/interview/lead-author-nft-standard-predicts-nfts-will-melt-fabric-our-everyday-lives/?utm_source=Twitter&utm_medium=social&utm_campaign=20240415",
     "title": "Lead Author of the NFT Standard Predicts NFTs Will Melt Into The Fabric of Our Everyday Lives"
   },
   {
     "date": "2023-11-14",
-    "authors": ["Jesse Hamilton"],
+    "authors": [
+      "Jesse Hamilton"
+    ],
     "publication": "CoinDesk",
     "url": "https://www.coindesk.com/policy/2023/11/13/crypto-tax-proposal-open-for-revision-irs-officials-questions-suggest/",
     "title": "Crypto Tax Proposal Open for Revision, IRS Officials' Questions Suggest"
   },
   {
     "date": "2023-10-27",
-    "authors": ["Wendy O"],
+    "authors": [
+      "Wendy O"
+    ],
     "publication": "The O Show",
     "url": "https://www.youtube.com/watch?v=bkv4PAbfuNA",
     "title": "Breaking FTX SBF has meltdown in court"
   },
   {
     "date": "2023-08-13",
-    "authors": ["NatyShi"],
+    "authors": [
+      "NatyShi"
+    ],
     "publication": "Platzi blog",
     "url": "https://platzi.com/blog/ha-llegado-el-fin-de-los-nfts/",
     "title": "¿Ha llegado el fin de los NFTs?"
   },
   {
     "date": "2023-07-10",
-    "authors": ["Dan Tedesco"],
+    "authors": [
+      "Dan Tedesco"
+    ],
     "publication": "The Craft",
     "url": "https://www.youtube.com/watch?v=peYlZNLRy3o",
     "title": "The Craft Podcast Interview with William Entriken"
   },
   {
     "date": "2023-06-22",
-    "authors": ["Binance"],
+    "authors": [
+      "Binance"
+    ],
     "publication": "Binance",
     "url": "https://x.com/i/spaces/1mnGeRlQwQLJX?s=20",
     "title": "NFT&去中心化存储DMC能擦出什么样的火花",
@@ -44,7 +65,9 @@
   },
   {
     "date": "2023-06-29",
-    "authors": ["DMC Foundation"],
+    "authors": [
+      "DMC Foundation"
+    ],
     "publication": "DMC Foundation",
     "url": "https://www.youtube.com/watch?v=ZDydsH8TYzU",
     "title": "DMC对话NFT之父William",
@@ -52,7 +75,9 @@
   },
   {
     "date": "2023-06-29",
-    "authors": ["DMC Foundation"],
+    "authors": [
+      "DMC Foundation"
+    ],
     "publication": "DMC Foundation",
     "url": "https://www.youtube.com/watch?v=HQc8HNWvufI",
     "title": "DMC Dialogue with William (en)",
@@ -60,147 +85,191 @@
   },
   {
     "date": "2023-05-11",
-    "authors": ["Mason Marcobello"],
+    "authors": [
+      "Mason Marcobello"
+    ],
     "publication": "CoinDesk",
     "url": "https://www.coindesk.com/learn/what-are-eip-and-erc-and-how-are-they-connected/",
     "title": "What Are EIP and ERC and How Are They Connected?"
   },
   {
     "date": "2023-04-30",
-    "authors": ["NFT Horizon"],
+    "authors": [
+      "NFT Horizon"
+    ],
     "publication": "NFT Horizon",
     "url": "https://www.youtube.com/watch?v=IDKZYrx6SwM&t=7s",
     "title": "Capabilities of ERC-721, Solve Real Life Problems with NFT"
   },
   {
     "date": "2023-02-05",
-    "authors": ["黑色马里奥"],
+    "authors": [
+      "黑色马里奥"
+    ],
     "publication": "费城中文广播电视台",
     "url": "https://www.youtube.com/watch?v=XiPGqlXhZFk",
     "title": "第二届大费城华人元宵春晚—host and performer"
   },
   {
     "date": "2022-12-25",
-    "authors": ["黑色马里奥"],
+    "authors": [
+      "黑色马里奥"
+    ],
     "publication": "金色财经",
     "url": "https://www.jinse.com/news/blockchain/2834547.html",
     "title": "一文盘点以太坊上的NFT底层协议标准"
   },
   {
     "date": "2022-09-20",
-    "authors": ["NFT.nyc"],
+    "authors": [
+      "NFT.nyc"
+    ],
     "publication": "NFT.nyc",
     "url": "https://nftnyc.medium.com/celebrating-the-contributions-of-william-entriken-on-nft-day-lead-author-of-the-erc-721-7a959e3aa863",
     "title": "Celebrating the Contributions of William Entriken on NFT Day — Lead author of the ERC-721 Non-Fungible Token Standard"
   },
   {
     "date": "2022-09-01",
-    "authors": ["Holly Shannon"],
+    "authors": [
+      "Holly Shannon"
+    ],
     "publication": "Culture Factor",
     "url": "https://hollyshannon.com/culture-factor-main/summer-series-10",
     "title": "Lead Author of the NFT or ERC-721 with William Entriken"
   },
   {
     "date": "2022-08-31",
-    "authors": ["Sai Charan Paloju"],
+    "authors": [
+      "Sai Charan Paloju"
+    ],
     "publication": "Smart Cherrys Thoughts",
     "url": "https://smartcherrysthoughts.com/smart-cherrys-thoughts-podcast-sai-charan-paloju/chatting-with-william-entriken-about-nft-and-blockchain-who-is-from-usa-philadelphia/",
     "title": "Chatting with William Entriken about NFT and Blockchain who is from USA, Philadelphia"
   },
   {
     "date": "2022-08-10",
-    "authors": ["ZeroG"],
+    "authors": [
+      "ZeroG"
+    ],
     "publication": "Exploring the Vintage NFT Space with ZeroG",
     "url": "https://www.youtube.com/watch?v=is5Vrs6EZJk",
     "title": "Fun interview with William Entriken, founder of Su Squares, lead author of ERC-721 standard"
   },
   {
     "date": "2022-08-09",
-    "authors": ["Benjamin Ahmed"],
+    "authors": [
+      "Benjamin Ahmed"
+    ],
     "publication": "Interviews with Leaders in Fintech & Web3",
     "url": "https://www.buzzsprout.com/1683091/11106376",
     "title": "William Entriken, Lead Author of ERC-721 - NFT Standard, Talks to NFT Prodigy Benyamin Ahmed"
   },
   {
     "date": "2022-07-14",
-    "authors": ["TRON DAO"],
+    "authors": [
+      "TRON DAO"
+    ],
     "publication": "Around the Block",
     "url": "https://www.youtube.com/watch?v=zU9xFXILyyM",
     "title": "#AroundtheBlock: Episode 10 William Entriken & Sydney Xiong #BUIDLing on-chain projects & protocols!"
   },
   {
     "date": "2022-06-17",
-    "authors": ["Angela Dalton", "Evan Castelli"],
+    "authors": [
+      "Angela Dalton",
+      "Evan Castelli"
+    ],
     "publication": "Culture Meets Crypto with Signum Growth",
     "url": "https://www.youtube.com/watch?v=6gW-g2KRxno",
     "title": "Lead Author of the ERC-721 Standard"
   },
   {
     "date": "2022-03-25",
-    "authors": ["Sonja Sherwood"],
+    "authors": [
+      "Sonja Sherwood"
+    ],
     "publication": "Drexel Magazine",
     "url": "https://drexelmagazine.org/2022/40-under-40-2022/",
     "title": "40 Under 40: 10th Anniversary"
   },
   {
     "date": "2022-05-09",
-    "authors": ["Ian Allison"],
+    "authors": [
+      "Ian Allison"
+    ],
     "publication": "CoinDesk",
     "url": "https://www.coindesk.com/business/2022/05/09/arianee-raises-21m-to-bring-luxury-nfts-to-the-metaverse/",
     "title": "Arianee Raises $21M to Bring Luxury NFTs to the Metaverse"
   },
   {
     "date": "2022-02-08",
-    "authors": ["费城聚焦"],
+    "authors": [
+      "费城聚焦"
+    ],
     "publication": "春晚节目",
     "url": "https://youtu.be/hynIKCphCzA?t=759",
     "title": "2022大费城全民总动员网络春晚，展现不一样的费城华人。"
   },
   {
     "date": "2022-01-18",
-    "authors": ["Constantin Kogan"],
+    "authors": [
+      "Constantin Kogan"
+    ],
     "publication": "n/a",
     "url": "https://youtu.be/TH-cNKeUbf0",
     "title": "The phenomenon of first NFT Protocol - ERC-721"
   },
   {
     "date": "2022-01-10",
-    "authors": ["Pooja Ranjan"],
+    "authors": [
+      "Pooja Ranjan"
+    ],
     "publication": "Ethereum Cat Herders",
     "url": "https://www.youtube.com/watch?v=3ig5WhvRI9k",
     "title": "PEEP an EIP #58: EIP-721: Non-Fungible Token Standard with William Entriken"
   },
   {
     "date": "2022-01-07",
-    "authors": ["Qazal"],
+    "authors": [
+      "Qazal"
+    ],
     "publication": "NFT Labs",
     "url": "https://nftlabs.medium.com/nft-labs-talk-conversation-with-the-lead-author-of-erc-721-standard-william-entriken-the-9942a7a1979e",
     "title": "NFT Labs Talk: Conversation with the Lead Author of ERC-721 Standard William Entriken — The Zooming Out"
   },
   {
     "date": "2021-12-30",
-    "authors": ["Qazal"],
+    "authors": [
+      "Qazal"
+    ],
     "publication": "NFT Labs",
     "url": "https://nftlabs.medium.com/nft-labs-talk-erc-721-lead-author-william-entriken-elaborates-nft-and-its-future-applying-fields-c02ea69f4b48",
     "title": "NFT Labs Talk: ERC-721 Lead Author William Entriken Elaborates NFT and its future applying fields in Pharma — The Zooming In"
   },
   {
     "date": "2021-12-02",
-    "authors": ["Diana Dai"],
+    "authors": [
+      "Diana Dai"
+    ],
     "publication": "Binance Live",
     "url": "https://www.binance.com/en/live/video?roomId=2100375",
     "title": "What is NFT? How to mint? Why to buy? Meet ERC-721 leader author Wm Entriken"
   },
   {
     "date": "2021-12-01",
-    "authors": ["Jonas Kasper Jensen", "Michael Juul Rugaard"],
+    "authors": [
+      "Jonas Kasper Jensen",
+      "Michael Juul Rugaard"
+    ],
     "publication": "The Tokenizer",
     "url": "https://thetokenizer.io/NFT/the-standard-of-uniqueness/",
     "title": "The Standard of Uniqueness"
   },
   {
     "date": "2021-12-01",
-    "authors": ["Ben Davis"],
+    "authors": [
+      "Ben Davis"
+    ],
     "publication": "Artnet",
     "url": "https://news.artnet.com/opinion/inside-the-nft-rush-a-token-could-save-your-life-artistic-value-means-nothing-until-its-flipped-and-other-lessons-learned-at-the-crypto-coachella-2040043",
     "title": "Inside the NFT Rush: Speculators Offer Up the Literal Formula for Success, Plus Other Lessons From ‘Crypto Coachella’"
@@ -214,49 +283,65 @@
   },
   {
     "date": "2021-06-03",
-    "authors": ["Michael Butler"],
+    "authors": [
+      "Michael Butler"
+    ],
     "publication": "Technical.ly Philly",
     "url": "https://technical.ly/philly/2021/06/03/nft-william-entriken-standard/",
     "title": "This local technologist made Philly the birthplace of the leading NFT standard"
   },
   {
     "date": "2021-05-07",
-    "authors": ["Joyce Yip"],
+    "authors": [
+      "Joyce Yip"
+    ],
     "publication": "China Daily",
     "url": "https://www.chinadaily.com.cn/a/202105/07/WS6094db49a31024ad0babc83e.html",
     "title": "Token of art appreciation"
   },
   {
     "date": "2021-04-13",
-    "authors": ["Dawn Kawamoto"],
+    "authors": [
+      "Dawn Kawamoto"
+    ],
     "publication": "TheStreet",
     "url": "https://www.thestreet.com/investing/are-nfts-a-good-investment",
     "title": "Are NFTs a Good Investment?"
   },
   {
     "date": "2021-03-30",
-    "authors": ["Matthew Sparkes"],
+    "authors": [
+      "Matthew Sparkes"
+    ],
     "publication": "New Scientist",
     "url": "https://www.newscientist.com/article/2272687-nft-developers-say-cryptocurrencies-must-tackle-their-carbon-emissions/",
     "title": "NFT developers say cryptocurrencies must tackle their carbon emissions"
   },
   {
     "date": "2021-02-23",
-    "authors": ["Joshua Mapperson"],
+    "authors": [
+      "Joshua Mapperson"
+    ],
     "publication": "Cointelegraph",
     "url": "https://cointelegraph.com/news/new-report-predicts-nfts-will-explode-in-popularity-during-2021",
     "title": "New report predicts NFTs will explode in popularity during 2021"
   },
   {
     "date": "2021-02-23",
-    "authors": ["Brady Dale"],
+    "authors": [
+      "Brady Dale"
+    ],
     "publication": "CoinDesk",
     "url": "https://www.coindesk.com/its-an-nft-boom-do-you-know-where-your-digital-art-lives",
     "title": "It's an NFT Boom. Do You Know Where Your Digital Art Lives?"
   },
   {
     "date": "2021-02-09",
-    "authors": ["Loïc Lesavre", "Priam Varin", "Dylan Yaga"],
+    "authors": [
+      "Loïc Lesavre",
+      "Priam Varin",
+      "Dylan Yaga"
+    ],
     "publication": "NIST",
     "url": "https://nvlpubs.nist.gov/nistpubs/ir/2021/NIST.IR.8301.pdf",
     "title": "NISTIR 8301: Blockchain Networks: Token Design and Management Overview"
@@ -270,14 +355,22 @@
   },
   {
     "date": "2020-01-14",
-    "authors": ["Loïc Lesavre", "Priam Varin", "Peter Mell", "Michael Davidson", "James Shook"],
+    "authors": [
+      "Loïc Lesavre",
+      "Priam Varin",
+      "Peter Mell",
+      "Michael Davidson",
+      "James Shook"
+    ],
     "publication": "NIST, Computer Security Division",
     "url": "https://nvlpubs.nist.gov/nistpubs/CSWP/NIST.CSWP.01142020.pdf",
     "title": "A Taxonomic Approach to Understanding Emerging Blockchain Identity Management Systems"
   },
   {
     "date": "2020-01-09",
-    "authors": ["Ikran Dahir"],
+    "authors": [
+      "Ikran Dahir"
+    ],
     "publication": "BuzzFeed",
     "url": "https://www.buzzfeed.com/ikrd/student-family-tiktok-meme",
     "title": "This Student And Her Family Became A TikTok Meme After They Filmed Themselves Reacting To Her College Acceptance"
