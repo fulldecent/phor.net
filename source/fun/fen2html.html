@@ -1,0 +1,97 @@
+---
+layout: null
+---
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    >
+    <link href="{{ page.url | prepend: site.baseurl | prepend: site.url | escape }}" rel="canonical">
+    <title>FEN2HTML</title>
+    <style>
+      table.chess {
+        border: 1px solid black;
+        margin: 2px;
+        font-size: xx-large;
+      }
+      table.chess td {
+        width: 1.5em;
+        height: 1.5em;
+        padding: 0;
+        margin: 0;
+        vertical-align: middle;
+        text-align: center;
+      }
+      table.chess tr td {
+        background: #f2e0cb;
+      }
+      table.chess tr:nth-child(odd) td:nth-child(even),
+      table.chess tr:nth-child(even) td:nth-child(odd) {
+        background: #c4aa8b;
+      }
+    </style>
+  </head>
+  <body class="my-5">
+    <div class="container">
+      <h1><abbr title="Forsyth-Edwards Notation">FEN</abbr> to HTML</h1>
+      <p class="lead">by <a href="https://fulldecent.blogspot.com">William Entriken</a></p>
+      <hr>
+      <h2>Input FEN</h2>
+      <div class="input-group input-group-lg">
+        <input
+          class="form-control"
+          onKeyUp="fentohtml()"
+          id="fen"
+          value="rnbqkbnr/pppppppp/8/8/8/8/PPPPPPPP/RNBQKBNR w KQkq - 0 1"
+        >
+      </div>
+      <hr>
+      <div class="row">
+        <div class="col-lg-6">
+          <h2>Output View</h2>
+          <div id="out"></div>
+        </div>
+        <div class="col-lg-6">
+          <h2>Output HTML (view source for CSS)</h2>
+          <pre id="outhtml"></pre>
+        </div>
+      </div>
+    </div>
+    <!-- /container -->
+    <script>
+      const pieces = {
+        K: '♔',
+        Q: '♕',
+        R: '♖',
+        B: '♗',
+        N: '♘',
+        P: '♙',
+        k: '♚',
+        q: '♛',
+        r: '♜',
+        b: '♝',
+        n: '♞',
+        p: '♟',
+      };
+      function fentohtml() {
+        html = document
+          .getElementById('fen')
+          .value.trim()
+          .replace(/\s+.*/, '')
+          .replace(/\d+/g, (n) => ' '.repeat(n))
+          .replace(/./g, (char) => '<td>' + (pieces[char] || char))
+          .replace(/^|<td>\//g, '\n  <tr>');
+        html = '<table class="chess">' + html + '\n</table>';
+        document.getElementById('out').innerHTML = html;
+        document.getElementById('outhtml').innerHTML = html.replace(/</g, '&lt;').replace(/>/g, '&gt;');
+      }
+      fentohtml();
+    </script>
+  </body>
+</html>

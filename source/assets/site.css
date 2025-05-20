@@ -1,0 +1,65 @@
+.glowbar {
+  background: linear-gradient(to right, #fdc830, #f37335);
+  animation: glow 1s ease forwards;
+  background-size: 200% 200%;
+}
+@keyframes glow {
+  0% {
+    background-size: 500% 500%;
+  }
+  100% {
+    background-size: 100% 100%;
+  }
+}
+
+.minipolaroid {
+  display: inline-block;
+  vertical-align: top;
+  background-color: #ffffff;
+  padding: 2px;
+  padding-bottom: 10px;
+  border: 1px solid #eee;
+  box-shadow: 2px 2px 2px #ccc;
+  margin: 12px;
+  text-decoration: none;
+  color: #444;
+  animation: spin 1s ease forwards;
+}
+@keyframes spin {
+  100% {
+    -webkit-transform: rotate(-12deg);
+    transform: rotate(-12deg);
+  }
+}
+
+/* More specific selector by targeting the button element */
+.btn-primary {
+  background-color: #ff5722 !important;
+  color: #fff !important;
+  border: 2px solid #ff5722 !important;
+  transition:
+    background-color 0.3s,
+    border-color 0.3s !important;
+}
+
+.btn-primary:hover {
+  background-color: #e64a19 !important;
+  border-color: #e64a19 !important;
+}
+
+.btn-primary:focus,
+.btn-primary:active {
+  background-color: #d84315 !important;
+  border-color: #d84315 !important;
+  box-shadow: 0 0 0 0.25rem rgba(245, 124, 20, 0.5) !important;
+}
+
+.btn-primary:focus {
+  outline: none !important;
+}
+
+abbr {
+  text-decoration: none;
+  border-bottom: 1px dotted #000;
+  cursor: help;
+}

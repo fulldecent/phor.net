@@ -1,0 +1,16 @@
+---
+layout: null
+# Front matter variables:
+#  - page.redirect_target -- URL of where this page will redirect to
+#  - page.title (optional) -- how to refer to page
+---
+<!doctype html lang="en">
+<meta charset="utf-8">
+<meta http-equiv="refresh" content="1; url={{ page.redirect_target | escape }}">
+<link href="{{ page.url | prepend: site.baseurl | prepend: site.url | escape }}" rel="canonical">
+<script>
+  window.location.href = '{{ page.redirect_target | escape }}';
+</script>
+<title>Page redirection</title>
+If you are not redirected automatically, follow this
+<a href="{{ page.redirect_target | escape }}">link to {{ page.title | default: 'page' | escape }}</a>

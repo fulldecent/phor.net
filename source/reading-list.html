@@ -1,0 +1,255 @@
+---
+layout: page
+title: William Entriken, Reading List
+---
+<style>
+  /**
+   * Pure CSS EAN-13 barcode encoding
+   * (c) 2020 William Entriken
+   * Reference specification: https://www.gs1.org/standards/barcodes-epcrfid-id-keys/gs1-general-specifications
+   */
+
+  /* Basic style for all digit encoding */
+  .ean13 span {
+    flex: 7; /* seven modules */
+    display: flex;
+    align-items: flex-end; /* vertical down */
+    justify-content: center; /* horizontal center */
+    font-size: 10pt;
+    font-family: monaco, Consolas, 'Lucida Console', monospace;
+    position: relative; /* SO WE CAN MAKE INSIDE pseudo element absolute */
+  }
+
+  /* Basic style for all digit bars */
+  .ean13 span::before {
+    background-size: 100% 80% !important;
+    background-repeat: no-repeat !important;
+    height: 100%;
+    width: 100%;
+    content: '';
+    position: absolute;
+  }
+
+  /* Digit encoding for the R-code */
+  span[data-val='0']::before {
+    background: linear-gradient(to right, #000 42.85%, #fff 42.85% 71.42%, #000 71.42% 85.71%, #fff 85.71%);
+  }
+  span[data-val='1']::before {
+    background: linear-gradient(to right, #000 28.57%, #fff 28.57% 57.14%, #000 57.14% 85.71%, #fff 85.71%);
+  }
+  span[data-val='2']::before {
+    background: linear-gradient(to right, #000 28.57%, #fff 28.57% 42.85%, #000 42.85% 71.42%, #fff 71.42%);
+  }
+  span[data-val='3']::before {
+    background: linear-gradient(to right, #000 14.28%, #fff 14.28% 71.42%, #000 71.42% 85.71%, #fff 85.71%);
+  }
+  span[data-val='4']::before {
+    background: linear-gradient(to right, #000 14.28%, #fff 14.28% 28.57%, #000 28.57% 71.42%, #fff 71.42%);
+  }
+  span[data-val='5']::before {
+    background: linear-gradient(to right, #000 14.28%, #fff 14.28% 42.85%, #000 42.85% 85.71%, #fff 85.71%);
+  }
+  span[data-val='6']::before {
+    background: linear-gradient(to right, #000 14.28%, #fff 14.28% 28.57%, #000 28.57% 42.85%, #fff 42.85%);
+  }
+  span[data-val='7']::before {
+    background: linear-gradient(to right, #000 14.28%, #fff 14.28% 57.14%, #000 57.14% 71.42%, #fff 71.42%);
+  }
+  span[data-val='8']::before {
+    background: linear-gradient(to right, #000 14.28%, #fff 14.28% 42.85%, #000 42.85% 57.14%, #fff 57.14%);
+  }
+  span[data-val='9']::before {
+    background: linear-gradient(to right, #000 42.85%, #fff 42.85% 57.14%, #000 57.14% 71.42%, #fff 71.42%);
+  }
+
+  /* Start/end markers */
+  .ean13 .c1,
+  .ean13 .c3 {
+    flex: 3; /* three modules */
+    align-self: flex-start;
+    height: 100%;
+    background: linear-gradient(to right, #000 33.33%, #fff 33.33% 66.66%, #000 66.66%);
+    background-size: 100% 90% !important;
+    background-repeat: no-repeat !important;
+  }
+
+  /* Center marker */
+  .ean13 .c2 {
+    flex: 5; /* five modules */
+    align-self: flex-start;
+    height: 100%;
+    background: linear-gradient(to right, #fff 20%, #000 20% 40%, #fff 40% 60%, #000 60% 80%, #fff 80%);
+    background-size: 100% 90% !important;
+    background-repeat: no-repeat !important;
+  }
+
+  .ean13 {
+    display: flex;
+    width: 200px;
+    height: 80px;
+  }
+
+  .ean13 span:first-child::before {
+    /* The first digit has no lines, it sets the parities for the first 6 digits*/
+    background: none;
+  }
+
+  /* For digits 2–7, default to L-code */
+  .ean13 span:nth-child(3)::before,
+  .ean13 span:nth-child(4)::before,
+  .ean13 span:nth-child(5)::before,
+  .ean13 span:nth-child(6)::before,
+  .ean13 span:nth-child(7)::before,
+  .ean13 span:nth-child(8)::before {
+    /*  background-color: blue; */
+    filter: invert(100%);
+  }
+
+  /* For digits 2–7 override to G-code based on first digit */
+  .ean13 span:first-child[data-val='0'] ~ span:nth-child(3)::before,
+  .ean13 span:first-child[data-val='0'] ~ span:nth-child(4)::before,
+  .ean13 span:first-child[data-val='0'] ~ span:nth-child(5)::before,
+  .ean13 span:first-child[data-val='0'] ~ span:nth-child(6)::before,
+  .ean13 span:first-child[data-val='0'] ~ span:nth-child(7)::before,
+  .ean13 span:first-child[data-val='0'] ~ span:nth-child(8)::before {
+    /* If first digit is zero, no change, use all L-code */
+  }
+
+  .ean13 span:first-child[data-val='1'] ~ span:nth-child(5)::before,
+  .ean13 span:first-child[data-val='1'] ~ span:nth-child(7)::before,
+  .ean13 span:first-child[data-val='1'] ~ span:nth-child(8)::before {
+    /* background-color: green; */
+    transform: scale(-1, 1);
+    filter: none;
+  }
+
+  .ean13 span:first-child[data-val='2'] ~ span:nth-child(5)::before,
+  .ean13 span:first-child[data-val='2'] ~ span:nth-child(6)::before,
+  .ean13 span:first-child[data-val='2'] ~ span:nth-child(8)::before {
+    /* background-color: green; */
+    transform: scale(-1, 1);
+    filter: none;
+  }
+
+  .ean13 span:first-child[data-val='3'] ~ span:nth-child(5)::before,
+  .ean13 span:first-child[data-val='3'] ~ span:nth-child(6)::before,
+  .ean13 span:first-child[data-val='3'] ~ span:nth-child(7)::before {
+    /* background-color: green; */
+    transform: scale(-1, 1);
+    filter: none;
+  }
+
+  .ean13 span:first-child[data-val='4'] ~ span:nth-child(4)::before,
+  .ean13 span:first-child[data-val='4'] ~ span:nth-child(7)::before,
+  .ean13 span:first-child[data-val='4'] ~ span:nth-child(8)::before {
+    /* background-color: green; */
+    transform: scale(-1, 1);
+    filter: none;
+  }
+
+  .ean13 span:first-child[data-val='5'] ~ span:nth-child(4)::before,
+  .ean13 span:first-child[data-val='5'] ~ span:nth-child(5)::before,
+  .ean13 span:first-child[data-val='5'] ~ span:nth-child(8)::before {
+    /* background-color: green; */
+    transform: scale(-1, 1);
+    filter: none;
+  }
+
+  .ean13 span:first-child[data-val='6'] ~ span:nth-child(4)::before,
+  .ean13 span:first-child[data-val='6'] ~ span:nth-child(5)::before,
+  .ean13 span:first-child[data-val='6'] ~ span:nth-child(6)::before {
+    /* background-color: green; */
+    transform: scale(-1, 1);
+    filter: none;
+  }
+
+  .ean13 span:first-child[data-val='7'] ~ span:nth-child(4)::before,
+  .ean13 span:first-child[data-val='7'] ~ span:nth-child(6)::before,
+  .ean13 span:first-child[data-val='7'] ~ span:nth-child(8)::before {
+    /* background-color: green; */
+    transform: scale(-1, 1);
+    filter: none;
+  }
+
+  .ean13 span:first-child[data-val='8'] ~ span:nth-child(4)::before,
+  .ean13 span:first-child[data-val='8'] ~ span:nth-child(6)::before,
+  .ean13 span:first-child[data-val='8'] ~ span:nth-child(7)::before {
+    /* background-color: green; */
+    transform: scale(-1, 1);
+    filter: none;
+  }
+
+  .ean13 span:first-child[data-val='9'] ~ span:nth-child(4)::before,
+  .ean13 span:first-child[data-val='9'] ~ span:nth-child(5)::before,
+  .ean13 span:first-child[data-val='9'] ~ span:nth-child(7)::before {
+    /* background-color: green; */
+    transform: scale(-1, 1);
+    filter: none;
+  }
+</style>
+
+<div class="jumbotron">
+  <div class="container">
+    <h1 class="display-4">Reading list</h1>
+    <p class="lead">These are books I've read and some brief commentary.</p>
+    <p><em>Amazon links on this page include an affiliate code and I'll hopefully get paid if you click them.</em></p>
+  </div>
+</div>
+
+<div class="container">
+  {% assign books = site.data['reading-list'] | reverse %}
+  {% for book in books %}
+    <h3 class="mt-3" id="{{ book.isbn | escape }}">
+      {{ book.title | escape }}
+      <a
+        class="btn btn-sm btn-outline-primary pull-right"
+        href="https://www.amazon.com/exec/obidos/ASIN/{{ book.isbn | escape }}/phornetandrel-20"
+        >Get on Amazon</a
+      >
+    </h3>
+    <div class="row">
+      <div class="col-md-5">
+        <dl class="row" style="margin-top:0">
+          <dt class="col-4">Author</dt>
+          <dd class="col-8">{{ book.author | escape }}</dd>
+          <dt class="col-4">Published</dt>
+          <dd class="col-8">{{ book.publishdate | default: '' | escape }}</dd>
+          <dt class="col-4">Publisher</dt>
+          <dd class="col-8">{{ book.publisher | escape }}</dd>
+          <dt class="col-4">Pages</dt>
+          <dd class="col-8">{{ book.pages | escape }}</dd>
+          <dt class="col-4">Date read</dt>
+          <dd class="col-8">{{ book.dateread | escape }}</dd>
+          <dt class="col-4">ISBN</dt>
+          <dd class="col-8">
+            {% assign isbn13 = book.isbn | remove: '-' %}
+            {% assign isbn13size = isbn13 | size %}
+            {% if isbn13size == 13 %}
+              {{ isbn13[3] }}
+              <div class="ean13">
+                <span data-val="{{ isbn13 | slice: 0 }}">{{ isbn13 | slice: 0 }}</span><span class="c1"></span
+                ><span data-val="{{ isbn13 | slice: 1 }}">{{ isbn13 | slice: 1 }}</span
+                ><span data-val="{{ isbn13 | slice: 2 }}">{{ isbn13 | slice: 2 }}</span
+                ><span data-val="{{ isbn13 | slice: 3 }}">{{ isbn13 | slice: 3 }}</span
+                ><span data-val="{{ isbn13 | slice: 4 }}">{{ isbn13 | slice: 4 }}</span
+                ><span data-val="{{ isbn13 | slice: 5 }}">{{ isbn13 | slice: 5 }}</span
+                ><span data-val="{{ isbn13 | slice: 6 }}">{{ isbn13 | slice: 6 }}</span><span class="c2"></span
+                ><span data-val="{{ isbn13 | slice: 7 }}">{{ isbn13 | slice: 7 }}</span
+                ><span data-val="{{ isbn13 | slice: 8 }}">{{ isbn13 | slice: 8 }}</span
+                ><span data-val="{{ isbn13 | slice: 9 }}">{{ isbn13 | slice: 9 }}</span
+                ><span data-val="{{ isbn13 | slice: 10 }}">{{ isbn13 | slice: 10 }}</span
+                ><span data-val="{{ isbn13 | slice: 11 }}">{{ isbn13 | slice: 11 }}</span
+                ><span data-val="{{ isbn13 | slice: 12 }}">{{ isbn13 | slice: 12 }}</span><span class="c3"></span>
+              </div>
+            {% else %}
+              {{ book.isbn | escape }}
+            {% endif %}
+          </dd>
+        </dl>
+      </div>
+      <div class="col-md-7">
+        <p class="body">{{ book.notes | escape }}</p>
+      </div>
+    </div>
+  {% endfor %}
+</div>

@@ -1,1 +1,4 @@
+# Site settings
 permalink: /:categories/:year/:month/:day/:title
+destination: build
+source: source
