@@ -1,23 +1,31 @@
 {
+  "--": [
+    "Notes:",
+    "Our scripts use a special POSIX shim that allows you to run i.e. yarn markdownlint-check and specify files to check, or omit the files and it has a default.",
+    "The magic is in the ${@:-\"**/*.md\"} part:",
+    "$@: This represents all the arguments passed to the script (e.g., the files you want to lint).",
+    "${...:-...}: This is the shell's 'use default value' operator.",
+    "In plain English, it means: If $@ (the list of arguments) is empty or not set, use the default value **/*.md. Otherwise, use the arguments that were provided."
+  ],
   "license": "UNLICENSED",
   "devDependencies": {
-    "@shopify/prettier-plugin-liquid": "^1.9.3",
-    "better-sqlite3": "^11.10.0",
-    "glob": "^11.0.2",
-    "html-validate": "^9.5.3",
+    "@fulldecent/nice-checkers-plugin": "^1.0.1",
+    "@shopify/prettier-plugin-liquid": "^1.10.0",
+    "better-sqlite3": "^12.4.1",
+    "glob": "^11.0.3",
+    "html-validate": "^10.1.0",
     "markdownlint-cli2": "^0.18.1",
-    "prettier": "^3.5.3",
-    "shell-quote": "^1.8.2"
+    "prettier": "^3.6.2",
+    "shell-quote": "^1.8.3"
   },
   "scripts": {
-    "test": "node test/fixtures-html-validate-should-fail.mjs && node test/build-html-validate.mjs",
-    "lint": "yarn prettier-check && yarn markdownlint-check",
-    "lint-fix": "yarn prettier-fix && yarn markdownlint-fix",
-    "generate-sitemap": "node scripts/generate-sitemap.mjs",
-    "prettier-check": "yarn prettier --check .",
-    "markdownlint-check": "yarn markdownlint-cli2 '**/*.md'",
-    "prettier-fix": "yarn prettier --write .",
-    "markdownlint-fix": "yarn markdownlint-cli2 --fix '**/*.md'",
+    "lint": "sh -c 'yarn lint:prettier \"$@\" && yarn lint:markdown \"$@\"' --",
+    "lint:prettier": "sh -c 'yarn prettier --check ${@:-\".\"}' --",
+    "lint:markdown": "sh -c 'yarn markdownlint-cli2 ${@:-\"**/*.md\"}' --",
+    "format-all": "yarn prettier --write . && yarn markdownlint-cli2 --fix '**/*.md'",
+    "build": "bundle exec jekyll build",
+    "test": "sh -c 'yarn test:html-validate \"$@\" && yarn test:dirty-file-paths-checker \"$@\"' --",
+    "test:html-validate": "node test/html-validate.mjs",
     "postinstall": "yarn dlx @yarnpkg/sdks vscode"
   },
   "packageManager": "yarn@4.9.1",
