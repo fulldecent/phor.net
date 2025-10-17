@@ -1,0 +1,44 @@
+{% comment -%}
+  This file is the bare minimum HTML->HEAD content required for every page.
+  You must include this file immediately after the opening <head> tag on every page.
+  This does NOT include any style or UI scripts.
+
+  REQUIRED VARIABLES:
+  - site.url: The base URL of the site, e.g. "https://example.com"
+  - page.title: text written in the language of page.lang
+  - page.description: text written in the language of page.lang
+
+  OPTIONAL VARIABLES:
+  - page.canonical_link: MUST start with slash, will output with full https:// URL (defaults to published page path)
+  - page.alternate_langs
+    # Note: Alternate URLs must be fully-qualified, including the transport method (http/https), so:
+    # https://developers.google.com/search/docs/specialty/international/localized-versions
+    - lang: a BCP 47 language tag, e.g. 'en', 'en-US', 'pt-BR'
+    - href: complete URL, e.g. https://example.com/xyz
+  - page.hide_from_search_engines: if true, adds <meta name="robots" content="noindex">
+
+  NOTES:
+  - We do not include meta-keywords because it "is not used by Google Search". Source: https://developers.google.com/search/docs/crawling-indexing/special-tags#unsupported. But you MAY include page.keywords on the page to help you remember the purpose of this page.
+{% endcomment -%}
+
+<meta charset="utf-8">
+<title>
+  {%- if page.title -%}{{ page.title | escape }}{%- else -%}{{ site.title | escape }}{%- endif -%}
+</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link
+  rel="canonical"
+  href="{%- if page.canonical_link -%}{{site.url}}{{page.canonical_link}}{%- else -%}{{ site.url | escape }}{{ page.url | escape }}{%- endif -%}"
+>
+<meta
+  name="description"
+  content="{%- if page.description -%}{{ page.description | escape }}{%- else -%}{{ site.description | escape }}{%- endif -%}"
+>
+{%- if page.alternate_langs %}
+  {%- for language in page.alternate_langs %}
+    <link rel="alternate" href="{{ language.href }}" hreflang="{{ language.lang }}">
+  {%- endfor %}
+{%- endif %}
+{%- if page.hide_from_search_engines -%}
+  <meta name="robots" content="noindex">
+{%- endif -%}

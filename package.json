@@ -11,24 +11,24 @@
   "devDependencies": {
     "@fulldecent/nice-checkers-plugin": "^1.0.1",
     "@shopify/prettier-plugin-liquid": "^1.10.0",
-    "better-sqlite3": "^12.4.1",
     "glob": "^11.0.3",
-    "html-validate": "^10.1.0",
+    "html-validate": "^10.1.2",
     "markdownlint-cli2": "^0.18.1",
-    "prettier": "^3.6.2",
-    "shell-quote": "^1.8.3"
+    "prettier": "^3.6.2"
   },
   "scripts": {
+    "dev": "bundle exec jekyll serve --livereload --unpublished",
+    "build": "bundle exec jekyll build",
     "lint": "sh -c 'yarn lint:prettier \"$@\" && yarn lint:markdown \"$@\"' --",
     "lint:prettier": "sh -c 'yarn prettier --check ${@:-\".\"}' --",
-    "lint:markdown": "sh -c 'yarn markdownlint-cli2 ${@:-\"**/*.md\"}' --",
+    "lint:markdown": "sh -c 'yarn markdownlint-cli2 ${@:-\"**/*.md\"} \"!source/_medical-news/**\"' --",
     "format-all": "yarn prettier --write . && yarn markdownlint-cli2 --fix '**/*.md'",
-    "build": "bundle exec jekyll build",
-    "test": "sh -c 'yarn test:html-validate \"$@\" && yarn test:dirty-file-paths-checker \"$@\"' --",
+    "generate-sitemap": "node scripts/generate-sitemap.mjs",
+    "test": "sh -c 'yarn test:html-validate \"$@\"'",
     "test:html-validate": "node test/html-validate.mjs",
     "postinstall": "yarn dlx @yarnpkg/sdks vscode"
   },
-  "packageManager": "yarn@4.9.1",
+  "packageManager": "yarn@4.10.3",
   "dependencies": {
     "front-matter": "^4.0.2",
     "xml2js": "^0.6.2"

@@ -2,3 +2,5 @@
 permalink: /:categories/:year/:month/:day/:title
 destination: build
 source: source
+
+url: "https://phor.net"

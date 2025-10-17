@@ -3,8 +3,6 @@ layout: page
 title: "#bigups"
 ---
 
-# #bigups
-
 These are products that I have used and can personally endorse. This is exactly what I tell a friend that is asking what I use, because I assume only friends are reading this.
 
 Remember back when you would read your friends' blogrolls and notes like this versus now when most people search Google for fake reviews mostly created by robots?
