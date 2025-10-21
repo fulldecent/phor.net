@@ -1,8 +1,11 @@
 # phor.net website
 
-## Updating content
+##   Updating content
 
-🔨 Add specific notes here about content style guides or how contributors can work together to update content on your site.
+1. All text shall be in sentence case. Capital letters are used only for proper nouns and the first word of a sentence.
+1. Do not use Oxford commas.
+1. All images must use SVG or WebP lossy format. Maximum size 800px wide side or 1200px for full width images. Compress like `cwebp -q 80 -m 6 -mt -v -resize 800 0 -o output.webp input.png`.
+1. All video must be WebM, use like `ffmpeg -i input.mov -vf scale=640:-2 -c:v libvpx -q:v 10 output.webm`.
 
 ## How to build this website locally
 
@@ -27,8 +30,8 @@ Or if you do not want VS Code or the Docker setup, install your environment manu
 3. Install Node & yarn, use version in build-test-deploy.yml in "Setup Node.js", (try nvm):
 
    ```sh
-   nvm install --lts --reinstall-packages-from=current
-   nvm use --lts
+   nvm install # uses our .nvmrc
+   nvm use # uses our .nvmrc
    yarn install
    ```
 
@@ -37,7 +40,7 @@ Or if you do not want VS Code or the Docker setup, install your environment manu
 Build the HTML website.
 
 ```sh
-bundle exec jekyll build
+yarn build
 ```
 
 Access your site at <http://127.0.0.1:4000> (or see other "server address" in console output).
@@ -59,16 +62,20 @@ yarn lint
 And automatically fix with:
 
 ```sh
-yarn lint-fix
+yarn format-all
 ```
 
 ### Testing
 
 Perform website testing (you must have already [built the site](#build-the-site))
 
+:warning: `yarn build` produces different files than `bundle exec jekyll serve`. And the test suite may have false positives if you test the `serve` output.
+
 ```sh
 yarn test
 ```
+
+This tests structured data (JSON+LD), hyperlinks and other best practices on each page. This done using [HTML-validate](https://html-validate.org/) and [Nice Checkers](https://github.com/fulldecent/html-validate-nice-checkers).
 
 ## Notes for VS Code
 
