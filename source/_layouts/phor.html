@@ -17,6 +17,7 @@ layout: null
       integrity="sha256-pdY4ejLKO67E0CM2tbPtq1DJ3VGDVVdqAR6j3ZwdiE4="
       crossorigin="anonymous"
     >
+    <link href="https://fonts.bunny.net/css?family=inter:400,500,600,700&display=swap" rel="stylesheet">
     <link href="{% link /assets/site.css %}" rel="stylesheet">
     <style>
       :root {
@@ -40,16 +41,39 @@ layout: null
       a:not(.btn):visited {
         color: #0a3322;
       }
+
+      .phor-header a:not(.btn) {
+        color: #86c69a;
+      }
+
+      .phor-header a:not(.btn):hover {
+        color: #c4e8d1;
+      }
+
+      .phor-header a:not(.btn):visited {
+        color: #86c69a;
+      }
+
+      .bg-dark a:not(.btn) {
+        color: #86c69a;
+      }
+
+      .bg-dark a:not(.btn):hover {
+        color: #c4e8d1;
+      }
+
+      .bg-dark a:not(.btn):visited {
+        color: #86c69a;
+      }
     </style>
   </head>
 
   <body class="bg-light">
-    <header style="background-color: #0a3322;">
+    <header class="phor-header" style="background-color: #0a3322; padding-bottom: 1.5rem;">
       <nav class="navbar navbar-dark">
-        <div class="container">
-          <a class="navbar-brand" href="/" style="color: #fff;"
-            >William Entriken
-            {%- if page.lang == 'zh' %}（安其文）{%- endif -%}
+        <div class="container d-flex align-items-center justify-content-between">
+          <a class="navbar-brand p-0" href="/">
+            {%- include logo-dark-inline.svg -%}
           </a>
           {%- if page.alternate_langs %}
             <div class="d-flex align-items-center">
@@ -78,9 +102,27 @@ layout: null
       <h1>{{ page.title | escape }}</h1>
     </div>
     {{ content }}
-    <footer class="mt-5 pb-4">
-      <div class="container">
-        <div class="row mt-3">
+
+    <!-- CTA -->
+    {% unless page.url contains '/advisory' %}
+      <section class="mt-5" style="background-color: #0a3322; color: #fff;">
+        <div class="container py-5">
+          <h2 class="fw-bold mb-2">Work with me</h2>
+          <p style="color: #c4e8d1;">
+            If your project needs to attract developers, survive a security audit, or build standards-grade credibility,
+            let's talk.
+          </p>
+          <div class="d-flex gap-3 flex-wrap">
+            <a href="/advisory" class="btn btn-light fw-semibold" style="color: #0a3322;">Apply for Advisory</a>
+            <a href="https://hour.gg" class="btn btn-outline-light fw-semibold">Join Free Community Hour</a>
+          </div>
+        </div>
+      </section>
+    {% endunless %}
+
+    <footer class="bg-dark text-light">
+      <div class="container py-4">
+        <div class="row">
           <div class="col">Updated {{ site.time | date: '%Y-%m-%d' }}. No cookies. No analytics.</div>
           <div class="col text-end"><i class="bi bi-globe" aria-hidden="true"></i> Philadelphia, USA / 中国上海</div>
         </div>

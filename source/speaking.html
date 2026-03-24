@@ -1,0 +1,375 @@
+---
+layout: phor
+title: Speaking & policy work
+---
+<div class="container">
+  <p class="lead">Learn about emerging tech, public policy and entrepreneurship at my workshops and speeches.</p>
+
+  <!-- Featured talks -->
+  <section class="my-5">
+    <h2 class="fw-bold">Featured talks</h2>
+    <div class="row row-cols-2 row-cols-lg-3 g-4">
+      <figure class="col">
+        <a href="https://www.youtube.com/watch?v=tJ-xaTTsZfo">
+          <img
+            src="assets/speeches/2021-11-01-nft-nyc-nft-10-year-plan.jpg"
+            class="img-fluid rounded"
+            alt="NFT NYC 10 year plan"
+          >
+        </a>
+        <figcaption class="figure-caption">
+          <strong>NFT 10-year plan</strong> — gives the three phases of NFTs: tech artists, traditional artists,
+          physical products
+        </figcaption>
+      </figure>
+      <figure class="col">
+        <a href="https://www.youtube.com/watch?v=z8bzQHV5cvY&list=PL9oQ7yETvN11Ju0MTJ8yJ6dPYzNpW3_fn&index=18">
+          <img
+            src="assets/speeches/2022-04-19-emerging-technologies-for-the-enterprise-architecture-design-for-blockchain-projects.jpg"
+            class="img-fluid rounded"
+            alt="Emerging Technologies for the Enterprise"
+          >
+        </a>
+        <figcaption class="figure-caption">
+          <strong>Architecture design for blockchain projects</strong> — a blueprint for scaling your blockchain project
+          and its infrastructure
+        </figcaption>
+      </figure>
+      <figure class="col">
+        <a href="https://www.youtube.com/watch?v=oYUB_ALbW3Y">
+          <img
+            src="assets/speeches/2023-04-12-desci-nyc-funding-science-research.jpg"
+            class="img-fluid rounded"
+            alt="Funding science research"
+          >
+        </a>
+        <figcaption class="figure-caption">
+          <strong>Funding science research</strong> — inspired from the first data DAO in the 1900s
+        </figcaption>
+      </figure>
+      <figure class="col">
+        <a href="https://www.youtube.com/watch?v=7LoMoqltRzM">
+          <img
+            src="assets/speeches/2024-04-22-bananaconf-how-does-the-estonian-regulatory-climate-differ-from-the-rest-of-the-world.jpg"
+            class="img-fluid rounded"
+            alt="Estonian regulatory climate"
+          >
+        </a>
+        <figcaption class="figure-caption">
+          <strong>Baltic regulatory climate</strong>, and the end of money laundering
+        </figcaption>
+      </figure>
+      <figure class="col">
+        <a href="https://youtu.be/cQ1QOLGJPIw">
+          <img
+            src="assets/speeches/2023-05-09-nft-tallinn-innovation-in-estonia-and-leading-eu.jpg"
+            class="img-fluid rounded"
+            alt="Innovation in Estonia and leading EU"
+          >
+        </a>
+        <figcaption class="figure-caption">
+          <strong>Innovation in Estonia and leading EU</strong>, how this one country has successfully deployed online
+          voting, citizen services all using decentralized systems
+        </figcaption>
+      </figure>
+      <figure class="col">
+        <a href="https://twitter.com/bledstratforum/status/1039482666024947712">
+          <img
+            src="assets/project-images/bled2019-1.jpg"
+            class="img-fluid rounded"
+            alt="Bled Strategic Forum"
+          >
+        </a>
+        <figcaption class="figure-caption">
+          <strong>Initiatives in the Balkans</strong>, and the future of government transparency
+        </figcaption>
+      </figure>
+    </div>
+
+    <figure class="my-4">
+      <img
+        src="assets/on-stage.jpg"
+        class="w-100 rounded"
+        alt="On stage"
+        style="mask-image: linear-gradient(to bottom, black 90%, transparent 100%);"
+      >
+      <figcaption class="figure-caption">William interviewing ministry officials, Estonia, 2022</figcaption>
+    </figure>
+  </section>
+
+  <hr>
+
+  <!-- Full speaking history -->
+  <section class="my-5">
+    <h2 class="fw-bold" id="speaking">Full speaking history</h2>
+    <ul id="speaking-events">
+      <li>
+        Every Tuesday.
+        <a href="https://docs.google.com/document/d/1ta_6tSCGfC31iIfhz4bfC_oBKyNZGEdDsZkD-BRXY_Y/edit#"
+          >Community Service Hour</a
+        >
+      </li>
+      {% for speaking-event in site.data['speaking-events'] %}
+        <li>
+          <time datetime="{{ speaking-event.date | escape }}">
+            {{- speaking-event.date | escape -}}
+          </time>
+          <a href="{{ speaking-event.url | escape }}">
+            {{- speaking-event.title | escape -}}
+          </a>
+          {% if speaking-event.coverage %}
+            /
+            {% for coverage in speaking-event.coverage %}
+              <a href="{{ coverage | escape }}">
+                {%- if coverage contains 'youtube' -%}
+                  <i class="bi bi-youtube"></i>
+                {%- elsif coverage contains 'youtu.be' -%}
+                  <i class="bi bi-youtube"></i>
+                {%- elsif coverage contains 'x' -%}
+                  <i class="bi bi-twitter-x"></i>
+                {%- elsif coverage contains '.jpg' -%}
+                  <i class="bi bi-file-image"></i>
+                {%- else -%}
+                  <i class="bi bi-newspaper"></i>
+                {%- endif -%}
+              </a>
+            {% endfor %}
+          {% endif %}
+        </li>
+      {% endfor %}
+    </ul>
+  </section>
+
+  <hr>
+
+  <!-- Regulatory & policy work -->
+  <section class="my-5">
+    <h2 class="fw-bold">Regulatory &amp; policy work</h2>
+    <ul>
+      <li>
+        <a
+          href="https://www.sec.gov/files/ctf-memo-tokenco-wm-entriken-design-blockchain-technology-061015.pdf"
+          >SEC Crypto Task Force meeting</a
+        >
+        — sat directly with the new SEC Crypto Task Force to discuss blockchain technology design (2025).
+      </li>
+      <li>
+        <a href="https://www.regulations.gov/document/IRS-2023-0041-0001">IRS public comments</a> — public comments for
+        IRS gross proceeds and basis reporting by brokers for digital asset transactions (2023).
+      </li>
+      <li>
+        USDA
+        <a href="https://www.govinfo.gov/content/pkg/FR-2020-08-05/pdf/2020-14581.pdf"
+          >proposing immutable ledger technology for agricultural product source verification</a
+        >
+        (with my client CattleProof). This
+        <a
+          href="https://www.ams.usda.gov/sites/default/files/media/Official%20Listing%20of%20Approved%20Process%20Verified%20Programs%20for%20Sevice%20Providers.pdf"
+          >is a USDA Process Verified Program</a
+        >
+        to verify the source of agricultural products and the first to use distributed ledger technology.
+      </li>
+    </ul>
+  </section>
+
+  <hr>
+
+  <!-- Credentials -->
+  <section class="my-5">
+    <h2 class="fw-bold">Credentials</h2>
+    <ul>
+      <li>
+        Lead author of <a href="https://eips.ethereum.org/EIPS/eip-721">ERC-721</a>, the document that started the NFT
+        industry
+      </li>
+      <li>Completed over USD 100M of ICOs (technical advisor)</li>
+      <li>On the Nightfall team (EY, Ernst &amp; Young)</li>
+      <li>Led hands-on developer workshops in US, HK, SG, CN, SI, AR, EE in English and Mandarin</li>
+      <li>Helped thousands of artists become millionaires, create USD 1B of commerce per week</li>
+      <li>Contributor to Solidity project</li>
+      <li>Sponsored by Ethereum Foundation and Microsoft (GitHub Sponsors)</li>
+      <li>100+ podcast episodes of product &amp; industry reviews</li>
+    </ul>
+  </section>
+
+  <hr>
+
+  <!-- Press coverage -->
+  <section class="my-5">
+    <h2 class="fw-bold">Press coverage</h2>
+    <ul>
+      {% for press-coverage in site.data['press-coverage'] %}
+        <li>
+          <cite>
+            <time
+              title="{{ press-coverage.date | date: '%Y-%m-%d' }}"
+              datetime="{{ press-coverage.date | date: '%Y-%m-%d' }}"
+            >
+              {{- press-coverage.date | date: '%Y' -}}</time
+            >. {{ press-coverage.authors | join: ', ' | escape }}. {{ press-coverage.publication | escape }}.
+            <a href="{{ press-coverage.url | escape }}">{{ press-coverage.title | escape }}</a>.
+          </cite>
+        </li>
+      {% endfor %}
+    </ul>
+    <p><a href="self-portraits">Self portraits for media</a></p>
+  </section>
+
+  <hr>
+
+  <!-- Extra stuff for stalkers -->
+  <section class="my-5">
+    <h2 class="fw-bold">Extra stuff for stalkers</h2>
+    <div class="row">
+      <div class="col-md-4">
+        <h3 class="h5">Math</h3>
+        <ul>
+          <li>
+            <a href="https://tromp.github.io/chess/chess.html">Chess research with John Tromp</a> — parallel,
+            exhaustive-search problems
+          </li>
+          <li>
+            <a href="https://blog.phor.net/interesting-properties-of-entropy"
+              >Original research on the entropy function</a
+            >
+            — a new, iterative way to calculate entropy
+          </li>
+        </ul>
+
+        <h3 class="h5">Active projects you can join</h3>
+        <ul>
+          <li>
+            I am active <a href="https://github.com/fulldecent">on GitHub</a>, let's do something awesome together
+          </li>
+          <li><a href="https://kde.org/">KDE contributor and webadmin (commit access to homepage)</a></li>
+        </ul>
+
+        <h3 class="h5">Photography</h3>
+        <ul>
+          <li>My wife and I run a boudoir photography studio. Check out https://glamourphilly.com/</li>
+        </ul>
+      </div>
+      <div class="col-md-4">
+        <h3 class="h5">Things I made that you can buy</h3>
+        <ul>
+          <li>
+            <a href="https://itunes.apple.com/us/app/2017-patent-bar-exam-study-prep-and-pass/id994868838"
+              >US Patent Bar Study (iOS)</a
+            >
+            — a tool for students studying for the patent bar exam
+          </li>
+          <li>
+            Observance — my first published guitar song
+            <a href="https://itunes.apple.com/us/artist/will-entriken/id389914879">iTunes Music</a>
+            <a href="https://open.spotify.com/track/09X5ClB6xTVzY8befFsyHZ">Spotify</a>
+          </li>
+        </ul>
+
+        <h3 class="h5">More music</h3>
+        <ul>
+          <li>
+            <a href="https://phor.net/media/Only.mp3">Only</a> (and
+            <a href="https://www.youtube.com/watch?v=xWy4BfZKXsI">music video</a>) — my award winning remix of Nine Inch
+            Nails's song. Winner in WYSP's First NIN Remix contest (2005), got to meet the band.
+          </li>
+          <li><a href="https://phor.net/media/Air.m4a">Air</a> — the first track my wife and I made together.</li>
+        </ul>
+
+        <h3 class="h5">Civic projects</h3>
+        <ul>
+          <li>
+            <strong>EMCCC, PA</strong> — Eastern Montgomery County Chamber of Commerce, PA, co-chair government affairs
+            committee board.
+          </li>
+          <li>
+            <strong>SEPTA rail scheduling</strong> — I consult with SEPTA to help set their rail schedules.
+            <a href="https://apps.phor.net/septa/">On-time performance tracker</a>.
+            <a
+              href="https://patents.google.com/patent/US20200317242A1/en?q=transit+scheduling&inventor=Entriken&oq=Entriken+transit+scheduling"
+              >Patent application</a
+            >.
+          </li>
+          <li>
+            <strong>Philadelphia Traffic Court</strong> — successfully petitioned the Philadelphia government to
+            <a href="https://github.com/fulldecent/philadelphia-traffic-court-rtk/blob/master/README.md"
+              >make public their entire database of traffic violations</a
+            >.
+          </li>
+        </ul>
+      </div>
+      <div class="col-md-4">
+        <h3 class="h5">Professional associations</h3>
+        <ul>
+          <li>
+            <a href="https://ispe.org/">ISPE</a> International Society for Pharmaceutical Engineering, participant
+            blockchain SIG
+          </li>
+          <li><a href="https://www.chamberofcommerce.com/">Chamber of Commerce</a> participant</li>
+          <li><a href="https://metaversestandards.org/">Metaverse Standards Forum</a> participant</li>
+          <li><a href="https://www.ieee.org/">IEEE</a> participant</li>
+          <li><a href="https://entethalliance.org/">Ethereum Enterprise Alliance</a> participant</li>
+        </ul>
+
+        <h3 class="h5">Contributions / big projects</h3>
+        <ul>
+          <li>Code.mil — helps the US Department of Defense share computer science projects with the public</li>
+          <li>
+            Git (2013) —
+            <a href="https://github.com/git/git/commit/75bf5e60e8c09075af1e4cd0d68a6d73fdf92c42">fixed</a>
+            a recursion bug for submodules
+          </li>
+          <li>Linux kernel v2.2 (1999) — fixed Realtek ethernet driver</li>
+          <li>
+            KDE (2006) — led as a top committer,
+            <a href="https://developers.google.com/open-source/gsoc/2006/?csw=1#kde">Google page on contributions</a>
+          </li>
+          <li><a href="https://jekyllrb.com/news/2015/10/26/jekyll-3-0-released/">Jekyll 3.0 contributor</a></li>
+          <li>
+            Archive.org (2006) —
+            <a href="https://archive.org/details/2006-AIM-IMChaos-WebShots-Collecting"
+              >collection of AOL Instant Messenger, IMChaos, WebShots</a
+            >
+          </li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <hr>
+
+  <!-- Personal -->
+  <section class="my-5">
+    <h2 class="fw-bold">Personal</h2>
+    <div class="row row-cols-2 row-cols-md-5 g-3">
+      <div class="col">Best marathon time: 9h : 13m</div>
+      <div class="col"><a href="reading-list">Books I've read</a></div>
+      <div class="col"><a href="goals">My goals in life</a></div>
+      <div class="col"><a href="bookmarks">My favorite websites</a></div>
+      <div class="col">
+        <a href="/resume.pdf"><i class="bi bi-file-pdf"></i> Resume (PDF)</a>
+      </div>
+    </div>
+  </section>
+</div>
+
+<script>
+  // Future speaking events: add "I'm going too" tweet button
+  document.querySelectorAll('#speaking-events li').forEach((el) => {
+    const datetimeEl = el.querySelector('time');
+    if (!datetimeEl) return;
+    const date = new Date(datetimeEl.attributes.datetime.value);
+    if (date > new Date()) {
+      const titleEl = el.querySelector('a');
+      if (!titleEl) return;
+      const title = titleEl.innerHTML;
+      const tweetURL =
+        'https://twitter.com/intent/tweet?text=I%27ll%20go%20to%20' + encodeURIComponent(title) + '%20%40fulldecent';
+      const link = document.createElement('a');
+      link.href = tweetURL;
+      link.target = '_blank';
+      link.classList.add('btn', 'btn-primary', 'btn-sm', 'my-1');
+      link.innerHTML = "I'm going too";
+      el.insertBefore(link, el.firstChild);
+    }
+  });
+</script>
