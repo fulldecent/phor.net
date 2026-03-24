@@ -4,7 +4,7 @@
 
 1. All text shall be in sentence case. Capital letters are used only for proper nouns and the first word of a sentence.
 1. Do not use Oxford commas.
-1. All images must use SVG or WebP lossy format. Maximum size 800px wide side or 1200px for full width images. Compress like `cwebp -q 80 -m 6 -mt -v -resize 800 0 -o output.webp input.png`.
+1. All images must use SVG or WebP lossy format. Maximum size 800px wide side or 1200px for full width images. Compress like `cwebp -q 80 -m 6 -mt -v -resize 800 0 -o output.webp input.png`. For zero-to-one product images, use `magick in.png -resize 400x400 -quality 80 out.webp`.
 1. All video must be WebM, use like `ffmpeg -i input.mov -vf scale=640:-2 -c:v libvpx -q:v 10 output.webm`.
 
 ## How to build this website locally
