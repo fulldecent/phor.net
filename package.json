@@ -9,12 +9,12 @@
   ],
   "license": "UNLICENSED",
   "devDependencies": {
-    "@fulldecent/nice-checkers-plugin": "^1.3.0",
+    "@fulldecent/nice-checkers-plugin": "^1.3.2",
     "@shopify/prettier-plugin-liquid": "^1.10.2",
     "glob": "^13.0.6",
-    "html-validate": "^10.11.2",
-    "markdownlint-cli2": "^0.22.0",
-    "prettier": "^3.8.1"
+    "html-validate": "^10.13.1",
+    "markdownlint-cli2": "^0.22.1",
+    "prettier": "^3.8.3"
   },
   "scripts": {
     "dev": "bundle exec jekyll serve --livereload --unpublished",
@@ -28,7 +28,7 @@
     "test:html-validate": "node test/html-validate.mjs",
     "postinstall": "yarn dlx @yarnpkg/sdks vscode"
   },
-  "packageManager": "yarn@4.13.0",
+  "packageManager": "yarn@4.14.1",
   "dependencies": {
     "front-matter": "^4.0.2",
     "xml2js": "^0.6.2"
