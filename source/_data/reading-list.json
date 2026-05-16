@@ -1642,5 +1642,15 @@
     "pages": 720,
     "dateread": "March 2026",
     "notes": "this book is an unconstrained construction of how social orders existed using what we know from archaeology and forgetting everything else we thought we knew. The main point is that Rousseaux's Discourse on Inequality starts with the wrong answer and fails to come from any useful questions. The correct question is why did mankind settle on bondage across all modern societies as the primary and exclusive way of social life? Just before modern times, Graeber explores social orders that were fluid. By looking at many individual civilizations, he has distilled a lush set of orders such as social hierarchy or control or treating neighbors like family. So rather than to look at modern inequality as the ultimate evolution, Graeber is trying to see why instead the plurality of orders has fallen out of fashion. I think the question is great, and the book is a compendium of past civilizations, looking at archaeological evidence, and migration to find the right data. But if the dawn is what we were looking for, is he not really looking for a sunset? Although the book is extremely helpful for me to understand poly social orders, the questions and patterns are not strong enough to apply in modern times where we have a much more precise playbook of how civilizations fall. If the author looks back fondly on these more fun times, and he personally participates in demonstrations of uprising, then it surely is within his means to give me the tools I need to re-analyze revolutions and uprisings over the past thousand years. And so we have a dovetail from archaeology into psychology."
+  },
+  {
+    "title": "The Evolution of Cooperation",
+    "author": "Robert Axelrod",
+    "publisher": "Basic Books",
+    "publishdate": "March 1, 1984",
+    "isbn": "978-046500564-2",
+    "pages": 241,
+    "dateread": "May 2026",
+    "notes": "This is a heavy intro on the prisoner's dilemma computer program contest. The detail is rich, perhaps too rich if you know anything about game theory, but perfectly rich if you were reading in 1984. Past that is the best part: why trench warfare results in natural, mutual nonagression, but only in WWI. Good citations and storytelling to demonstrate a natural application of the theory. This chapter is gold, read it before the rest of the book. From there it breaks down in painstaking detail each variable and the boundary conditions for the equilibrium. Nash's work was know at this time so I would much have appreciated an actual equation, and a list of boundaries. This would have fit on one page with room to spare. The rest of the book gets into an ecology of computer programs fighting against each other. That construction was flawed because it forgot the RANDOM singleton program, an important fish in the original competition that sharks to win against."
   }
 ]
