@@ -8,8 +8,10 @@
   "image": "mcr.microsoft.com/devcontainers/jekyll",
   "features": {
     // The devcontainers/jekyll comes with the wrong Ruby version
+    // We want the version that GitHub Pages actually uses, see:
+    // https://pages.github.com/versions.json
     "ghcr.io/devcontainers/features/ruby:1": {
-      "version": "3.3"
+      "version": "3.3.4"
     },
     // Install latest stable Node (we use for validation scripts after build)
     "ghcr.io/devcontainers/features/node:1": {

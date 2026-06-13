@@ -23,7 +23,7 @@ jobs:
     name: Jekyll build
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v6
       - name: Setup Ruby # See https://www.ruby-lang.org/en/downloads/branches/
         uses: ruby/setup-ruby@v1
         with:
@@ -34,7 +34,7 @@ jobs:
       - name: Enable Corepack
         run: corepack enable
       - name: Setup Node.js
-        uses: actions/setup-node@v4
+        uses: actions/setup-node@v6
         with:
           node-version-file: .nvmrc
           cache: "yarn"
@@ -44,11 +44,11 @@ jobs:
       - name: Generate sitemap
         run: yarn run generate-sitemap
       - name: Upload build artifact, ready for GitHub Pages deployment
-        uses: actions/upload-pages-artifact@v3
+        uses: actions/upload-pages-artifact@v5
         with:
           path: build/
       - name: Upload build artifact, ready for testing
-        uses: actions/upload-artifact@v4
+        uses: actions/upload-artifact@v7
         with:
           name: build-artifact
           path: build/ # the Jekyll build directory
@@ -60,11 +60,11 @@ jobs:
     runs-on: ubuntu-latest
     needs: build
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v6
       - name: Enable Corepack
         run: corepack enable
       - name: Setup Node.js
-        uses: actions/setup-node@v4
+        uses: actions/setup-node@v6
         with:
           node-version-file: .nvmrc
           cache: "yarn"
@@ -72,12 +72,12 @@ jobs:
       - name: Install dependencies
         run: yarn install --immutable
       - name: Download build artifact
-        uses: actions/download-artifact@v4
+        uses: actions/download-artifact@v8
         with:
           name: build-artifact
           path: build/
       - name: Restore testing cache
-        uses: actions/cache/restore@v4
+        uses: actions/cache/restore@v5
         with:
           path: cache/
           key: test-cache
@@ -86,7 +86,7 @@ jobs:
       - name: Test suite
         run: yarn run test
       - name: Save testing cache
-        uses: actions/cache/save@v4
+        uses: actions/cache/save@v5
         if: always()
         with:
           path: cache/
@@ -104,4 +104,4 @@ jobs:
     steps:
       - name: Deploy to GitHub Pages
         id: deployment
-        uses: actions/deploy-pages@v4
+        uses: actions/deploy-pages@v5

@@ -2,26 +2,29 @@
 # Manual changes might be lost - proceed with caution!
 
 __metadata:
-  version: 9
+  version: 10
   cacheKey: 10c0
 
-"@fulldecent/nice-checkers-plugin@npm:^1.3.2":
-  version: 1.3.2
-  resolution: "@fulldecent/nice-checkers-plugin@npm:1.3.2"
+"@fulldecent/nice-checkers-plugin@npm:^1.3.7":
+  version: 1.3.7
+  resolution: "@fulldecent/nice-checkers-plugin@npm:1.3.7"
   dependencies:
-    better-sqlite3: "npm:^12.6.2"
+    better-sqlite3: "npm:^12.10.0"
     cheerio: "npm:^1.2.0"
-    shell-quote: "npm:^1.8.3"
+    shell-quote: "npm:^1.8.4"
   peerDependencies:
-    html-validate: ^10.0.0
-  checksum: 10c0/fc3e064b52c9f69c2c3edb1506ec2e3abbccc8c24d2180832c8567bd59b43d6d1dadbbcd90406fc24fe75b7d93c6a6c64489a2bf0a059ec9708b7a690a28699b
+    html-validate: ^10.0.0 || ^11.0.0
+  dependenciesMeta:
+    better-sqlite3:
+      built: true
+  checksum: 10c0/f402bfed7b655bbe51dc657a4e14a99eb3e6aa99d871985816495c1a4d93081c3fbe0b36dc9da0f573b897857755fa982251e53b0e8d99dc44b272db2986c103
   languageName: node
   linkType: hard
 
-"@html-validate/stylish@npm:^5.2.0":
-  version: 5.2.0
-  resolution: "@html-validate/stylish@npm:5.2.0"
-  checksum: 10c0/45522e4c7013926e394fb3a37d57f551eb852101079e15566282ee422062554764d0aed202eacd0b4bcea7a432b91c929fa384d2b369ec098eefef8f0d747b72
+"@html-validate/stylish@npm:^6.0.0":
+  version: 6.0.0
+  resolution: "@html-validate/stylish@npm:6.0.0"
+  checksum: 10c0/f0bd3b53ead31d7f4e911e399356b6c8760a69e6e54c9f593e8a7acdadbe9427be487ea7be3ab3e0c957a4f910a9a79bc41907772e00ce5199964e9125fd7418
   languageName: node
   linkType: hard
 
@@ -105,26 +108,24 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@shopify/prettier-plugin-liquid@npm:^1.10.2":
-  version: 1.10.2
-  resolution: "@shopify/prettier-plugin-liquid@npm:1.10.2"
+"@shopify/prettier-plugin-liquid@npm:^1.10.3":
+  version: 1.10.3
+  resolution: "@shopify/prettier-plugin-liquid@npm:1.10.3"
   dependencies:
     "@shopify/liquid-html-parser": "npm:^2.9.2"
     html-styles: "npm:^1.0.0"
   peerDependencies:
     prettier: ^2.0.0 || ^3.0.0
-  checksum: 10c0/dd5cb5a60055ca9c55e689068c32cfb2095d685a4adafd4c6ec4a9b4b7ad75f5985d40b07c1e60e27536cbbec2101e0f6031cc9c81fcc98988eebf49d6346195
+  checksum: 10c0/9a55e1fe598d99b879f427f0fc5e09b44e44cde5fe8b5aedfc3a86893d79e67c13c5385c8619a3ef9feb9c8b48700274dbc5df4c7f3f3aa52f2a4d36c29f1387
   languageName: node
   linkType: hard
 
-"@sidvind/better-ajv-errors@npm:5.0.0":
-  version: 5.0.0
-  resolution: "@sidvind/better-ajv-errors@npm:5.0.0"
-  dependencies:
-    kleur: "npm:^4.1.0"
+"@sidvind/better-ajv-errors@npm:7.0.0":
+  version: 7.0.0
+  resolution: "@sidvind/better-ajv-errors@npm:7.0.0"
   peerDependencies:
-    ajv: ^7.0.0 || ^8.0.0
-  checksum: 10c0/ef2559d0a6809f2da820159f818b6bc19c5ff18f577b41eb0762eb30dd3b6ddae31dda0d61963498840b0b0482b106a1f21b05183c730c20a619174cc48b6ba8
+    ajv: ^8.0.0
+  checksum: 10c0/8ac190b8f956c4e19384d80b73eb9f2e0e9f10c9bda95a4e3b1fa2899cbd7967826248f6e01f4fcbcd5fc5e2615dcdf63fe688745027a89d3d66d2c6d9b5fa47
   languageName: node
   linkType: hard
 
@@ -277,14 +278,14 @@ __metadata:
   languageName: node
   linkType: hard
 
-"better-sqlite3@npm:^12.6.2":
-  version: 12.9.0
-  resolution: "better-sqlite3@npm:12.9.0"
+"better-sqlite3@npm:^12.10.0":
+  version: 12.10.0
+  resolution: "better-sqlite3@npm:12.10.0"
   dependencies:
     bindings: "npm:^1.5.0"
     node-gyp: "npm:latest"
     prebuild-install: "npm:^7.1.1"
-  checksum: 10c0/69ee0d908fa6a5c8643872aa664686ed02476e88cb654fe37f0fef5845081430d4280c82f5d370e169c2abe7a14a85d9bc718ea720058abf4f7cd9a8dbe227f0
+  checksum: 10c0/b269792c1e456201b16fb9abd1e3fa9284d7710929f991899cebbb61e56dc3703673be29dadcb2f4a2d02961c49145f53d7d7b13b7b47298c033ec9de524f34f
   languageName: node
   linkType: hard
 
@@ -854,7 +855,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"glob@npm:^13.0.0, glob@npm:^13.0.6":
+"glob@npm:^13.0.6":
   version: 13.0.6
   resolution: "glob@npm:13.0.6"
   dependencies:
@@ -893,30 +894,28 @@ __metadata:
   languageName: node
   linkType: hard
 
-"html-validate@npm:^10.13.1":
-  version: 10.13.1
-  resolution: "html-validate@npm:10.13.1"
+"html-validate@npm:^11.5.3":
+  version: 11.5.3
+  resolution: "html-validate@npm:11.5.3"
   dependencies:
-    "@html-validate/stylish": "npm:^5.2.0"
-    "@sidvind/better-ajv-errors": "npm:5.0.0"
+    "@html-validate/stylish": "npm:^6.0.0"
+    "@sidvind/better-ajv-errors": "npm:7.0.0"
     ajv: "npm:^8.0.0"
-    glob: "npm:^13.0.0"
     kleur: "npm:^4.1.0"
-    minimist: "npm:^1.2.0"
     prompts: "npm:^2.0.0"
     semver: "npm:^7.0.0"
   peerDependencies:
-    "@jest/globals": ^28.1.3 || ^29.0.3 || ^30.0.0
-    jest: ^28.1.3 || ^29.0.3 || ^30.0.0
-    jest-diff: ^28.1.3 || ^29.0.3 || ^30.0.0
-    jest-snapshot: ^28.1.3 || ^29.0.3 || ^30.0.0
-    vitest: ^1.0.0 || ^2.0.0 || ^3.0.0 || ^4.0.1
+    "@jest/globals": ^29.0.3 || ^30.0.0
+    "@vitest/expect": ^3.0.0 || ^4.0.1
+    jest: ^29.0.3 || ^30.0.0
+    jest-snapshot: ^29.0.3 || ^30.0.0
+    vitest: ^3.0.0 || ^4.0.1
   peerDependenciesMeta:
     "@jest/globals":
       optional: true
-    jest:
+    "@vitest/expect":
       optional: true
-    jest-diff:
+    jest:
       optional: true
     jest-snapshot:
       optional: true
@@ -924,7 +923,7 @@ __metadata:
       optional: true
   bin:
     html-validate: bin/html-validate.mjs
-  checksum: 10c0/0691e2c2b633043753392aa0201a7a3638ad358a5ea9ae7c840ffea3a96be0711eb64d3912d7f828bfc99e8ee35188258d810fb00fde961ae1775f3f39d49fe2
+  checksum: 10c0/4d7c76aed3f68c7a8a76c78725883aeaba722a9f7f16b5bdb23d7a91619ae848daed225100c9eab8a503cfbeb44b0abce90c98e3639fecbab583537bda739a54
   languageName: node
   linkType: hard
 
@@ -2026,12 +2025,12 @@ __metadata:
   languageName: node
   linkType: hard
 
-"prettier@npm:^3.8.3":
-  version: 3.8.3
-  resolution: "prettier@npm:3.8.3"
+"prettier@npm:^3.8.4":
+  version: 3.8.4
+  resolution: "prettier@npm:3.8.4"
   bin:
     prettier: bin/prettier.cjs
-  checksum: 10c0/754816fd7593eb80f6376d7476d463e832c38a12f32775a82683adb6e35b772b1f484d65f19401507b983a8c8a7cd5a4a9f12006bd56491e8f35503473f77473
+  checksum: 10c0/b90a0cbe75b88ac0af9c13fe0f359bd19926fabccd88483227b21f71f0c1cc42da056fc1ac3a361e665577c568371d5ccfb2c62c31c8a1186f8d1bd531a063e9
   languageName: node
   linkType: hard
 
@@ -2136,13 +2135,13 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "root-workspace-0b6124@workspace:."
   dependencies:
-    "@fulldecent/nice-checkers-plugin": "npm:^1.3.2"
-    "@shopify/prettier-plugin-liquid": "npm:^1.10.2"
+    "@fulldecent/nice-checkers-plugin": "npm:^1.3.7"
+    "@shopify/prettier-plugin-liquid": "npm:^1.10.3"
     front-matter: "npm:^4.0.2"
     glob: "npm:^13.0.6"
-    html-validate: "npm:^10.13.1"
+    html-validate: "npm:^11.5.3"
     markdownlint-cli2: "npm:^0.22.1"
-    prettier: "npm:^3.8.3"
+    prettier: "npm:^3.8.4"
     xml2js: "npm:^0.6.2"
   dependenciesMeta:
     "@shopify/prettier-plugin-liquid@1.5.0":
@@ -2205,10 +2204,10 @@ __metadata:
   languageName: node
   linkType: hard
 
-"shell-quote@npm:^1.8.3":
-  version: 1.8.3
-  resolution: "shell-quote@npm:1.8.3"
-  checksum: 10c0/bee87c34e1e986cfb4c30846b8e6327d18874f10b535699866f368ade11ea4ee45433d97bf5eada22c4320c27df79c3a6a7eb1bf3ecfc47f2c997d9e5e2672fd
+"shell-quote@npm:^1.8.4":
+  version: 1.8.4
+  resolution: "shell-quote@npm:1.8.4"
+  checksum: 10c0/86c93678bc394cb81f5ddcdc87df9c95d279ef9652775cd1cd1eed361404169a8d8cbaacaeed232ab09919e36ee1e5363863570390d78571f8c22b7f6312fb40
   languageName: node
   linkType: hard
 
