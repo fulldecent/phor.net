@@ -44,7 +44,6 @@ If the original URL is invalid, begin a structured search for a replacement. Doc
   - URL variations: try simple modifications such as swapping `http` for `https`, adding or removing `www.`, adding or removing a trailing slash, and removing common tracking parameters (for example, utm_*, gclid).
   - Path simplification: remove parts of the URL path to navigate up the directory structure (for example, from `/news/2024/article-slug` to `/news/2024/` or `/news/`).
   - Internal search: use the website's own search feature with keywords from the expected topic or the original URL’s slug.
-  - Sitemap: check for `/sitemap.xml` to find lists of valid URLs.
 
 - External search engines
 

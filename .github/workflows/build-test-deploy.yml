@@ -41,8 +41,6 @@ jobs:
           check-latest: true
       - name: Install dependencies
         run: yarn install --immutable
-      - name: Generate sitemap
-        run: yarn run generate-sitemap
       - name: Upload build artifact, ready for GitHub Pages deployment
         uses: actions/upload-pages-artifact@v5
         with:

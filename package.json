@@ -24,7 +24,6 @@
     "lint:prettier": "sh -c 'yarn prettier --check ${@:-\".\"}' --",
     "lint:markdown": "sh -c 'yarn markdownlint-cli2 ${@:-\"**/*.md\"} \"!source/_medical-news/**\"' --",
     "format-all": "yarn prettier --write . && yarn markdownlint-cli2 --fix '**/*.md'",
-    "generate-sitemap": "node scripts/generate-sitemap.mjs",
     "test": "sh -c 'yarn test:html-validate \"$@\"'",
     "test:html-validate": "yarn node test/html-validate.mjs",
     "postinstall": "yarn dlx @yarnpkg/sdks vscode"
