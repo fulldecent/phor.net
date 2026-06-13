@@ -1,14 +1,21 @@
 import { parentPort } from "worker_threads";
-import { HtmlValidate, FileSystemConfigLoader, formatterFactory, esmResolver } from "html-validate";
 
-// Initialize HtmlValidate instance (same as main script)
-const resolver = esmResolver();
-const loader = new FileSystemConfigLoader([resolver]);
-const htmlValidate = new HtmlValidate(loader);
-const formatter = formatterFactory("text");
+let htmlValidate;
+let formatter;
 
-// Listen for messages from parent thread
+async function init() {
+  const hv = await import("html-validate");
+  const resolver = hv.esmResolver();
+  const loader = new hv.FileSystemConfigLoader([resolver]);
+  htmlValidate = new hv.HtmlValidate(loader);
+  formatter = hv.formatterFactory("text");
+}
+
 parentPort.on("message", async (data) => {
+  if (!htmlValidate) {
+    await init();
+  }
+
   const { filePath, workerId } = data;
 
   try {
@@ -29,7 +36,7 @@ parentPort.on("message", async (data) => {
       workerId,
       filePath,
       success: false,
-      message: `❌ Error validating`,
+      message: `❌ Error validating: ${error.message || error}`,
       isValid: false,
     };
 

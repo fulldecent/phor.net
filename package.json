@@ -14,6 +14,7 @@
     "glob": "^13.0.6",
     "html-validate": "^11.5.3",
     "markdownlint-cli2": "^0.22.1",
+    "node-gyp": "^13.0.0",
     "prettier": "^3.8.4"
   },
   "scripts": {
@@ -25,7 +26,7 @@
     "format-all": "yarn prettier --write . && yarn markdownlint-cli2 --fix '**/*.md'",
     "generate-sitemap": "node scripts/generate-sitemap.mjs",
     "test": "sh -c 'yarn test:html-validate \"$@\"'",
-    "test:html-validate": "node test/html-validate.mjs",
+    "test:html-validate": "yarn node test/html-validate.mjs",
     "postinstall": "yarn dlx @yarnpkg/sdks vscode"
   },
   "packageManager": "yarn@4.16.0",

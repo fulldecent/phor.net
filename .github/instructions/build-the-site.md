@@ -1,1 +1,3 @@
+# Build the site
+
 - If `yarn dev` command (which runs `bundle exec jekyll serve`) it's already running then you do not need to perform `yarn build` to see your changes.
