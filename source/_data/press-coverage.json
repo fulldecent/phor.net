@@ -239,6 +239,7 @@
     "authors": ["Joyce Yip"],
     "publication": "China Daily",
     "url": "https://www.chinadaily.com.cn/a/202105/07/WS6094db49a31024ad0babc83e.html",
+    "url2": "https://www.chinadaily.com.cn/a/202105/07/WS6094db49a31024ad0babc83e_2.html",
     "title": "Token of art appreciation"
   },
   {
@@ -342,7 +343,8 @@
     "date": "2019-04-28",
     "authors": "罗鸿达",
     "publication": "金色财经",
-    "url": "https://www.jinse.com/news/blockchain/357441.html",
+    "url": "https://web.archive.org/web/20210619084916id_/https://www.jinse.com/news/blockchain/357441.html",
+    "url2": "https://www.jinse.com/news/blockchain/357441.html",
     "title": "ERC721主作者：撰写协议的过程是对用例更加深入的探讨"
   },
   {
@@ -429,6 +431,13 @@
     "publication": "区块链周刊 (BTWeek)",
     "url": "http://www.btweek.com/news/10217/",
     "title": "区块链不仅是技术还是原则，不应该把它概念化 (ERC-721)"
+  },
+  {
+    "date": "2018-04-23",
+    "authors": "C114中国通信网",
+    "publication": "C114",
+    "url": "https://www.c114.com.cn/expo/15/a1050187.html",
+    "title": "区块链世界论坛上海站闭幕 下一站深圳"
   },
   {
     "date": "2018-02-16",
