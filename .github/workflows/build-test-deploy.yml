@@ -23,7 +23,7 @@ jobs:
     name: Jekyll build
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v6
+      - uses: actions/checkout@v7
       - name: Setup Ruby # See https://www.ruby-lang.org/en/downloads/branches/
         uses: ruby/setup-ruby@v1
         with:
@@ -31,10 +31,8 @@ jobs:
           bundler-cache: true # runs 'bundle install' and caches installed gems automatically
       - name: Build site
         run: bundle exec jekyll build
-      - name: Enable Corepack
-        run: corepack enable
       - name: Setup Node.js
-        uses: actions/setup-node@v6
+        uses: actions/setup-node@v7
         with:
           node-version-file: .nvmrc
           cache: "yarn"
@@ -58,11 +56,9 @@ jobs:
     runs-on: ubuntu-latest
     needs: build
     steps:
-      - uses: actions/checkout@v6
-      - name: Enable Corepack
-        run: corepack enable
+      - uses: actions/checkout@v7
       - name: Setup Node.js
-        uses: actions/setup-node@v6
+        uses: actions/setup-node@v7
         with:
           node-version-file: .nvmrc
           cache: "yarn"
