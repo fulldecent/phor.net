@@ -12,22 +12,26 @@ jobs:
 
     steps:
       - name: Checkout
-        uses: actions/checkout@v6
+        uses: actions/checkout@v7
         with:
           # Make sure the actual branch is checked out when running on pull requests
           ref: ${{ github.head_ref }}
+
+      # Update this when Yarn no longer recommends Corepack
+      # See: https://yarnpkg.com/getting-started/install
       - name: Enable Corepack
         run: corepack enable
       - name: Setup Node.js
-        uses: actions/setup-node@v6
+        uses: actions/setup-node@v7
         with:
-          node-version-file: .nvmrc
-          cache: "yarn"
-          check-latest: true
+          node-version-file: .node-version
+          cache: yarn
+          cache-dependency-path: yarn.lock
       - name: Install dependencies
         run: yarn install --immutable
-      - name: Prettify code # Use yarn script instead of a prettier action, in order to load plugins from .prettierrc.js
-        run: yarn run prettier-check
+
+      - name: Check with prettier # Use yarn script instead of a prettier action, in order to load plugins from .prettierrc.js
+        run: yarn run lint:prettier
 
   markdownlint:
     name: Markdownlint code lint
@@ -35,18 +39,20 @@ jobs:
 
     steps:
       - name: Checkout
-        uses: actions/checkout@v6
+        uses: actions/checkout@v7
         with:
           ref: ${{ github.head_ref }}
+
       - name: Enable Corepack
         run: corepack enable
       - name: Setup Node.js
-        uses: actions/setup-node@v6
+        uses: actions/setup-node@v7
         with:
-          node-version-file: .nvmrc
-          cache: "yarn"
-          check-latest: true
+          node-version-file: .node-version
+          cache: yarn
+          cache-dependency-path: yarn.lock
       - name: Install dependencies
         run: yarn install --immutable
-      - name: Run markdownlint
-        run: yarn run markdownlint-check
+
+      - name: Check with markdownlint
+        run: yarn run lint:markdown

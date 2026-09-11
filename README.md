@@ -17,21 +17,20 @@ Use VS Code and the [Dev Containers extension](https://marketplace.visualstudio.
 
 Or if you do not want VS Code or the Docker setup, install your environment manually:
 
-1. Install Ruby (use version in [build-test-deploy.yml](https://github.com/fulldecent/github-pages-template/blob/main/.github/workflows/build-test-deploy.yml) in "Setup Ruby", (try [rbenv](https://github.com/rbenv/rbenv))
-
-2. Install Jekyll:
+1. Install Ruby and gems to match GitHub Pages versions:
 
    ```sh
-   gem update --system
-   gem install bundler
-   bundle install
+   brew install rv # uses .ruby-version
+   rv ruby install
+   rv run bundle install
    ```
 
-3. Install Node & yarn, use version in build-test-deploy.yml in "Setup Node.js", (try nvm):
+2. Install Node.js, yarn and packages for utilities:
 
    ```sh
-   nvm install # uses our .nvmrc
-   nvm use # uses our .nvmrc
+   fnm install # uses .node-version
+   fnm use
+   corepack enable
    yarn install
    ```
 
@@ -43,13 +42,13 @@ Build the HTML website.
 yarn build
 ```
 
-Access your site at <http://127.0.0.1:4000> (or see other "server address" in console output).
-
 ### Serve/run the site
 
 ```sh
-bundle exec jekyll serve --livereload
+yarn dev
 ```
+
+Access your site at <http://127.0.0.1:4000> (or see other "server address" in console output).
 
 ### Linting
 
@@ -62,14 +61,24 @@ yarn lint
 And automatically fix with:
 
 ```sh
-yarn format-all
+yarn format
 ```
+
+You can also run these commands on specific files:
+
+```sh
+yarn lint source/index.html README.md
+yarn format source/index.html README.md
+```
+
+**Notes:**
+- Prettier caching is enabled using the `cache/` folder to speed up formatting checks. The cache is only written during `--write` operations (not `--check`), so CI environments should not expect cache benefits on lint-only operations.
+- Markdown files (`.md`) are formatted by markdownlint, not Prettier (see `.prettierignore`).
+- When you pass specific files, only `.md` files are processed by markdownlint; other file types are silently skipped.
 
 ### Testing
 
-Perform website testing (you must have already [built the site](#build-the-site))
-
-:warning: `yarn build` produces different files than `bundle exec jekyll serve`. And the test suite may have false positives if you test the `serve` output.
+Perform website testing (you must have already [built the site](#build-the-site)):
 
 ```sh
 yarn test
@@ -87,16 +96,25 @@ This will give you formatting, linting, and other tools to help you develop.
 
 Do this every month or so and please send a PR here if you see updates available:
 
-```sh
-yarn set version latest && yarn # Send PR
-yarn upgrade-interactive # Send PR
-```
+1. Update Node.js parts
 
-Also you can run this to update your environment to match the GitHub Pages (no PR, this is in .gitignore):
+   ```sh
+   curl -s https://nodejs.org/dist/index.json | jq -r '[.[] | select(.lts != false)][0].version' > .node-version
+   yarn set version latest && yarn
+   yarn upgrade-interactive
+   ```
 
-```sh
-bundle update --conservative # "--consersative" ignores updates that GitHub Pages is not using
-```
+2. Get updated Ruby + gems GitHub Pages uses, no PR for this, the lock file is git-ignored
+
+   ```sh
+   curl -s https://pages.github.com/versions.json | jq -r .ruby > .ruby-version
+   rv ruby install
+   rv run bundle install
+   ```
+
+3. Update versions in .github/workflows scripts to latest GitHub supported Action versions.
+
+4. Update .devcontainer/devcontainer.json to use the latest Microsoft supported runners and matching versions per above.
 
 ## References
 

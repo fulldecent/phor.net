@@ -1,6 +1,6 @@
 # Copilot instructions for fixing errors
 
-To build, first use `nvm use` and then do tests with `yarn build && yarn test`.
+To build, first use `fnm use` and then do tests with `yarn build && yarn test`.
 
 - `[nice-checkers/mailto-awesome]`
 
