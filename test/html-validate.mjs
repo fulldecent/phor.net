@@ -64,10 +64,15 @@ await validateParallel();
 
 async function validateParallel() {
   let completedTasks = 0;
-  let allTestsPassed = true;
   const results = [];
   const workers = [];
   const taskQueue = [...targets];
+
+  // Debouncing state
+  let lastSuccessReportTime = 0;
+  let pendingSuccessCount = 0;
+  let lastSuccessFilePath = null;
+  const DEBOUNCE_INTERVAL = 2000; // 2 seconds
 
   let isDone = false;
   function completeParallelProcessing() {
@@ -76,11 +81,21 @@ async function validateParallel() {
 
     workers.forEach((worker) => worker.terminate());
 
+    // Report any remaining successful files
+    if (pendingSuccessCount > 0 && lastSuccessFilePath) {
+      const relativeFilePath = path.relative(process.cwd(), lastSuccessFilePath);
+      console.log(`✅ (${completedTasks} of ${targets.length}) ${relativeFilePath}`);
+    }
+
     const failedResults = results.filter((r) => !r.isValid);
+    const warningResults = results.filter((r) => r.isValid && r.warningCount > 0);
     const passedCount = results.length - failedResults.length;
 
     console.log("\n📊 Results summary:");
     console.log(`✅ ${passedCount} files passed validation`);
+    if (warningResults.length > 0) {
+      console.log(`⚠️  ${warningResults.length} files had warnings (not failing)`);
+    }
 
     if (failedResults.length > 0) {
       console.log(`❌ ${failedResults.length} files failed validation`);
@@ -100,15 +115,28 @@ async function validateParallel() {
       const relativeFilePath = path.relative(process.cwd(), result.filePath);
 
       if (!result.isValid) {
-        allTestsPassed = false;
         console.log(`❌ (${completedTasks} of ${targets.length}) ${relativeFilePath}`);
-        // Print error messages with indentation
         const errorLines = result.message.trim().split("\n");
         errorLines.forEach((line) => {
           console.log(`- ${line}`);
         });
+      } else if (result.warningCount > 0) {
+        console.log(`⚠️  (${completedTasks} of ${targets.length}) ${relativeFilePath}`);
+        const warningLines = result.message.trim().split("\n");
+        warningLines.forEach((line) => {
+          console.log(`- ${line}`);
+        });
       } else {
-        console.log(`✅ (${completedTasks} of ${targets.length}) ${relativeFilePath}`);
+        // Debounce successful file reports
+        const now = Date.now();
+        pendingSuccessCount++;
+        lastSuccessFilePath = result.filePath;
+
+        if (now - lastSuccessReportTime >= DEBOUNCE_INTERVAL) {
+          console.log(`✅ (${completedTasks} of ${targets.length}) ${relativeFilePath}`);
+          lastSuccessReportTime = now;
+          pendingSuccessCount = 0;
+        }
       }
 
       if (taskQueue.length > 0) {
@@ -123,7 +151,6 @@ async function validateParallel() {
 
     worker.on("error", (error) => {
       console.error(`Worker ${workerId} error:`, error);
-      allTestsPassed = false;
       completeParallelProcessing();
     });
 

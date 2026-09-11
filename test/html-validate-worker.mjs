@@ -1,45 +1,32 @@
 import { parentPort } from "worker_threads";
+import { HtmlValidate, FileSystemConfigLoader, formatterFactory, esmResolver } from "html-validate";
 
-let htmlValidate;
-let formatter;
-
-async function init() {
-  const hv = await import("html-validate");
-  const resolver = hv.esmResolver();
-  const loader = new hv.FileSystemConfigLoader([resolver]);
-  htmlValidate = new hv.HtmlValidate(loader);
-  formatter = hv.formatterFactory("text");
-}
+const resolver = esmResolver();
+const loader = new FileSystemConfigLoader([resolver]);
+const htmlValidate = new HtmlValidate(loader);
+const formatter = formatterFactory("text");
 
 parentPort.on("message", async (data) => {
-  if (!htmlValidate) {
-    await init();
-  }
-
   const { filePath, workerId } = data;
 
   try {
     const report = await htmlValidate.validateFile(filePath);
+    const formatted = formatter(report.results).trim();
 
-    const result = {
+    parentPort.postMessage({
       workerId,
       filePath,
-      success: report.valid,
-      message: report.valid ? `✅ ${filePath}` : formatter(report.results),
       isValid: report.valid,
-      report: report,
-    };
-
-    parentPort.postMessage(result);
+      warningCount: report.warningCount,
+      message: formatted,
+    });
   } catch (error) {
-    const result = {
+    parentPort.postMessage({
       workerId,
       filePath,
-      success: false,
-      message: `❌ Error validating: ${error.message || error}`,
       isValid: false,
-    };
-
-    parentPort.postMessage(result);
+      warningCount: 0,
+      message: `Error validating: ${error.message || error}`,
+    });
   }
 });

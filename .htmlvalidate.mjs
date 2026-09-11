@@ -32,5 +32,13 @@ export default defineConfig({
         alias: [],
       },
     ],
+    // TODO: cut this over to "error" once remaining PNG/JPEG/GIF/MP3 (and other dirty
+    // asset paths) are converted to WebP/SVG/WebM. Not enforced on this site yet.
+    "nice-checkers/match-regex": [
+      "warn",
+      {
+        mustNotMatch: ["\\.(?:png|jpe?g|gif|woff|eot|ttf|htm|ogv|mp4|mp3)(?:[\"'?#]|$)"],
+      },
+    ],
   },
 });
