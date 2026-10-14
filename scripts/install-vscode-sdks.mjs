@@ -16,6 +16,8 @@ const tempRoot = mkdtempSync(path.join(tmpdir(), "phor-net-sdks-"));
 const childEnv = { ...process.env };
 // The parent install injects its Plug'n'Play loader. The temporary project must resolve on its own.
 delete childEnv.NODE_OPTIONS;
+// GitHub Actions sets CI=true, which makes Yarn treat a missing lockfile as an immutable-install error.
+delete childEnv.YARN_ENABLE_IMMUTABLE_INSTALLS;
 
 function runYarn(args) {
   const yarnBin = process.env.npm_execpath || "yarn";
@@ -47,7 +49,7 @@ try {
     )}\n`,
   );
   writeFileSync(path.join(tempRoot, ".yarnrc.yml"), "enableScripts: true\nnodeLinker: pnp\nnpmMinimalAgeGate: 0\n");
-  runYarn(["install"]);
+  runYarn(["install", "--no-immutable"]);
   runYarn(["sdks", "vscode", "--cwd", projectRoot]);
 } finally {
   rmSync(tempRoot, { recursive: true, force: true });
