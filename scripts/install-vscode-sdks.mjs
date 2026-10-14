@@ -26,7 +26,8 @@ function runYarn(args) {
     throw result.error;
   }
   if (result.status !== 0) {
-    process.exit(result.status ?? 1);
+    // Throw instead of process.exit so the finally block can delete the temp project.
+    throw new Error(`yarn ${args.join(" ")} failed with exit code ${result.status ?? "unknown"}`);
   }
 }
 
