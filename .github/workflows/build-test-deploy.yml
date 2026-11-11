@@ -21,7 +21,8 @@ jobs:
   # Build using Jekyll, and Node.js, save GitHub Pages artifact and build artifact
   build:
     name: Jekyll build
-    runs-on: ubuntu-latest
+    # ubuntu-latest is 26.04, and ruby/setup-ruby has no 3.3.4 build for it.
+    runs-on: ubuntu-24.04
     steps:
       - uses: actions/checkout@v7
       - name: Setup Ruby # See https://www.ruby-lang.org/en/downloads/branches/
